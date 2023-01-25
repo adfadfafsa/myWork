@@ -3,8 +3,6 @@
 3. 구분 - 헤더1 섹션4 푸터1
 4. 로고 네비게이션 수직스크롤 캐러셀 페럴렉스 동영상 일러스트레이션(삽화)
 
--안쓴거-
-
 adn스타일  https://adnstyle.com/
 동영상
 
@@ -14,7 +12,6 @@ adn스타일  https://adnstyle.com/
 핸드 스튜디오  https://handstudio.net/
 동영상 푸터
 
--쓴거-
 
 토이 인터렉티브  http://www.toyinteractive.co.kr/
 일러스트레이션
