@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>이미지</h1>
+
+    <blockquote cite="http://www.wa.or.kr/m1/sub1.asp">정보통신접근성 (Web 접근성)은
+        「지능정보화기본법」에 따라 장애인이나 고령자분들이 웹 사이트에서
+        제공하는 정보를 비장애인과 동등하게 접근하고 이용 할 수 있도록
+        보장하는 것으로 웹 접근성 준수는 법적의무사항 입니다.</blockquote>
+
+    <!-- 웹 접근성: alt를 반드시 기입.
+    장애인이나 고령자분들이 웹사이트에서 제공하는 정보를 비장애인과
+    동등하게 접근하고 이용할 수 있도록 보장하는 것-->
+
+    <!-- html 문서와 이미지가 같은 폴더에 있는 경우: 파일 이름만 쓴다 -->
+    <img src="/50_html/Coffee beans.jpg" alt="커피콩">
+
+    <!-- html 문서보다 하위폴더에 이미지가 있는 경우: 폴더1/폴더2/파일명 -->
+    <img src="assets/House.jpg" alt="건축 이미지1">
+    <img src="assets/images/Bear closeup.jpg" alt="곰">
+    <img src="assets/images/header/Dan.jpg" alt="Dan">
+
+    <!-- html 문서보다 상위폴더에 이미지가 있는 경우: 상위폴더 갯수만큼
+    ../파일명 -->
+    <img src="../typewriter.jpg" alt="타이프라이터">
+    <img src="../assets/map.jpg" alt="지도">
+
+    <hr>
+
+    <!-- 루트 폴더로부터 경로 설정 -->
+    <img src="/50_html/assets/House.jpg" alt="집">
+    <img src="/50_html/assets/images/Bear closeup.jpg" alt="곰">
+    <img src="/50_html/assets/images/header/Dan.jpg" alt="단">
+    <img src="/50_html/Coffee beans.jpg" alt="커피콩">
+    <img src="/typewriter" alt="타이프라이터">
+    <img src="/assets/map.jpg" alt="지도">
+    
+    <!-- 여기까지가 상대경로 -->
+    <hr>
+
+    <!-- 절대경로 지정 방법 -->
+    <img src="http://frim0707.dothome.co.kr/assets/map.jpg" alt="지도">
+
+
+</body>
+
+</html>
