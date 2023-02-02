@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>폼</h1>
+
+    <!-- 서버프로그래밍 언어: php, jsp, asp -->
+    <form action="action_page.php">
+
+        <!-- 입력상자 -->
+        <input type="text">
+        <button>버튼</button>
+
+    </form>
+
+    <!-- form: method="post" -> 주소창에 입력값이 뜨는걸 막아준다 -->
+    <!-- form: autocomplete="on/off" -> 자동완성 켜고 끄기 -->
+    <!-- label: 라벨의 label for="이름", 인풋의 name="이름" 으로 매치시켜줘야 브라우저가 폼의 라벨을 인식 -->
+    <form action="login.php" method="post" autocomlete="on"><br>
+
+        <h2>로그인 창</h2>
+
+        <label for="">아이디:</label>
+        <!-- input: required -> 입력값을 필수값으로 설정 -->
+        <input type="text" name="user_id" required><br>
+        <label for="">패스워드:</label>
+        <input type="password" name="user_pw"><br>
+        <!-- input: type의 종류에 따라 value의 기능은 달라진다
+            버튼 이름, 초기값, 전송값 중 하나가 된다 -->
+        <input type="submit" value="로그인">
+        <input type="reset" value="초기화">
+        <input type="button" value="버튼">
+        <button type="submit">로그인</button>
+        <button type="reset">로그인</button>
+        <button type="button">로그인</button>
+        <button>로그인</button>
+
+        <input type="hidden" name="user_pw"><br><br>
+
+        <h2>검색창</h2>
+            <!-- input의 type이 search기 때문에 value는 초기값 기능 -->
+            <input type="search" name="query" value="토끼 캐릭터"><br>
+            <button>검색</button>
+
+            <h2>회원가입</h2>
+            <!-- input: placeholder -> 폼 안의 안내문. value 초기값과는 다르게 지우지 않아도 된다 -->
+        <label>연락처: <input type="tel" name="user_tel" placeholder="전화번호를 쓰세요"></label><br>
+        <label>이메일: <input type="email" name="user_email" placeholder="이메일을 쓰세요"></label><br>
+        <label>웹주소: <input type="url" name="user_url" placeholder="웹주소를 쓰세요"></label><br>
+        <hr>
+
+        <!-- 체크박스 (확인란): 다중 선택 가능. name으로 그룹핑 가능 -->
+        <!-- 라벨을 씌워주면 글자를 클릭해도 체크된다 -->
+        <!-- input: 체크박스, 라디오 버튼이기 때문에 value 값이 데이터베이스로 전송되는 전송값임 -->
+        <!-- checked -> 기본으로 체크되어있게 설정 -->
+        <label><input type="checkbox" name="chkgroup" value="css" checked>HTML</label>
+        <label><input type="checkbox" name="chkgroup" value="html">CSS</label>
+        <label><input type="checkbox" name="chkgroup" value="js">JavaScript</label><br>
+        <!-- 라디오 버튼: 다중 선택 불가. name으로 그룹핑 가능. 그룹핑 해야만 하나를 고르게 할 수 있음 -->
+        <label><input type="radio" name="radiogruop" value="yes">동의</label>
+        <label><input type="radio" name="radiogruop" value="no">동의하지 않음</label>
+    </form>
+</body>
+
+</html>
