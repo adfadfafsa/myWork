@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* 
+        우선순위:
+        id > class > 요소
+
+        id와 class의 이름 지정 방법 -> 첫글자는 영소문자 (숫자 불가) 
+        두번째 글자부턴 영문 숫자 조합 가능
+        */
+        #p1 {color:green;}
+        .p {
+            color:blue;
+            font-size:32px;
+            background-color:yellow;
+        }
+        p {color:red;}
+    </style>
+</head>
+<body>
+    <!-- id 값이 똑같은게 있으면 안됨 -->
+    <!-- 클래스는 똑같은거 여러번 써도 됨 -->
+    <h1>선택기</h1>
+    <h2>단순 선택기</h2>
+    <p>나는 요소 선택기입니다.</p>
+    <p id="p">나는 id 선택기입니다.</p>
+    <p class="p" id="p1">나는 class 선택기 입니다.</p>
+    <p class="p p1 p2 p3">나는 그룹 선택기입니다.</p>
+    <p id="p3">나는 범용 선택기입니다.</p>
+</body>
+</html>
