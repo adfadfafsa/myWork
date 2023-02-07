@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+
+    <style>
+        a {text-decoration: none; color:#333;}
+        /* a:hover {text-decoration: underline;} -> 마우스 갖다대면 밑줄 생김*/
+    </style>
+</head>
+
+<body>
+    <h1>링크</h1>
+    <a href="#">임시링크</a>
+
+    <!-- 
+        URL(Uniform Resource Locator)
+        스킴://도메인
+        = 프로토콜://도메인(IP)(= 포트/경로/파일명)
+        https:// <- 스킴 naver.com <- 도메인
+        http://127.0.0.1:5500/50_html/09_링크.html
+     -->
+    <a href="https://naver.com">네이버</a>
+    <a href="https://google.com" target="blank">구글</a>
+    <a href="tel:010-1234-5678">010-1234-5678</a>
+    <a href="mailto:frim0707@gmail.com">G메일</a>
+
+    <a href="https://mail.naver.com/write/popup?srvid=note&to=id@naver.com" target="blank">네이버 메일</a>
+
+    <!-- 현재 문서와 같은 폴더에 있는 경우: 파일명만 기록해도 됨 -->
+    <a href="08_이미지.html">08_이미지.html</a>
+    <!-- 하위폴더의 이미지 링크 -->
+    <a href="assets/House.jpg">건축 이미지</a>
+
+</body>
+
+</html>

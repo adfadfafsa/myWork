@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>HTML+CSS</title>
+
+    <style>
+        .p1 {text-decoration: none;}
+        .p2 {text-decoration: underline;
+        text-decoration-color:red;}
+        .p3 {text-decoration: overline;}
+        .p4 {text-decoration: line-through;}
+
+        /* 속기 속성: 한번에 다때려넣기 */
+        .p5 {text-decoration: line-through red dashed 5px;}
+        /* = .p5 {text-decoration: line-through;
+        text-decoration-color: red;
+        text-decoration-style: dashed;
+        text-decoration-thickness: 5px;} */
+
+        .p2-1 {text-decoration-style: solid;}
+        .p2-2 {text-decoration-style: dashed;}
+        .p2-3 {text-decoration-style: dotted;}
+        .p2-4 {text-decoration-style: double;}
+        .p2-5 {text-decoration-style: wavy;}
+
+        .p3-1 {text-decoration-thickness: 1px;}
+        .p3-2 {text-decoration-thickness: 16px;}
+        .p3-3 {text-decoration-thickness: 150%;} /* default: 16px (100%), 글자 크기 (font-size 기준의 퍼센테이지 적용) */
+    </style>
+</head>
+<body>
+    <h1>CSS 텍스트 속성</h1>
+    <h2>텍스트 정렬 (수평)</h2>
+
+    <p class="p1"> text-decoration: none;</p>
+    <p class="p2 p2-1"> text-decoration: underline;</p>
+    <p class="p2 p2-2"> text-decoration: underline;</p>
+    <p class="p2 p2-3"> text-decoration: underline;</p>
+    <p class="p2 p2-4"> text-decoration: underline;</p>
+    <p class="p2 p2-5"> text-decoration: underline;</p>
+    <p class="p3"> text-decoration: overline;</p>
+    <p class="p3 p3-1"> text-decoration: overline;</p>
+    <p class="p3 p3-2"> text-decoration: overline;</p>
+    <p class="p3 p3-3"> text-decoration: overline;</p>
+    <p class="p4"> text-decoration: line-through;</p>
+    <p class="p5"> text-decoration: line-through;</p>
+
+    <p><ins>underline</ins></p>
+    <p><del>line-through</del></p>
+
+    <h2>텍스트 정렬 (수직)</h2>
+
+    <div>
+        <b class="b1">기준</b>
+        <b class="b2">x</b>
+        <b class="b3">y</b>
+        <b class="b4">z</b>
+    </div>
+
+    <pre>설 연휴가 끝나고 일상으로 복귀한 25일 초강력 추위에 이어 중부지방을 중심으로 폭설이 예보돼 철저한 대비가 필요하다.
+이번 눈은 26일 출근길에 가장 강하게 내릴것으로 보여 출근길 교통대란도 우려된다.
+기상청에 따르면 24일~25일 강추위를 일으킨 우리나라 서쪽 대륙 고기압은 앞으로 이동성 고기압 으로 바뀌면서 남동쪽으로 이동할 것으로 예상된다.
+</pre>
+</body>
+</html>
