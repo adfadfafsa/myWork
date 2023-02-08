@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+
+        body {
+            color: red; /* color -> 상속되는 태그 */
+            border:1px solid red; /* border -> 상속이 안되는 태그*/
+        }
+
+        
+        /* 
+        상속이 안되면 원래 이렇게 써야함
+        h1 {color:red;}
+        h2 {color:red;}
+        ul {color:red;} 
+        */
+        
+        /* 
+        그룹선택기 -> 선택기1, 선택기2 ...
+        콤마가 그룹핑을 가능하게 해줌
+
+        h1, h2, ul {color:red;}
+        */
+
+        /*
+        범용(전체) 선택기 -> 전체 선택임
+        소모가 과해져서 잘 쓰지 않는다
+
+        *{color:red;}
+        는 아래와 같다
+
+        html {color:red;}
+        body {color:red;}
+        h1 {color:red;}
+        h2 {color:red;}
+        ul {color:red;}
+        li {color:red;}
+        div {color:red;}
+        p {color:red;}
+
+        ------
+
+        보통 다음과 같이 사용
+        *{
+            color:red;
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        */
+
+    </style>
+</head>
+
+<body>
+    <h1>선택기</h1>
+    <h2>단순선택기</h2>
+    <ul>
+        <li>요소</li>
+        <li>id</li>
+        <li>class</li>
+        <li>그룹</li>
+        <li>범용</li>
+    </ul>
+</body>
+
+</html>

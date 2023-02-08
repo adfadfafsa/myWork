@@ -7,12 +7,17 @@
     <title>HTML+CSS</title>
 
     <style>
-        /* 자동 줄바꿈 */
+        /* 자동 줄 바꿈 (o), Enter (x), space tab (x) */
         .p1 {white-space:normal;}
-        /* wrap -> 줄바꿈이라는 뜻. nowrap => 줄바꿈 x */
+
+        /* 자동 줄 바꿈 (x), Enter (x), space tab (x) */
         .p2 {white-space:nowrap;}
-        .p4 {white-space:pre;}
-        .p3 {white-space:pre-wrap;}
+        /* 자동 줄 바꿈 (x), Enter (o), space tab (o) */
+        .p3 {white-space:pre;}
+
+        /* 자동 줄 바꿈 (o), Enter (o), space tab (o) */
+        .p4 {white-space:pre-wrap;}
+        /* 자동 줄 바꿈 (o), Enter (o), space tab (x) */
         .p5 {white-space:pre-line;}
     </style>
 </head>
@@ -21,5 +26,33 @@
     <h1>CSS 텍스트 속성</h1>
     <h2>white-space</h2>
     <!-- 요소 내부 공백 (space bar, tab 등등) 처리 방법 -->
-    <p class="p1">Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum dolor sit. Lorem ipsum dolor sit.</p>
+    <p class="p1">Lorem          ipsum dolor sit. Lorem ipsum dolor sit.
+        Lorem       ipsum dolor sit. Lorem ipsum dolor sit.
+        Lorem ipsum dolor sit. Lorem ipsum dolor sit.
+        Lorem ipsum dolor sit. Lorem ipsum dolor sit.</p>
+    </p>
+
+    <p class="p2">Lorem ipsum dolor sit. Lorem ipsum dolor sit.
+        Lorem ipsum dolor sit. Lorem ipsum dolor sit.
+        Lorem ipsum dolor sit. Lorem ipsum dolor sit.
+        Lorem ipsum dolor sit. Lorem ipsum dolor sit.</p>
+    </p>
+
+    <p class="p3">Lorem ipsum dolor sit. Lorem ipsum dolor sit.
+        Lorem ipsum dolor sit. Lorem ipsum dolor sit.
+        Lorem ipsum dolor sit. Lorem ipsum dolor sit.
+        Lorem ipsum dolor sit. Lorem ipsum dolor sit.</p>
+    </p>
+
+    <p class="p4">Lorem ipsum dolor sit. Lorem ipsum dolor sit.
+        Lorem ipsum dolor sit. Lorem ipsum dolor sit.
+        Lorem ipsum dolor sit. Lorem ipsum dolor sit.
+        Lorem ipsum dolor sit. Lorem ipsum dolor sit.</p>
+    </p>
+
+    <p class="p5">Lorem ipsum dolor sit. Lorem ipsum dolor sit.
+        Lorem ipsum dolor sit. Lorem ipsum dolor sit.
+        Lorem ipsum dolor sit. Lorem ipsum dolor sit.
+        Lorem ipsum dolor sit. Lorem ipsum dolor sit.</p>
+    </p>
 </html>
