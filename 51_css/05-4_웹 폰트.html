@@ -5,35 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML+CSS</title>
+    
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet"> -->
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-        p {font-family: 'Roboto', sans-serif;}
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;900&display=swap');
 
-        .fw1 {font-weight:100;}
-        .fw2 {font-weight:lighter;}
-        .fw3 {font-weight:300;}
+        @font-face {
+            font-family: 'koreailRoundGothicBold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KorailRoundGothicBold.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;}
 
-        .fw4 {font-weight:400;}
-        .fw5 {font-weight:500;}
+            @font-face {
+                font-family: 'PyeongChangPeace-Light';
+                src: url('http://frim0707.dothome.co.kr/html/font/PyeongChangPeace-Light.ttf');}
 
-        .fw6 {font-weight:bold;}
-        .fw7 {font-weight:700;}
-        .fw8 {font-weight:bolder;}
-        .fw9 {font-weight:900;}
+            .fw2 {font-family: 'Raleway', sans-serif;}
+            .fw3 {font-family: 'koreailRoundGothicBold', sans-serif;}
+            .fw4 {font-family: 'PyeongChangPeace-Light';}
+
+            p {font-family: 'font1', 'Raleway', sans-serif;
+            font-size: 2em;}
     </style>
 </head>
 <body>
     <h1>웹 폰트</h1>
     <h2>구글 폰트</h2>
-    <p class="fw1">Lorem ipsum dolor sit amet.</p>
-    <p class="fw2">Lorem ipsum dolor sit amet.</p>
-    <p class="fw3">Lorem ipsum dolor sit amet.</p>
-    <p class="fw4">Lorem ipsum dolor sit amet.</p>
-    <p class="fw5">Lorem ipsum dolor sit amet.</p>
-    <p class="fw6">Lorem ipsum dolor sit amet.</p>
-    <p class="fw7">Lorem ipsum dolor sit amet.</p>
-    <p class="fw8">Lorem ipsum dolor sit amet.</p>
-    <p class="fw9">Lorem ipsum dolor sit amet.</p>
+    <!-- 드래그 후 ctrl + D -> 같은 내용 선택 -->
+    <p class="fw1">How can I live without the train</p>
+    <p class="fw2">How can I live without the train</p>
+    <p class="fw3">어떻게 전철없이 살겠어</p>
+    <p class="fw4">어떻게 전철없이 살겠어</p>
 </body>
 </html>
