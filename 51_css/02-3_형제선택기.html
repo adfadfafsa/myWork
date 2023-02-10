@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+
+    <style>
+        /*
+        일반형제선택기 (~ -> Tilde 틸더라고 읽음)
+        선택기1 ~ 선택기2
+        선택기1이 형 요소
+        선택기2는 제 요소 
+        */
+        /* p1 아래로의 h2 */
+        /* .p1 ~ p {color:red;} */
+
+        /*
+        인접형제선택기 (+)
+        선택기1 + 선택기2
+        선택기1이 형 요소
+        선택기2는 인접한 제 요소 
+        */
+        /* p1 바로 아랫줄의 h2만 */
+        /* .p1 + h2 {background-color:yellow;} */
+
+        .p1 {color:red;}
+        .p2 {color:blue;}
+    </style>
+</head>
+
+<body>
+    <h1>선택기</h1>
+    <h2>일반형제선택기</h2>
+    <h2>인접형제선택기</h2>
+    <p class="p1 p2">나는 첫째다</p>
+    <p>나는 둘째다</p>
+    <p>나는 셋째다</p>
+    <p>나는 넷째다</p>
+</body>
+</html>

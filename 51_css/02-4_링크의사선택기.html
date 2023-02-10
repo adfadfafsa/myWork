@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+
+    <style>
+        /* 
+            앵커의사선택기
+            a태그 :link -> 방문 전: 파란색
+            a태그 :visited -> 방문 후: 보라색
+            선택기 (id, class) :hover -> 올린 경우: 파란색
+            선택기 (id, class) :active -> 누른 경우: 빨간색
+
+            :link -> :visited -> :hover -> :active 순으로 기록해야한다
+        */
+
+        /*
+        a:link {color:red;}
+        a:visited {color:gray;}
+        a:hover {color:orange;}
+        a:active {color:olive;}
+        */
+        a {
+            color:#999;
+            text-decoration: none;
+        }
+        a :hover {
+            color:#333;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>선택기</h1>
+    <h2>링크 의사선택기</h2>
+    <a href="#">링크</a>
+    <a href="https://naver.com">네이버</a>
+</body>
+</html>

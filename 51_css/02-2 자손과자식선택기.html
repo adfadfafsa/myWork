@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+
+    <style>
+        /*
+            자손선택기
+            선택기1 선택기2
+            선택기 사이는 공백으로 구분
+            선택기 1은 조상(부모포함)
+            선택기 2는 손자(자식포함)
+         */
+        .s1 div li {
+            color: red;
+        }
+        .s1 div p {
+            color: blue;
+        }
+
+        /*
+            자식선택기
+            선택기1 선택기2
+            선택기 사이는 > 으로 구분
+            선택기 1은 부모
+            선택기 2는 자식
+         */
+        .s2 > ul > li {
+            color: red;
+        }
+        .s2 > p {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>선택기</h1>
+    <h2>자손 (자식+손자) 선택기</h2>
+    <section class="s1">
+        <div>
+            <p>나는 div의 자식이다</p>
+            <ul>
+                <li>나는 div의 손자이다</li>
+            </ul>
+        </div>
+    </section>
+    <ul>
+        <li>나는 ul의 자식이다</li>
+    </ul>
+    <p>나는 div의 자식이 아니다</p>
+
+    <h2>자식 선택기</h2>
+    <section class="s2">
+        <div>
+            <p>나는 div의 자식이다</p>
+            <ul>
+                <li>나는 div의 손자이다</li>
+            </ul>
+    </section>
+    <ul>
+        <li>나는 ul의 자식이다</li>
+    </ul>
+    </div>
+    <p>나는 div의 자식이 아니다</p>
+
+</body>
+
+</html>
