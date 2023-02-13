@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        div {
+            width: 350px;
+            height: 350px;
+            border: 1px solid red;
+            margin: 20px;
+        }
+
+        div {
+            background-image: url(assets/House.jpg);
+            background-size: 50%;
+            background-repeat:no-repeat;
+        }
+
+        /*
+            배경 이미지의 크기
+            background-size: 너비 높이;
+            단위: px(em, rem), %
+            너비/높이: auto, cover, contain
+            cover: 가득 참, 이미지 일부 잘릴 수 있음
+            contain: 잘리진 않는데 빈 공간 생길 수 있음
+            숫자 하나만 쓰면 너비로 적용
+        */
+
+        .div1 {background-size:auto;}
+        .div2 {background-size:cover;}
+        .div3 {background-size:contain;}
+        .div4 {background-size:500px 333px;}
+        .div5 {background-size:333px;}
+        .div6 {background-size:100% 100%;}
+        .div7 {background-size:100%;}
+    </style>
+</head>
+
+<body>
+    <h1>배경</h1>
+    <h2>배경 이미지 위치</h2>
+    <div class="div1">auto</div>
+    <div class="div2">cover</div>
+    <div class="div3">contain</div>
+    <div class="div4">500px 333px</div>
+    <div class="div5">333px</div>
+    <div class="div6">100% 100%</div>
+    <div class="div7">100%</div>
+</body>
+
+</html>

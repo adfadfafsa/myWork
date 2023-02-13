@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* 
+            박스 모델 기본 속성
+            가로크기: width
+            세로크기: height
+            테두리: border
+            여백: margin
+            패딩: padding
+
+            반복: background-repeat: repeat;
+        */
+        /* 이미지가 안보이는 이유 -> div의 높이가 0 */
+        div {
+            background-image: url(assets/House.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            height: 500px;
+            width: 700px;
+            border: 1px solid red;
+        }
+
+        .div1 {
+            background-image: url(assets/House.jpg);
+            background-repeat: no-repeat;
+            /* background-position: 가로 세로; -> 둘중 하나만 쓰면 나머지는 중앙정렬 */
+            background-position: top;
+            background: yellow url(assets/House.jpg) no-repeat left/contain;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>배경</h1>
+    <h2>배경 이미지</h2>
+    <div></div>
+    <hr>
+    <h2>img 요소</h2>
+    <div class="div1">
+        <img src="assets/House.jpg" alt="건축이미지">
+    </div>
+</body>
+
+</html>
