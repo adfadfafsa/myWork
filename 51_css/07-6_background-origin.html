@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+
+    <style>
+        div {
+            width: 500px;
+            height: 350px;
+            border: 10px dashed rgba(255, 0, 0, 0.5);
+            /* margin: 경계와 경계 간격 */
+            /* padding: 경계와 내용물의 간격 */
+            margin: 20px;
+            padding: 20px;
+
+            background: url(assets/House.jpg) no-repeat;
+        }
+
+        .div2 {
+            background-origin: padding-box;
+        }
+
+        .div3 {
+            background-origin: border-box;
+        }
+
+        .div4 {
+            background-origin: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>배경</h1>
+    <h2>배경 이미지의 원점</h2>
+    <div class="div1">값을 지정하지 않음</div>
+    <div class="div2">padding-box</div>
+    <div class="div3">border-box</div>
+    <div class="div4">content-box</div>
+</body>
+
+</html>

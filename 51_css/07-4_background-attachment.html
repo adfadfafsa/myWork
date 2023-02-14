@@ -8,15 +8,20 @@
     <title>HTML+CSS</title>
     <style>
         div {
-            width: 350px;
-            height: 350px;
+            height: 800px;
             border: 1px solid red;
             margin: 20px;
         }
 
-        div {
-            background-image: url(assets/House.jpg);
-            background-repeat:no-repeat;
+        .div1 {
+            background-image: url(assets/parallax1.jpg);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+            background-attachment: fixed;
+
+            /*  속기형태: url 반복 위치/크기 고정;
+                background: url(assets/parallax1.jpg) no-repeat top/cover fixed; */
         }
 
         /*
@@ -26,14 +31,19 @@
             scroll: 배경 이미지 스크롤
             fixed: 이미지 고정
         */
-
     </style>
 </head>
 
 <body>
     <h1>배경</h1>
     <h2>배경 이미지 고정 여부</h2>
-    <div class="div1">텍스트</div>
+    <div class="div1">배경 이미지</div>
+    <div class="div2">
+        <h3>콘텐츠의 제목</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Cupiditate officia delectus totam vitae hic, excepturi ipsa quam veniam rem,
+            voluptates saepe impedit aspernatur laboriosam non doloremque numquam suscipit libero ipsam?</p>
+    </div>
 </body>
 
 </html>
