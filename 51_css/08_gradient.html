@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + CSS</title>
+    <style>
+        div {
+            width: 200px;
+            height: 150px;
+            border: 1px solid red;
+            margin: 20px;
+        }
+
+        /* 
+            그라디언트 유형
+            1) 선형(linear)
+            2) 원형(radial)
+            3) 원추형 (원뿔) (conic)
+        */
+
+        /*    
+                linear-gradient(to 방향1 [방향2], 색1, 색2);
+                linear-gradient([각도], 색1, 색2, 색3, ...);
+                각도: 0~360deg
+        */
+        .div1 {
+            background: linear-gradient(blue, white);
+        }
+
+        .div2 {
+            background: linear-gradient(to bottom, blue, white);
+        }
+
+        .div3 {
+            background: linear-gradient(to right bottom, blue, white);
+        }
+
+        .div4 {
+            background: linear-gradient(to bottom, #06f, #fff 30%, #06f);
+        }
+
+        .div5 {
+            background: linear-gradient(135deg, #f00, #fff);
+        }
+
+        .div6 {
+            background: repeating-linear-gradient(red, yellow, green 10%);
+        }
+
+        .div7 {
+            background: repeating-linear-gradient(yellow, yellow 20%, red 20%, red 40%);
+        }
+
+        .div8 {
+            background: linear-gradient(#999 50%, #111 50%);
+        }
+
+        /*    
+                radial-gradient([모양] [크기] [at 위치], 색1, 색2, 색3, ...);
+                모양: circle
+                크기: closest-side, closest-corner, farthest-side, farthest-corner
+        */
+
+        .div9 {
+            background: radial-gradient(white, yellow, red);
+        }
+
+        .div10 {
+            background: radial-gradient(circle, white, yellow, red);
+        }
+
+        .div11 {
+            background: radial-gradient(circle closest-side at 20% 20%, yellow, green);
+        }
+
+        .div12 {
+            background: radial-gradient(circle closest-corner at 20% 20%, yellow, green);
+        }
+
+        .div13 {
+            background: radial-gradient(circle farthest-side at 20% 20%, yellow, green);
+        }
+
+        .div14 {
+            background: radial-gradient(circle farthest-corner at 20% 20%, yellow, green);
+        }
+        
+        .div15 {
+            background: radial-gradient(circle at 20% 20%, white, blue);
+            border-radius: 50%;
+            height: 200px;
+            border: none;
+        }
+
+        .div16 {
+            background: radial-gradient(yellow, white 10%, orange 60%);
+        }
+
+        .div17 {
+            background: repeating-radial-gradient(circle, white, #ccc 10%);
+        }
+
+        .div18 {
+            background: repeating-radial-gradient(circle, white, white 10%, #ccc 10%, #ccc 20%);
+        }
+
+        /* 
+        conic-gradient ([from 각도] [at 중심점 위치], 색1 [각도], 색2 [각도], [색3 [각도]], ...]);
+        중심점 위치: x위치 y위치
+        색: 색 또는 색 각도 (0~360deg)
+        */
+        .div19 {background: conic-gradient(red, yellow, green);}
+        .div20 {background: conic-gradient(red 45deg, yellow 90deg, green 210deg);}
+        .div21 {background: conic-gradient(red 0deg, yellow 90deg, yellow 180deg, green 180deg, green 210deg, blue 270deg, blue 360deg);}
+        .div22 {background: conic-gradient(from 90deg, red, yellow, green);}
+        .div23 {background: conic-gradient(at 60% 45%, red, yellow, green);}
+        .div24 {background: repeating-conic-gradient(red 10%, yellow 20%);}
+        .div25 {background: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg);}
+    </style>
+</head>
+<body>
+    <h1>배경 - 그라디언트</h1>
+
+    <h2>선형</h2>
+    <div class="div1">1</div>
+    <div class="div2">2</div>
+    <div class="div3">3</div>
+    <div class="div4">4</div>
+    <div class="div5">5</div>
+    <div class="div6">6</div>
+    <div class="div7">7</div>
+    <div class="div8">8</div>
+
+    <h2>원형</h2>
+    <div class="div9">9</div>
+    <div class="div10">11</div>
+    <div class="div11">11</div>
+    <div class="div12">12</div>
+    <div class="div13">13</div>
+    <div class="div14">14</div>
+    <div class="div15">15</div>
+    <div class="div16">16</div>
+    <div class="div17">17</div>
+    <div class="div18">18</div>
+
+    <h2>원추형</h2>
+    <div class="div19">19</div>
+    <div class="div20">20</div>
+    <div class="div21">21</div>
+    <div class="div22">22</div>
+    <div class="div23">23</div>
+    <div class="div24">24</div>
+    <div class="div25">25</div>
+    <div class="div26">26</div>
+    <div class="div27">27</div>
+</body>
+</html>

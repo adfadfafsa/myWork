@@ -1,12 +1,97 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Noto+Sans+KR:wght@100;400;700&display=swap');
 
-a {font-size: 15px; color:#777;}
-a:hover {font-size: 15px; color:#000;}
+/* 초기화 */
+li {
+    list-style: none;
+}
 
-h1 {font-size: 24px; color:#fff; letter-spacing: 10px;}
-h2 {font-size: 36px; color:#fff; letter-spacing: 10px;}
-h3 {font-size: 24px; color:#777;}
-h4 {font-size: 18px; color:#777;}
+a {
+    color: #777;
+    text-decoration: none;
+}
 
-body {font-size: 15px; #777; line-height:1.8;}
-span {letter-spacing: 10px;}
+button {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+/* 타이포 */
+html {
+    font-size: 10px;
+}
+
+body {
+    font: 1.5rem/1.8 'Lato', 'Noto Sans KR', sans-serif;
+    color: #777;
+    line-height: 1.8;
+}
+
+h1 {
+    font-size: 2.4rem;
+    color: #fff;
+    letter-spacing: 1rem;
+    text-align:center;
+}
+
+h2 {
+    font-size: 3.6rem;
+    color: #fff;
+    letter-spacing: 1rem;
+    text-align:center;
+}
+
+h3 {
+    font-size: 2.4rem;
+    color: #777;
+    text-align:center;
+}
+
+h4 {
+    font-size: 1.8rem;
+    color: #777;
+    text-align:center;
+}
+
+a {
+    font-size: 1.5rem;
+    color: #777;
+}
+
+a:hover {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+button {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+button:hover {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+span {
+    letter-spacing: 1rem;
+}
+
+span {
+    font-size: 2.4rem;
+    color: #fff;
+}
+
+address {
+    font-size: 1.8rem;
+}
+
+em {text-align:center;}
+
+/* 헤더 */
+.logo {text-align:center;}
+/* 섹션1 */
+/* 섹션2 */
+/* 섹션3 */
+/* 섹션4 */
+/* 푸터 */
