@@ -2,6 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Noto+Sans+KR:wght@100;400;700&display=swap');
 
 /* 초기화 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 li {
     list-style: none;
 }
@@ -31,26 +44,26 @@ h1 {
     font-size: 2.4rem;
     color: #fff;
     letter-spacing: 1rem;
-    text-align:center;
+    text-align: center;
 }
 
 h2 {
     font-size: 3.6rem;
     color: #fff;
     letter-spacing: 1rem;
-    text-align:center;
+    text-align: center;
 }
 
 h3 {
     font-size: 2.4rem;
     color: #777;
-    text-align:center;
+    text-align: center;
 }
 
 h4 {
     font-size: 1.8rem;
     color: #777;
-    text-align:center;
+    text-align: center;
 }
 
 a {
@@ -86,10 +99,15 @@ address {
     font-size: 1.8rem;
 }
 
-em {text-align:center;}
+em {
+    text-align: center;
+}
 
 /* 헤더 */
-.logo {text-align:center;}
+.logo {
+    text-align: center;
+}
+
 /* 섹션1 */
 /* 섹션2 */
 /* 섹션3 */

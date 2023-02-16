@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {margin:0px;}
+
+        
+        .container {
+            background: red;
+            width:50%;
+            height:1000px;}
+            
+            .container div {background: yellow;
+            padding:20px;
+        margin:20px}
+        /* 
+            요소의 가로크기 auto는 100% 기준
+            요소의 세로크기 auto는 콘텐츠 크기 기준
+        */
+        .div1 {width:auto;}
+        .div1 {width:100%;}
+        .div1 {height:auto;}
+        /* %는 부모 크기 기준 */
+        .container .div2 {width:50%;
+        height: 200px;
+    margin:40px;}
+        .div3 {width:250px;
+        height:250px;}
+    </style>
+</head>
+
+<body>
+    <h1>박스 모델</h1>
+    <div class="container">
+        <div class="div1">박스1 : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ad dignissimos sunt molestias voluptates adipisci cum reiciendis quibusdam, non earum expedita veniam fuga quis debitis praesentium. Exercitationem libero vel a.</div>
+        <div class="div2">박스2 : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo harum tempora reiciendis accusamus facere. Ut nihil, iure odit repellat consequuntur explicabo accusantium, voluptas delectus accusamus quas dolorem animi doloribus voluptate?</div>
+        <div class="div3">박스3 : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo harum tempora reiciendis accusamus facere. Ut nihil, iure odit repellat consequuntur explicabo accusantium, voluptas delectus accusamus quas dolorem animi doloribus voluptate?</div>
+</body>
+</html>
