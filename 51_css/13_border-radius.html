@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        div {
+            width: 200px;
+            height: 150px;
+            background: yellow;
+            margin: 20px;
+        }
+
+        .br1 {
+            /* 
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            = border-radius: 15px;
+            */
+            border-radius: 15px;
+        }
+
+        .br2 {
+            border-radius: 10px 20px 30px 40px;
+        }
+
+        .br3 {
+            border-radius: 10px 20px 30px;
+        }
+
+        .br4 {
+            border-radius: 10px 20px;
+        }
+
+        /* width와 height의 절반 이상부턴 더 이상 모양이 변하지 않는다 */
+        .br5 {
+            border-radius: 75px;
+        }
+        
+        .br6 {
+            border-radius: 50%;
+        }
+
+        .br7 {
+            width: 75px;
+            border-top-left-radius: 75px;
+            border-bottom-left-radius: 75px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>모서리 반지름</h1>
+    <div class="br1"></div>
+    <div class="br2"></div>
+    <div class="br3"></div>
+    <div class="br4"></div>
+    <div class="br5"></div>
+    <div class="br6"></div>
+    <div class="br7"></div>
+</body>
+
+</html>
