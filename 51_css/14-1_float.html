@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        header {
+            /* 자식이 float되면 부모가 높이를 못가짐 */
+            background: yellow;
+            /* 한 줄일 때, 줄간격을 높이와 같은 크기로 지정하면 세로 중앙배치 됨 */
+            height: 55px;
+            line-height:55px;
+            letter-spacing: 4px;
+            box-sizing: border-box;
+            padding: 0px 30px;
+        }
+
+        .logo {
+            margin:0px;
+            font-size:15px;
+            float: left;
+            font-weight:normal;
+        }
+
+        nav {
+            font-size:15px;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>헤더</h1>
+    <hr>
+    <header>
+        <h1 class="logo">
+            <a href="#"><b>BR</b> Architects</a>
+        </h1>
+        <nav>
+            네비게이션
+        </nav>
+    </header>
+</body>
+
+</html>
