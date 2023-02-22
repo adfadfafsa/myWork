@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            line-height: 1.0;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        img {
+            width: 100%;
+            vertical-align: top;
+        }
+
+        .container {
+            width: 940px;
+            /* background: yellow; */
+            /* overflow: auto; */
+            /* 블록레벨 요소를 가로로 가운데 배치 */
+            margin: 0 auto;
+        }
+
+        ul {
+            background: yellow;
+            overflow: auto;
+        }
+
+        li {
+            float: left;
+            width: 220px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        li:nth-of-type(4n) {
+            margin-right: 0;
+        }
+
+        li:nth-of-type(4) ~ li {margin-bottom:0;}
+
+        span {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>8장의 이미지 4장씩 가로 배치</h1>
+    <hr>
+    <div class="container">
+        <ul>
+            <li><img src="https://via.placeholder.com/220x165" alt="이미지"></li>
+            <li><img src="https://via.placeholder.com/220x165" alt="이미지"></li>
+            <li><img src="https://via.placeholder.com/220x165" alt="이미지"></li>
+            <li><img src="https://via.placeholder.com/220x165" alt="이미지"></li>
+            <li><img src="https://via.placeholder.com/220x165" alt="이미지"></li>
+            <li><img src="https://via.placeholder.com/220x165" alt="이미지"></li>
+            <li><img src="https://via.placeholder.com/220x165" alt="이미지"></li>
+            <li><img src="https://via.placeholder.com/220x165" alt="이미지"></li>
+        </ul>
+    </div>
+</body>
+
+</html>

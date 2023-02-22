@@ -7,8 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML+CSS</title>
     <style>
-        .img {float:left;}
-        .p {float:right;}
+        .container {
+            width: 940px;
+            background: yellow;
+            overflow: auto;
+        }
+
+        img {
+            width: 50%;
+            vertical-align:top;
+            margin-top:50px;
+        }
+
+        .wrap {
+            float: left;
+            width: 45%;
+        }
+
+        p {
+            float: right;
+            width: 45%;
+        }
     </style>
 </head>
 
@@ -16,10 +35,13 @@
     <h1>이미지와 단락</h1>
     <hr>
     <div class="container">
-        <div class="img">
+        <div class="wrap">
             <img src="/70_project2/assets/House.jpg" alt="">
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias officia similique culpa dolorem ad itaque earum iusto sapiente, hic, facilis nobis nesciunt consequatur molestias ut iure eos natus! Obcaecati consectetur, perspiciatis quisquam debitis necessitatibus nihil aspernatur nobis temporibus cumque dolorem tempore. Recusandae ipsam dolorem cupiditate aliquid excepturi atque voluptas minus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias officia similique culpa dolorem ad itaque
+            earum iusto sapiente, hic, facilis nobis nesciunt consequatur molestias ut iure eos natus! Obcaecati
+            consectetur, perspiciatis quisquam debitis necessitatibus nihil aspernatur nobis temporibus cumque dolorem
+            tempore. Recusandae ipsam dolorem cupiditate aliquid excepturi atque voluptas minus.</p>
     </div>
 </body>
 

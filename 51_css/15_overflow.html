@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+
+        .container {
+            background: red;
+            overflow:auto;
+        }
+
+        .container div {
+            float: left;
+            width: 200px;
+            height:200px;
+            margin: 20px;
+            background: yellow;
+        }
+
+        /* .ovf1 {overflow:visible;}
+        .ovf2 {overflow:scroll;}
+        .ovf3 {overflow:hidden;}
+        .ovf4 {overflow:auto;} */
+    </style>
+</head>
+
+<body>
+    <h1>오버플로우</h1>
+    <p>콘텐츠가 요소의 범위를 넘칠 경우 넘친 부분을 숨기거나, 스크롤 바를 나타낸다.</p>
+    <div class="container">
+        <div class="ovf1">visible: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae necessitatibus
+            vel totam quaerat et at vero illum perferendis nemo iste iusto esse, ullam unde saepe excepturi consequatur
+            repellat illo in! Eius natus voluptate consectetur doloremque perferendis illum temporibus nisi libero,
+            dicta necessitatibus quos ab maiores placeat sapiente similique quam. Blanditiis?</div>
+        <div class="ovf2">scroll: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorum rerum ipsum,
+            possimus velit placeat ullam, deserunt blanditiis, quidem vitae illo tempora omnis tenetur. Suscipit animi
+            dolore quam quisquam soluta voluptatibus, vero inventore alias ipsum consequuntur! Non id cumque quidem,
+            natus omnis doloribus esse veniam quam repellendus quibusdam beatae nihil.</div>
+        <div class="ovf3">hidden: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur distinctio ad
+            modi, assumenda perspiciatis rerum aliquid voluptates sapiente ipsam ut praesentium, nisi at odio veniam
+            beatae expedita repellat cupiditate asperiores libero unde accusantium impedit. Vitae, pariatur minima minus
+            eligendi, soluta ipsa deleniti est dignissimos quaerat laboriosam quos a beatae et?</div>
+        <div class="ovf4">auto: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque reprehenderit, quia
+            pariatur suscipit quos cumque unde quisquam reiciendis quaerat? Rem placeat iure cum ducimus eveniet officia
+            quam possimus laboriosam, corrupti nesciunt et cupiditate repellendus at neque numquam eum quaerat ratione
+            quia quis consectetur libero iusto. Nihil voluptatem laudantium explicabo culpa.</div>
+    </div>
+</body>
+
+</html>
