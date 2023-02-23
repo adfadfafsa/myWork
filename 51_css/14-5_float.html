@@ -12,6 +12,13 @@
             line-height:1.0;
         }
 
+        .clearfix::after
+        {
+            content:'';
+            clear:both;
+            display:block;
+        }
+
         ul {
             margin: 0;
             padding: 0;
@@ -23,7 +30,6 @@
 
         .container {
             background: yellow;
-            overflow: auto;
         }
 
         li {
@@ -33,10 +39,10 @@
             padding:54px 0;
         }
 
-        li:nth-of-type(1) {background:#ccc;}
+        /* li:nth-of-type(1) {background:#ccc;}
         li:nth-of-type(2) {background:#bbb;}
         li:nth-of-type(3) {background:#aaa;}
-        li:nth-of-type(4) {background:#999;}
+        li:nth-of-type(4) {background:#999;} */
 
         span{
             display:block;
@@ -48,14 +54,12 @@
 <body>
     <h1>텍스트 가로로 4등분</h1>
     <hr>
-    <div class="container">
-        <ul>
+        <ul class="container clearfix">
             <li>a<span>(1)</span></li>
             <li>y<span>(2)</span></li>
             <li>g<span>(3)</span></li>
             <li>h<span>(4)</span></li>
         </ul>
-    </div>
 </body>
 
 </html>

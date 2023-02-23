@@ -4,6 +4,7 @@
 /* 초기화 */
 * {
     box-sizing: border-box;
+    border: 1px solid green;
 }
 
 body {
@@ -24,9 +25,20 @@ a {
     text-decoration: none;
 }
 
+img{
+    width:100%;
+    vertical-align: top;
+}
+
 button {
     font-size: 1.5rem;
     color: #000;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
 }
 
 /* 타이포 */
@@ -60,6 +72,7 @@ h3 {
     text-align: center;
 }
 
+
 h4 {
     font-size: 1.8rem;
     color: #777;
@@ -69,11 +82,6 @@ h4 {
 a {
     font-size: 1.5rem;
     color: #777;
-}
-
-a:hover {
-    font-size: 1.5rem;
-    color: #000;
 }
 
 button {
@@ -86,13 +94,12 @@ button:hover {
     color: #000;
 }
 
-span {
-    letter-spacing: 1rem;
-}
+/* span {
+    letter-spacing: 10px;
+} */
 
-span {
-    font-size: 2.4rem;
-    color: #fff;
+.pf3 span {
+    font-size: 24px;
 }
 
 address {
@@ -104,12 +111,94 @@ em {
 }
 
 /* 헤더 */
-.logo {
+header {
+    height: 45px;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    line-height: 45px;
+    padding: 20px 20px;
+}
+
+nav li a:hover {
+    background: #ccc;
+    color: #000;
+}
+
+.tac {
     text-align: center;
 }
 
 /* 섹션1 */
+
+/* 섹션 공통 */
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
 /* 섹션2 */
+
+/* 섹션2 프로필2: 내 사진, 프로필 */
+.pf2 div {
+    width:440px;
+    float:left;
+}
+
+.pf2 > p {
+    width:440px;
+    float:right;
+}
+
+/* 섹션2 스킬 */
+.skill div{
+    height: 35px;
+    background: #ddd;
+}
+
+.skill span{
+    height:100%;
+    display:block;
+    background: #616161;
+    color:#fff;
+    text-align:center;
+}
+
+.skill li:nth-of-type(1) span{
+    width:90%;
+}
+.skill li:nth-of-type(2) span{
+    width:85%;
+}
+.skill li:nth-of-type(3) span{
+    width:75%;
+}
+
+/* 섹션2 프로필3 */
+.pf3 li {
+    float:left;
+    width:25%;
+    height:135px;
+    text-align:center;
+    background: #616161;
+    color:#fff;
+    padding:30px;
+}
+
+.pf3 span{
+    display: block;
+}
+
 /* 섹션3 */
+.myWork li{
+    float:left;
+    width:220px;
+}
+
 /* 섹션4 */
+
 /* 푸터 */

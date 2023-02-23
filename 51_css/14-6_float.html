@@ -38,9 +38,21 @@
             margin: 0 auto;
         }
 
+        /* .clearfix::after{
+            content:'';
+            clear:both;;
+            display:block;
+        } */
+
         ul {
-            background: yellow;
+            background:yellow;
             overflow: auto;
+        }
+
+        ul::after{
+            content:'';
+            clear:both;
+            display:block;
         }
 
         li {
@@ -66,7 +78,7 @@
     <h1>8장의 이미지 4장씩 가로 배치</h1>
     <hr>
     <div class="container">
-        <ul>
+        <ul class="clearfix">
             <li><img src="https://via.placeholder.com/220x165" alt="이미지"></li>
             <li><img src="https://via.placeholder.com/220x165" alt="이미지"></li>
             <li><img src="https://via.placeholder.com/220x165" alt="이미지"></li>
