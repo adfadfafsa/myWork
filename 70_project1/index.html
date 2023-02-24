@@ -24,14 +24,13 @@
     <!-- //헤더 -->
 
     <!-- 섹션1 -->
-    <section>
-        <img src="images/parallax1.jpg" alt="나의 뒷모습">
-        <h1 class="logo">MY WEBSITE LOGO</h1>
+    <section id="sec1">
+        <h1 class="logo">JEON MIN JUNE</h1>
     </section>
     <!-- //섹션1 -->
 
     <!-- 섹션2 -->
-    <section>
+    <section id="sec2">
         <h3>ABOUT ME</h3>
         <p class="tac"><em>I love WebDesign</em></p>
         <div class="container">
@@ -93,9 +92,8 @@
     </section> <!-- 섹션2 -->
 
     <!-- 섹션3 -->
-    <section>
-        <div>
-            <img src="images/parallax2.jpg" alt="작품 이미지">
+    <section id="sec3">
+        <div class="para">
             <h2>PORTFORLIO</h2>
         </div>
 
@@ -122,32 +120,35 @@
     <!-- //섹션3 -->
 
     <!-- 섹션4 -->
-    <section>
-        <div>
-            <img src="images/parallax3.jpg" alt="연락 관련 배경이미지">
+    <section id="sec4">
+        <div class="para">
             <h2>CONTACT</h2>
         </div>
-        <div>
+        <div class="container">
             <h3>WHERE I WORK</h3>
-            <p>I'd love your feedback!</p>
-            <img src="images/map.jpg" alt="나의 위치">
-            <div>
-                <address>
-                    <ul>
-                        <li>인천광역시 남동구</li><br>
-                        <li>Phone: +010 1234 5678</li><br>
-                        <li>Email: frim0707@naver.com</li>
-                    </ul>
-                </address>
-            </div>
-            <p>당신의 연락을 기다립니다:</p>
-            <form action="message.php">
-                <input type="text" name="username" id="username" placeholder="이름">
-                <input type="email" name="useremail" id="useremail" placeholder="이메일">
-                <input type="text" name="usermsg" id="usermsg" placeholder="메세지">
-                <input type="submit" value="메세지 전송">
-            </form>
-        </div>
+            <p class="tac"><em>당신의 연락을 기다립니다!</em></p>
+            <div class="where clearfix">
+                <div class="map">
+                    <img src="images/map.jpg" alt="나의 위치">
+                </div>
+                <div class="info">
+                    <div>
+                        <address>
+                            인천광역시 남동구<br>
+                            Phone: +010 1234 5678<br>
+                            Email: frim0707@naver.com
+                        </address>
+                    </div>
+                    <p>아래 양식에 메모 또는 메일 주시면 연락드리겠습니다.</p>
+                    <form action="message.php">
+                        <input type="text" name="username" id="username" placeholder="이름">
+                        <input type="email" name="useremail" id="useremail" placeholder="이메일">
+                        <input type="text" name="usermsg" id="usermsg" placeholder="메세지">
+                        <button type="submit">메세지 전송하기</button>
+                    </form>
+                </div> <!-- info -->
+            </div> <!-- where -->
+        </div> <!-- container -->
     </section>
     <!-- //섹션4 -->
 </body>
@@ -157,7 +158,6 @@
     <div>
         <a href="#top">To the top</a>
         <p>Copyright 2023 JMJ. All rights reserved.</p>
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
     </div>
 </footer>
 <!-- //푸터 -->
