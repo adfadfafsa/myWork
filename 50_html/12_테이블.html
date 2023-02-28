@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- tr: 표의 행 (가로 줄) -->
+    <!-- th: 제목 셀 -->
+    <!-- td: 데이터 셀 -->
+    <h1>테이블</h1>
+    <table>
+        <caption>표 제목</caption>
+        <tr>
+            <th>셀 제목</th>
+            <td>데이터</td>
+        </tr>
+    </table>
+    <hr>
+    <h1>표</h1>
+    <table>
+        <tr>
+            <th>HTML</th>
+            <td>100점</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>CSS</th>
+            <td>100점</td>
+        </tr>
+    </table>
+    <hr>
+
+    <table>
+        <caption>1학년 성적표</caption>
+        <col>
+        <colgroup>
+            <col>
+            <col>
+        </colgroup>
+        </col>
+        <thead>
+            <tr>
+                <th>과목</th>
+                <th>HTML</th>
+                <th>CSS</th>
+                <th>JS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1학기</td>
+                <td>100점</td>
+                <td>90점</td>
+                <td>95점</td>
+            </tr>
+            <tr>
+                <td>2학기</td>
+                <td>100점</td>
+                <td>80점</td>
+                <td>90점</td>
+            </tr>
+            <tr>
+                <td>3학기</td>
+                <td>90점</td>
+                <td>100점</td>
+                <td>95점</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>평균</td>
+                <td>95점</td>
+                <td>90점</td>
+                <td>95점</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+    <table>
+        <!-- colspan: 두 개의 열(가로)을 병합 -->
+        <tr>
+            <td colspan="2">가나다라마바사</td>
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <!-- rowspan: 두 개의 행(세로)을 병합 -->
+        <tr>
+            <td rowspan="2">가나다라마바사</td>
+        </tr>
+    </table>
+</body>
+
+</html>

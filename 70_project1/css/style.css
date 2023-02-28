@@ -5,7 +5,7 @@
 /* 초기화 */
 * {
     box-sizing: border-box;
-    outline: 1px solid green;
+    /* outline: 1px solid green; */
 }
 
 body {
@@ -40,6 +40,10 @@ button {
     content: '';
     clear: both;
     display: block;
+}
+
+address {
+    font-style: normal;
 }
 
 /* 타이포 */
@@ -88,18 +92,14 @@ a {
 button {
     font-size: 1.5rem;
     color: #000;
-    cursor:pointer;
-    border:none;
+    cursor: pointer;
+    border: none;
 }
 
 button:hover {
     font-size: 1.5rem;
     color: #000;
 }
-
-/* span {
-    letter-spacing: 10px;
-} */
 
 .pf3 span {
     font-size: 24px;
@@ -113,40 +113,50 @@ em {
     text-align: center;
 }
 
-/* 아이콘 */
-nav li:first-of-type ~ li a::before{
-    content:'';
-    display:inline-block;
-    background-repeat: no-repeat;
-    width:11px;
-    height:11px;
-    padding-right:5px;
+.skill p {
+    letter-spacing: 10px;
 }
 
-nav li:nth-of-type(2) a::before{
+/* 아이콘 */
+nav li:first-of-type~li a::before {
+    content: '';
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 11px;
+    padding-right: 5px;
+}
+
+nav li:nth-of-type(2) a::before {
     background-image: url(../images/icon_nav1.png)
 }
 
-nav li:nth-of-type(3) a::before{
+nav li:nth-of-type(3) a::before {
     background-image: url(../images/icon_nav2.png)
 }
 
-nav li:nth-of-type(4) a::before{
+nav li:nth-of-type(4) a::before {
     background-image: url(../images/icon_nav3.png)
 }
 
-form button img{
-    width:16px;
-    vertical-align:middle;
-    margin-right:5px;
+form button img {
+    width: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
 }
 
-form button span{
-    vertical-align:middle;
+form button span {
+    vertical-align: middle;
 }
 
-.toTheTop {
+.sns a {
+    font-size: 24px;
+    color: #fff;
+    margin: 3px;
+}
 
+.sns a:hover {
+    color: #777;
 }
 
 /* 헤더 */
@@ -177,6 +187,12 @@ nav li a:hover {
 .container {
     width: 940px;
     margin: 0 auto;
+    padding: 90px 0;
+}
+
+em {
+    display: inline-block;
+    margin-bottom: 54px;
 }
 
 /* 패럴렉스 이미지 */
@@ -225,6 +241,11 @@ nav li a:hover {
 }
 
 /* 섹션2 스킬 */
+
+.skill h4 {
+    margin: 60px 0 40px;
+}
+
 .skill div {
     height: 35px;
     background: #ddd;
@@ -250,6 +271,10 @@ nav li a:hover {
     width: 75%;
 }
 
+.skill i {
+    margin: 20px 10px 20px 0;
+}
+
 /* 섹션2 프로필3 */
 .pf3 li {
     float: left;
@@ -264,7 +289,6 @@ nav li a:hover {
 .pf3 span {
     display: block;
 }
-
 
 /* 타이틀 */
 
@@ -296,6 +320,7 @@ nav li a:hover {
     line-height: 45px;
     background: #f1f1f1;
     color: #000;
+    margin-top: 50px;
 }
 
 .myWork a:hover {
@@ -313,45 +338,53 @@ nav li a:hover {
     width: 285px;
 }
 
+
 .info {
     float: right;
     width: 630px;
 }
 
+.info p {
+    margin: 30px 0 40px 0;
+}
+
+address i {
+    margin-right: 25px;
+}
+
 form {
-    text-align:right;
+    text-align: right;
 }
 
-form input{
-    width:292px;
-    height:45px;
-    padding:16px;
+form input {
+    width: 292px;
+    height: 45px;
+    padding: 16px;
 }
 
-form input::placeholder{
-    color:#ccc;
+form input::placeholder {
+    color: #ccc;
 }
 
 form button {
     width: 160px;
     height: 45px;
     background: #000;
-    color:#fff;
-    margin-top:13px;
-    margin-bottom:90px;
+    color: #fff;
+    margin-top: 20px;
 }
 
-form button:hover{
+form button:hover {
     background: #ccc;
 }
 
-form input:nth-of-type(1){
+form input:nth-of-type(1) {
     margin-right: 13px;
 }
 
-form input:nth-of-type(3){
-    width:600px;
-    margin-top:13px;
+form input:nth-of-type(3) {
+    width: 600px;
+    margin-top: 13px;
 }
 
 
@@ -360,11 +393,12 @@ footer {
     height: 288px;
     background: #616161;
     text-align: center;
-    color:#fff;
+    color: #fff;
+    padding-top: 70px;
 }
 
-footer :hover {
-    background:#000;
+footer:hover {
+    background: #000;
 }
 
 .toTheTop {
@@ -375,11 +409,15 @@ footer :hover {
     color: #616161;
 }
 
-.toTheTop:hover{
-    background:#ccc;
-    color:#000;
+.toTheTop:hover {
+    background: #ccc;
+    color: #000;
 }
 
 .toTheTop i {
-    margin-right:5px;
+    margin-right: 5px;
+}
+
+.sns {
+    margin: 15px 0;
 }

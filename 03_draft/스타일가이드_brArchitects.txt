@@ -1,0 +1,36 @@
+네비
+
+BR architects
+15px #000 22.5px
+
+헤더
+
+BR
+36px #fff 4px
+
+Architects
+36px #f1f1f1 4px
+
+섹션1
+
+projects
+24px #000
+
+houses
+15px #fff
+
+섹션2
+
+about / John Doe
+24px #000
+
+lorem
+15px #000 
+
+섹션3
+
+Contact
+24px #000
+
+Lorem
+15px #000
