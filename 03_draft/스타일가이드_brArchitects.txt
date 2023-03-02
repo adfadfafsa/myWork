@@ -3,7 +3,7 @@
 BR architects
 15px #000 22.5px
 
-헤더
+섹션1
 
 BR
 36px #fff 4px
@@ -11,7 +11,7 @@ BR
 Architects
 36px #f1f1f1 4px
 
-섹션1
+섹션2
 
 projects
 24px #000
@@ -19,7 +19,7 @@ projects
 houses
 15px #fff
 
-섹션2
+섹션3
 
 about / John Doe
 24px #000
@@ -27,7 +27,7 @@ about / John Doe
 lorem
 15px #000 
 
-섹션3
+섹션4
 
 Contact
 24px #000
