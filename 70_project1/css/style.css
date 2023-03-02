@@ -230,9 +230,17 @@ em {
 /* 섹션2 */
 
 /* 섹션2 프로필2: 내 사진, 프로필 */
+.pf2 {
+    margin-top:70px;
+}
+
 .pf2 div {
-    width: 440px;
+    width: 425px;
     float: left;
+}
+
+.pf2 div p {
+    margin-bottom:20px;
 }
 
 .pf2>p {
