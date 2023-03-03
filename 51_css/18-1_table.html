@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        a:hover{text-decoration:underline;}
+
+        h2,
+        p {
+            text-align: center;
+        }
+
+        table,
+        th,
+        td {
+            border-top: 1px solid #999;
+            border-bottom: 1px solid #999;
+        }
+
+        div {
+            width: 1280px;
+            margin: 0 auto;
+        }
+
+        .faq {
+            max-width: 100%;
+            border-collapse: collapse;
+            border-top: 4px;
+        }
+
+        caption {
+            display: none;
+        }
+
+        col:nth-of-type(1) {
+            width: 5%;
+            text-align: center;
+        }
+
+        col:nth-of-type(2) {
+            width: 60%;
+        }
+
+        col:nth-of-type(3) {
+            width: 15%;
+        }
+
+        col:nth-of-type(4) {
+            width: 10%;
+        }
+
+        col:nth-of-type(5) {
+            width: 10%;
+        }
+
+        th {
+            height: 54px;
+            text-align: center
+        }
+
+        td {
+            height: 52px;
+            text-align: center;
+        }
+
+        td:nth-child(2) {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>테이블: 7*5</h1>
+    <h2>자주하는 질문</h2>
+    <p>궁금하신 내용을 검색해 주세요.</p>
+    <div>
+        <table class="faq">
+            <thead>
+                <caption>FAQ</caption>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <tr>
+                    <th scope="col">번호</th>
+                    <th scope="col">제목</th>
+                    <th scope="col">글쓴이</th>
+                    <th scope="col">날짜</th>
+                    <th scope="col">조회</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>공지</td>
+                    <td><a href="#">[고객센터] 9월 1일부터 인상되는 디저트 가격이 어떻게 되나요?</a></td>
+                    <td>메가MGC커피</td>
+                    <td>2022-08-30</td>
+                    <td>2947</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a href="#">[모바일쿠폰] 음료 쿠폰 선물을 받았는데 메뉴 변경이 가능한가요?</a></td>
+                    <td>메가MGC커피</td>
+                    <td>2022-07-01</td>
+                    <td>1152</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="#">[모바일쿠폰] 모바일 쿠폰 이용 시 현금 영수증 발급 가능한가요?</a></td>
+                    <td>메가MGC커피</td>
+                    <td>2022-08-30</td>
+                    <td>904</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="#">[모바일쿠폰] 쿠폰 내 잔액 확인을 원하는데 확인 가능한가요?</a></td>
+                    <td>메가MGC커피</td>
+                    <td>2022-07-01</td>
+                    <td>928</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="#">[모바일쿠폰] 쿠폰의 유효기간을 연장하고 싶은데 가능한가요?</a></td>
+                    <td>메가MGC커피</td>
+                    <td>2022-07-01</td>
+                    <td>764</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><a href="#">[모바일쿠폰] 매장에서 쿠폰사용을 거부당했습니다. 사용 가능한가요?</a></td>
+                    <td>메가MGC커피</td>
+                    <td>2022-07-01</td>
+                    <td>1404</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
