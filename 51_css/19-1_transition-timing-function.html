@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            margin:10px;
+            background:red;
+            transition: 3s;
+        }
+        div:hover{
+            width:200px;
+        }
+
+        .trs1{
+            transition-timing-function:ease;
+        }
+        /* 느리게 시작, 점점 빨리 */
+        .trs2{
+            transition-timing-function:ease-in;
+        }
+        /* 빠르게 시작, 점점 느리게 */
+        .trs3{
+            transition-timing-function:ease-out;
+        }
+        /* 느리게 시작, 빨라지다 다시 느려짐 */
+        .trs4{
+            transition-timing-function:ease-in-out;
+        }
+        /* 등속 */
+        .trs5{
+            transition-timing-function:linear;
+        }
+        /* 함수이름 (인수1,인수2,...) */
+        /* linear-gradient(색1,색2) */
+        /* cubic-bezier(n,n,n,n) */
+        .trs6{
+            transition-timing-function:cubic-bezier(0,0,1,1);
+        }
+    </style>
+</head>
+<body>
+    <h1>전환</h1>
+    <div class="trs1">ease</div>
+    <div class="trs2">ease-in</div>
+    <div class="trs3">ease-out</div>
+    <div class="trs4">ease-in-out</div>
+    <div class="trs5">linear</div>
+    <div class="trs6">cubic-bezier</div>
+</body>
+</html>

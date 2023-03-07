@@ -1,36 +1,19 @@
-네비
+Typography
 
-BR architects
-15px #000 22.5px
+제목 폰트		Segoe UI
+본문 폰트		Verdana, Sans-serif
 
-섹션1
+h1		36px #fff	  자간4px		sec1 메인타이틀
+h2		24px			섹션 2,3,4 제목
+h3		18px			섹션 3 하위 제목
 
-BR
-36px #fff 4px
+.logo		15px #000 자간4px		로고
+a		15px #000 자간4px		GNB
+.copy		#fff
+body		15px #000 줄간격 1.5	
 
-Architects
-36px #f1f1f1 4px
 
-섹션2
-
-projects
-24px #000
-
-houses
-15px #fff
-
-섹션3
-
-about / John Doe
-24px #000
-
-lorem
-15px #000 
-
-섹션4
-
-Contact
-24px #000
-
-Lorem
-15px #000
+button		15px #000 bg:#f1f1f1	Contact
+button:hover	bg:#ccc
+button		15px #fff bg:#f1f1f1	SEND MESSAGE
+button:hover	bg:#ccc

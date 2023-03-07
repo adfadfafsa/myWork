@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            background:red;
+            /* 전환될 속성 지정 */
+            transition-property: width;
+            /* 전환 시간 */
+            transition-duration:0.3s;
+            /* 완화 / 가속도 (easing) */
+            transition-timing-function: ease-in-out;
+            /* 지연 시간 */
+            transition-delay: 0s;
+
+            transition: all .3s ease 0s;
+        }
+        div:hover{
+            width:200px;
+            background:blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>전환</h1>
+    <div></div>
+</body>
+</html>

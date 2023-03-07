@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    outline: 1px solid green;
+}
+
+body,h1,h2,h3,h4,p,ul {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    border: none;
+}
+
+hr {
+    background:#f5f5f5;
+    height: 1px;
+    border:0;
+}
