@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            margin: 20px;
+            border: 1px solid black;
+            perspective: 1000px;
+        }
+
+        .trf {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: .5s;
+        }
+
+        .wrap:hover .trftx {
+            transform: translatex(100px);
+        }
+
+        .wrap:hover .trfty {
+            transform: translatey(100px);
+        }
+
+        .wrap:hover .trftz {
+            /* 원근감 (perspective) 와 함께 사용해야한다. */
+            transform: translatez(100px) perspective(1000px);
+        }
+
+        .wrap:hover .trftd {
+            transform: translate3d(100px, 100px, 100px);
+        }
+
+        .wrap:hover .trft {
+            transform: translate(100px);
+        }
+
+        .move {
+            width: 200px;
+            overflow:hidden;
+            background: yellow;
+            padding: 10px 20px;
+        }
+        .move .bg {
+            float:left;
+            transform: translateY(20px);
+            transition:.3s ease-out;
+        }
+        .move:hover .bg{
+            transform:translateY(10px);
+        }
+        .move .txt{
+            float:right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>변환</h1>
+    <h2>이동</h2>
+    <div class="wrap">
+        <span class="trf trftx">translateX</span>transform
+    </div>
+    <div class="wrap">
+        <span class="trf trfty">translateY</span>transform
+    </div>
+    <div class="wrap">
+        <span class="trf trftz">translateZ</span>transform
+    </div>
+    <div class="wrap">
+        <span class="trf trftd">translate3d</span>transform
+    </div>
+    <div class="wrap">
+        <span class="trf trft">translate</span>transform
+    </div>
+
+    <hr>
+    <div class="move">
+        <div class="bg">
+            <img src="assets/Inthree/main-visual-dot-01.png" alt="">
+        </div>
+        <div class="txt">
+            <h3>가이드맵</h3>
+            <p>서울랜드를 한 눈에<br>둘러보세요!</p>
+        </div>
+    </div>
+</body>
+
+</html>
