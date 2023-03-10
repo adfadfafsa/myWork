@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+
+        /* 내가한거 */
+        /* .wrap {
+            width:110px;
+            height:110px;
+            border-radius: 50%;
+            position:relative;
+        }
+        .front {
+            background: #EBEBEB;
+            border-radius: 50%;
+        }
+
+        .spanf {
+            display:inline-block;
+            position:absolute;
+            translate: 120% -200%;
+            font-weight:1000;
+        }
+
+        .front:hover {
+            transition: .5s;
+            transform: rotatey(180deg);
+        }
+
+        .back {
+            display:none; 
+            position:absolute;
+            translate: 5% -110%;
+            background: #5bea2b;
+            width:100px;
+            height:100px;
+        }
+        .back:hover {
+            translate: 35% -180%;
+            font-size: 32px;
+            font-weight: 1000;
+            color: #fff;
+        } */
+
+        body * {
+            outline: 1px solid red;
+        }
+
+        .wrap {
+            position:relative;
+            overflow:hidden;
+            width:110px;
+            height:110px;
+            border-radius: 50%;
+            perspective:1000px;
+        }
+        .wrap > div {
+            position:absolute;
+        }
+        .wrap:hover .front {
+            transform: rotateY(180deg);
+        }
+        .wrap:hover .back {
+            transform: rotateY(0deg);
+        }
+        
+        span {
+        position: absolute;
+        text-align:center;
+        font: 700 28px 'Noto Sans KR', sans-serif;
+        font-weight:700;
+        /* left 50% translate (-50%) : 중앙배치. 요소 상관 없음 */
+        left:50%;
+        transform: translateX(-50%);
+        }
+
+        .front {
+            border-radius: 50%;
+            transition: .7s;
+            background:#ccc;
+            backface-visibility: hidden;
+        }
+        .front span {
+            color:#333;
+            bottom:15px;
+            font-size: 24px;
+        }
+
+        .back {
+            border-radius: 50%;
+            transition: .7s;
+            width:100%;
+            height:100%;
+            background: #5bae2a;
+            transform: rotateY(-180deg);
+        }
+        .back span {
+            color:#fff;
+            background: #5bae2a;
+            top:50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>회전</h1>
+    <h2>팜한농</h2>
+    <div class="wrap">
+        <div class="back">
+            <span>사과</span>
+        </div>
+        <div class="front">
+            <div><img src="/51_css/assets/farmhannong/icon_farming_02.png" alt=""></div>
+            <span>사과</span>
+        </div>
+    </div>
+</body>
+
+</html>
