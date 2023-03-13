@@ -7,10 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .container {
+            background: yellow;
+            overflow: hidden;
+        }
+
         .wrap {
+            float: left;
             margin: 20px;
             border: 1px solid black;
-            perspective: 1000px;
+            /* perspective: 1000px; */
         }
 
         .trf {
@@ -42,67 +48,100 @@
         .wrap .trfro {
             transform-origin: 0% 0%;
         }
+
         .wrap:hover .trfro {
             transform: rotate(90deg);
         }
+
         .wrap:nth-of-type(6) {
-            background:#000;
-            color:red;
+            background: #000;
+            color: red;
             perspective: 2000px;
             perspective-origin: right bottom;
         }
 
-        .move {
-            width: 200px;
-            overflow:hidden;
-            background: yellow;
-            padding: 10px 20px;
-        }
-        .move .bg {
-            float:left;
-            transform: rotateY(1);
-            transition:.3s ease-out;
-        }
-        .move:hover .bg{
-            transform:rotateY(2);
-        }
-        .move .txt{
-            float:right;
+        /* <hr> */
+
+        .wrap:hover .trfr {
+            transform: rotate(45deg);
         }
 
+        .trfo1 {
+            /* transform-origin: center center; */
+            transform-origin: 50% 50%;
+        }
+
+        .trfo2 {
+            /* transform-origin: left top; */
+            transform-origin: 0 0;
+        }
+
+        .trfo3 {
+            /* transform-origin: x축 y축; */
+            /* transform-origin: right top; */
+            /* transform-origin: top right; */
+            transform-origin: 100% 0;
+        }
+
+        .trfo4 {
+            /* transform-origin: right bottom; */
+            transform-origin: 100% 100%;
+        }
+
+        .trfo5 {
+            /* transform-origin: left bottom; */
+            transform-origin: 0 100%;
+        }
+
+        .trfo6 {
+            /* transform-origin: left bottom; */
+            transform-origin: 20% 30%;
+        }
     </style>
 </head>
 
 <body>
     <h1>변환</h1>
     <h2>이동</h2>
-    <div class="wrap">
-        <span class="trf trfrx">rotateX</span>transform
-    </div>
-    <div class="wrap">
-        <span class="trf trfry">rotateY</span>transform
-    </div>
-    <div class="wrap">
-        <span class="trf trfrz">rotateZ</span>transform
-    </div>
-    <div class="wrap">
-        <span class="trf trfrd">rotate3d</span>transform
-    </div>
-    <div class="wrap">
-        <span class="trf trfro">rotate</span>transform
-    </div>
-    <div class="wrap">
-        <span class="trf trfro">rotate</span>transform
-    </div>
-
-    <hr>
-    <div class="move">
-        <div class="bg">
-            <img src="assets/Inthree/main-visual-dot-01.png" alt="">
+    <div class="container">
+        <div class="wrap">
+            <span class="trf trfrx">rotateX</span>transform
         </div>
-        <div class="txt">
-            <h3>가이드맵</h3>
-            <p>서울랜드를 한 눈에<br>둘러보세요!</p>
+        <div class="wrap">
+            <span class="trf trfry">rotateY</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfrz">rotateZ</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfrd">rotate3d</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfro">rotate</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfro">rotate</span>transform
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="wrap">
+            <span class="trf trfr trfo1">rotate</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfr trfo2">rotate</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfr trfo3">rotate</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfr trfo4">rotate</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfr trfo5">rotate</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfr trfo6">rotate</span>transform
         </div>
     </div>
 </body>

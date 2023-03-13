@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* reset */
+        body {
+            margin: 0;
+        }
+        img {
+            width: 100%;
+            vertical-align:top;
+        }
+
+        /* section */
+        .section1 {
+            height:700px;
+            background: #fa9a9a;
+        }
+        .section2 {
+            height:910px;
+            position: relative;
+            background: yellow;
+        }
+        .section3 {
+            height:700px;
+            background: #d9cbc2;
+        }
+        .lst {
+            position: absolute;
+            width:100%;
+            height:100%;
+            top:0;
+            left:0;
+        }
+        .lst1{
+            background:url(/51_css/assets/Inthree/main-portfolio-line-t-b.png);
+        }
+        .lst2{
+            background:url(/51_css/assets/Inthree/main-portfolio-line-2.png);
+        }
+        .lst3{
+            background:url(/51_css/assets/Inthree/main-portfolio-line-3.png);
+        }
+        .mobile {
+            z-index:3;
+            position: absolute;
+            width:334px;
+            height:409px;
+            left:916px;
+            top:94px;
+            transition:.7s;
+        }
+        .mobile:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>기울기</h1>
+    <h2>인쓰리</h2>
+    <div class="section1">섹션1</div>
+    <div class="section2">
+        <div class="lst1">
+        </div>
+        <div class="lst lst2">
+            <div class="mobile"><img src="/51_css/assets/Inthree/main-portfolio-mobile.png" alt=""></div>
+        </div>
+        <div class="lst lst3">
+        </div>
+    </div>
+    <div class="section3">섹션3</div>
+</body>
+
+</html>
