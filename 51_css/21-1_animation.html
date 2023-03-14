@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: skyblue;
+        }
+
+        .wrap {
+            position: relative;
+        }
+
+        .cloud {
+            position: absolute;
+            width: 178px;
+            height: 100px;
+            opacity: 0;
+            animation: cloud 3s ease-out forwards;
+        }
+
+        @keyframes cloud {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: 300px;
+                opacity: 1;
+            }
+        }
+
+        .balloon {
+            position: absolute;
+            width: 116px;
+            height: 160px;
+            animation: balloon 1s infinite;
+        }
+        @keyframes balloon {
+            0% {top:0; animation-timing-function: ease-out;}
+            50% {top:20px; animation-timing-function: ease-in;}
+            100% {top:0; animation-timing-function: ease-out;}
+        }
+    </style>
+</head>
+
+<body>
+    <h1>애니메이션</h1>
+    <h2>해태제과</h2>
+    <div class="wrap">
+        <div class="cloud">
+            <img src="assets/ht/bg-main0-0.png" alt="">
+        </div>
+        <hr>
+        <div class="balloon">
+            <img src="assets/ht/bg-main0-5.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

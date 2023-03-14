@@ -28,6 +28,10 @@ body {
     color: #000;
 }
 
+h1,h2,h3 {
+    font-family: 'Segoe UI', sans-serif;
+}
+
 h1 {
     /* section1 - Main Title */
     font-size:36px;
@@ -112,6 +116,20 @@ nav li {
     margin: 0 auto;
 }
 
+#section2 ul::after, #section3 ul::after {
+    content:'';
+    display:block;
+    clear:both;
+}
+
+.container h2 {
+    margin-top: 80px;
+    margin-bottom: 42px;
+    border-bottom: 1px solid #ccc;
+    line-height:1;
+    padding-bottom:24px;
+}
+
 /* sec1 */
 #section1 {
     position: relative;
@@ -135,10 +153,8 @@ nav li {
 }
 
 /* sec2 */
-#section2 ul::after {
-    content:'';
-    display:block;
-    clear:both;
+#section2 h2 {
+    margin-bottom:42px;
 }
 
 #section2 li {
@@ -147,13 +163,17 @@ nav li {
     width:359px;
     margin-bottom:16px;
 }
-#section2 li:nth-of-type(1) ~ li {
+/* #section2 li:nth-of-type(1) ~ li {
     margin-left:16px;
 }
 #section2 li:nth-of-type(4) ~ li {
     margin-left:0;
 }
 #section2 li:nth-of-type(5) ~ li {
+    margin-left:16px;
+} */
+
+#section2 li:not(li:nth-of-type(1), li:nth-of-type(5)) {
     margin-left:16px;
 }
 
@@ -165,6 +185,43 @@ nav li {
     color: #fff;
     padding:8px 16px;
 }
+
 /* sec3 */
+#section3 > p {
+    margin-bottom: 42px;
+}
+
+#section3 li * {
+    margin: 16px 0;
+}
+
+#section3 li {
+    width:359px;
+    float:left;
+}
+
+#section3 li:not(li:nth-of-type(1)) {
+    margin-left:16px;
+}
+
+#section3 li p:nth-of-type(1){
+    color:#999;
+}
+
+#section3 a {
+    display:block;
+    width:100%;
+    text-align:center;
+    background: #ccc;
+    padding:12px 0;
+    line-height:1;
+}
+
+#section3 a:hover {
+    background: #999;
+}
+
+
+
 /* sec4 */
 /* footer */

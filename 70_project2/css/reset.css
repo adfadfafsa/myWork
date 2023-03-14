@@ -2,7 +2,7 @@
 
 * {
     box-sizing: border-box;
-    outline: 1px solid green;
+    /* outline: 1px solid green; */
 }
 
 body,h1,h2,h3,h4,p,ul {
