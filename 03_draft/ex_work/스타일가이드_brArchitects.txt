@@ -1,0 +1,19 @@
+Typography
+
+제목 폰트		Segoe UI
+본문 폰트		Verdana, Sans-serif
+
+h1		36px #fff	  자간4px		sec1 메인타이틀
+h2		24px			섹션 2,3,4 제목
+h3		18px			섹션 3 하위 제목
+
+.logo		15px #000 자간4px		로고
+a		15px #000 자간4px		GNB
+.copy		#fff
+body		15px #000 줄간격 1.5	
+
+
+button		15px #000 bg:#f1f1f1	Contact
+button:hover	bg:#ccc
+button		15px #fff bg:#f1f1f1	SEND MESSAGE
+button:hover	bg:#ccc
