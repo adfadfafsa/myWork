@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* reset */
+        body, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {color: #222328;}
+
+        img {
+            width:100%;
+            vertical-align: top;
+        }
+
+        /* slide */
+        .slide {
+            position: relative;
+            width:838px;
+            height:300px;
+            overflow:hidden;
+        }
+        .slide ul {
+            position: absolute;
+            left: 0;
+            top: 0;
+            /* 캐러셀 이미지 4장이니까 400% */
+            width: 400%;
+            height: 100%;
+            animation: slide 9s infinite;
+        }
+        @keyframes slide {
+            0% {left:0;}
+            5% {left:-100%;}
+            33.33% {left:-100%;}
+            38% {left:-200%;}
+            66.66% {left:-200%;}
+            71% {left:-300%;}
+            99.99% {left:-300%;}
+            100% {left:0;}
+        }
+        .slide li {
+            float:left;
+            /* ul에서 400퍼 했으니까 장당 25퍼로 다시 100퍼 맞추기 */
+            width:25%;
+            height:100%;
+        }
+        </style>
+</head>
+
+<body>
+    <h1>슬라이드 (좌,우)</h1>
+    <h2>삼양식품</h2>
+    <div class="slide">
+    <ul>
+        <li><img src="assets/slide/slide1.jpg" alt=""></li>
+        <li><img src="assets/slide/slide2.jpg" alt=""></li>
+        <li><img src="assets/slide/slide3.jpg" alt=""></li>
+        <li><img src="assets/slide/slide1.jpg" alt=""></li>
+    </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        플렉스박스 안
+        부모는 플렉스 컨테이너
+        -> display:flex;
+        자식은 플렉스 아이템이라 한다 
+        */
+        * {box-sizing: border-box;}
+
+        .container {
+            display: flex;
+            width:448px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            outline: 1px solid red;
+        }
+
+        .container div {
+            /* float:left; */
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+        }
+
+        .container div:not(:nth-of-type(1),:nth-of-type(5)) {
+            margin-left:16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>flexible (플렉서블)</h1>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+    <p>나는 단락이다</p>
+</body>
+
+</html>
