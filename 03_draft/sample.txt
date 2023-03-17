@@ -5,19 +5,19 @@ h2		36px #fff		Kyobo (sec1 h2)
 h3		24px #000	소제목
 
 p		15px #000	*p
-a		15px #000	sec2 구매 텍스트
-a:hover		#fff		sec2 구매 텍스트 (호버)
-from1 placholder	15px #ccc	sec3 폼 글자
-form2 value	15px #fff		sec3 신청 텍스트
+a		15px #000	sec3 구매 텍스트
+a:hover		#fff		sec3 구매 텍스트 (호버)
+from1 placholder	15px #ccc	sec4 폼 글자
+form2 value	15px #fff		sec4 신청 텍스트
 footer		15px #ccc
 
 body 		bg#f1f1f1
-a border		#ccc		sec2 구매 테두리
-a bg		#f1f1f1		sec2 구매 배경
-a:hover bg	#000		sec2 구매 배경 (호버)
-form1 border 	1px solid #ccc	sec3 폼 테두리
-form1 bg		#f1f1f1		sec3 폼 배경
-form2 background #000		sec3 신청 버튼 배경
+a border		#ccc		sec3 구매 테두리
+a bg		#f1f1f1		sec3 구매 배경
+a:hover bg	#000		sec3 구매 배경 (호버)
+form1 border 	1px solid #ccc	sec4 폼 테두리
+form1 bg		#f1f1f1		sec4 폼 배경
+form2 background #000		sec4 신청 버튼 배경
 footer bg	#f1f1f1		
 
 
