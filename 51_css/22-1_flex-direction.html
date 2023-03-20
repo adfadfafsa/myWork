@@ -33,26 +33,29 @@
         6. order: (순번, 숫자가 작을수록 앞으로 배치)
         */
 
-        * {box-sizing: border-box;}
-
         .container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            width:448px;
-            outline: 1px solid red;
+            display:flex;
         }
 
-        .container div {
-            /* float:left; */
-            width: 100px;
-            height: 100px;
+        .container div{
+            width:100px;
+            height:100px;
             background-color: gray;
         }
 
-        .container div:not(:nth-of-type(1),:nth-of-type(5)) {
-            margin-left:16px;
+        .fldr {
+            flex-direction: row;
         }
+        .fldrr {
+            flex-direction: row-reverse;
+        }
+        .fldc {
+            flex-direction: column;
+        }
+        .fldcr {
+            flex-direction: column-reverse;
+        }
+        
     </style>
 </head>
 
@@ -60,17 +63,33 @@
     <h1>flexible (플렉서블)</h1>
     <!-- div.container 은 부모 = 플렉스 컨테이너 -->
     <!-- div 1~8은 자식 = 플렉스 아이템 -->
-    <div class="container">
+    <div class="container fldr">
         <div>1</div>
         <div>2</div>
         <div>3</div>
         <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-        <div>8</div>
     </div>
-    <p>나는 단락이다</p>
+    <hr>
+    <div class="container fldrr">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <hr>
+    <div class="container fldc">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <hr>
+    <div class="container fldcr">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
 </body>
 
 </html>
