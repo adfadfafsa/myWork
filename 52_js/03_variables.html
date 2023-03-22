@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    </script>
+</head>
+
+<body>
+    <h1>변수</h1>
+
+    <script>
+        /* 변수 선언은 var, const, let이 있는데 15년 이후 const, let 을 주로 사용.
+        변수가 바뀔 수 있으면 let을 쓰는게 좋음. var은 똑같은 변수를 재선언 가능 */
+
+        // birthYear를 변수로 선언
+        var birthYear1;
+        let birthYear2;
+
+        // birthYear에 값을 할당
+        // 같다(이퀄)은 ==, ===으로 표현한다. = 과는 다름
+        birthYear1 = 1995;
+        birthYear2 = 2000;
+
+        // let과 const는 같은 변수를 재선언 할 수 없다
+        // const는 재할당 할 수 없다
+        birthYear1 = 1900;
+        birthYear2 = 1901;
+
+        // 선언과 할당
+        // const는 선언과 할당을 함께 해야한다
+        const birthYear3 = 2000;
+        let birthYear4 = 1995;
+
+        // 여러개 동시 선언
+        var currentYear1, age1;
+        let currentYear2, age2;
+        const currentYear3 = 2023, age3 = 20;
+
+        /* 변수는 전역변수와 지역변수로 나뉜다
+        블록 바깥은 전역변수(함수 바깥, 안 쪽 둘 다 쓸 수 있음)
+        안은 지역변수 (함수 안에서만 사용 가능) */
+        // let과 const는 블록(지역) 변수
+        // 블록({})이 다르면 재선언 가능
+        function fn() {
+            var currentYear1, age1;
+            let currentYear2, age2;
+            const currentYear3 = 1999, age3 = 24;
+        }
+    </script>
+</body>
+
+</html>

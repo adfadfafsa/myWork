@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    </script>
+</head>
+
+<body>
+    <h1>변수</h1>
+    <script>
+        const currentYear = 2023;
+        let birthYear;
+        let age;
+
+        birthYear = prompt("태어난 년도를 입력하세요.(YYYY)","");
+        age = currentYear - birthYear + 1;
+        document.write(currentYear + "년 현재<br>")
+        document.write(birthYear + "년에 태어난 사람의 나이는 " + age + "세입니다.")
+
+        // 줄바꿈
+        document.write('<br>');
+        document.write("<br>");
+
+        // + 연산자
+        // 숫자 + 숫자 -> 숫자
+        document.write(1+2);  // 출력: 3
+        document.write('<br>'); // 줄바꿈
+        // 문자열 + 숫자 -> 문자열
+        document.write("1"+2);  // 출력: 12 
+        document.write('<br>');
+        document.write("문자"+"문자");  // 출력: 문자문자
+    </script>
+</body>
+
+</html>

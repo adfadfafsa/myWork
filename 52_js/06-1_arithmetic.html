@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>피연산자</h1>
+    <script>
+        /* 
+        피연산자 개수
+        1. 단항: ++, --
+        2. 이항
+        3. 삼항
+
+        전위 연산: 연산 후 데이터 저장
+        후위 연산: 테이터 저장 후 연산
+        */
+        
+        // 선언, 할당
+        let i = 0;
+        document.write(i + "<br>");
+        // 후위 연산 (i에 저장 후 1 증가)
+        i = i++;
+        document.write(i + "<br>");
+        // 전위 연산 (1 증가 후 i 저장)
+        i = ++i;
+        document.write(i + "<br>");
+        i = i--;
+        document.write(i + "<br>");
+        i = --i;
+        document.write(i + "<br>");
+        
+        // 출력
+    </script>
+</body>
+</html>

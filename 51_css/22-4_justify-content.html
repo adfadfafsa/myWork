@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* resets */
+
+        /* contents */
+        .wrap1 {
+            margin-bottom: 200px;
+        }
+
+        .wrap2 {
+            display:flex;
+        }
+        .wrap2 .container {
+            flex-direction:column;
+            height: 1000px;
+        }
+
+        .container {
+            display:flex;
+            width:1484px;
+            outline:1px solid grey;
+        }
+
+        .container div{
+            width:100px;
+            height:100px;
+            background-color: gray;
+        }
+
+        /* 주축 시작부터 배치 */
+        .jcs {justify-content: flex-start;}
+        /* 주축 끝부터 배치 */
+        .jce {justify-content: flex-end;}
+        /* 주축 가운데 배치 */
+        .jcc {justify-content: center;}
+        /* 주축 양 끝에 배치 후 나머지 공간 균등 분배 */
+        .jcsb {justify-content: space-between;}
+        /* 플렉스 아이템 좌우 공간을 동일하게 배치 */
+        .jcsa {justify-content: space-around;}
+        /* 플렉스 아이템을 제외한 공간이 모두 동일해지게 배치 */
+        .jcse {justify-content: space-evenly;}
+    </style>
+</head>
+
+<body>
+    <h1>flexible (플렉서블)</h1>
+    <h2>flex-start</h2>
+    <div class="wrap1">
+        <div class="container jcs">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <h2>flex-end</h2>
+        <div class="container jce">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <h2>center</h2>
+        <div class="container jcc">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <h2>space-between</h2>
+        <div class="container jcsb">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <h2>space-around</h2>
+        <div class="container jcsa">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <h2>space-evenly</h2>
+        <div class="container jcse">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+    </div>
+
+    <div class="wrap2">
+        <h2>flex-start</h2>
+        <div class="container jcs">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <h2>flex-end</h2>
+        <div class="container jce">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <h2>center</h2>
+        <div class="container jcc">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <h2>space-between</h2>
+        <div class="container jcsb">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <h2>space-around</h2>
+        <div class="container jcsa">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <h2>space-evenly</h2>
+        <div class="container jcse">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+    </div>
+</body>
+
+</html>

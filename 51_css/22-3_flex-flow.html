@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        플렉스박스
+        주축과 교차축
+        flex-direction:row; 이면 주축 row, 교차축 column
+        flex-direction:column; 이면 주축 column, 교차축 row
+
+        부모: 플렉스 컨테이너
+        컨테이너가 쓸 수 있는 스타일:
+        1. display:flex;
+        2. flex-direction: 방향;
+        3. flew-wrap: 줄바꿈 여부;
+        4. flex-flow: direction wrap (-> 2,3번 속기형)
+        5. justify-content: 주축 정렬
+        6. align-items: 교차축 정렬 (한 개 라인)
+        7. align-content: 교차축 블록 방향 정렬 (두 개 이상의 라인)
+
+        자식: 플렉스 아이템
+        아이템이 쓸 수 있는 스타일:
+        1. align-self: 교차축 정렬 (align-items보다 우선적으로 적용된다)
+        2. flex-grow: (커진다. 디폴트 0)
+        3. flex-shrink: (작아진다. 디폴트 1)
+        4. flex-basis: (처음 크기)
+        5. flex: grow shrink basis (-> 2,3,4번 속기형)
+        6. order: (순번, 숫자가 작을수록 앞으로 배치)
+        */
+
+        .container {
+            display:flex;
+        }
+
+        .container div{
+            width:100px;
+            height:100px;
+            background-color: gray;
+        }
+
+        .flf1 {
+            flex-flow: row nowrap;
+        }
+        .flf2 {
+            flex-flow: row wrap;
+        }
+        .flf3 {
+            flex-flow: row wrap-reverse;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>flexible (플렉서블)</h1>
+    <!-- div.container 은 부모 = 플렉스 컨테이너 -->
+    <!-- div 1~8은 자식 = 플렉스 아이템 -->
+    <div class="container flf1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+    <hr>
+    <div class="container flf2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+    <hr>
+    <div class="container flf3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+
+</html>

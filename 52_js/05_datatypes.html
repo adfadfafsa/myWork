@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    </script>
+</head>
+
+<body>
+    <h1>변수</h1>
+    <script>
+        /*
+            1. String: '문자열' 또는 "문자열"
+            2. Number: 숫자
+            3. Boolean (부울): true 또는 false
+            4. undefined
+            5. Object (객체): Array (배열), Date (날짜), Math (수학적 데이터), ...
+            6. null 
+        */
+
+        // typeof(데이터) -> 데이터의 타입을 표시
+        // typeof(): 연산자임
+        var abc = 1000;
+        // 변수 선언 후 값을 지정하지 않으면 undefined
+        var def;
+
+        document.write(typeof('문자열')+'<br>');
+        document.write(typeof('abc')+'<br>');
+        document.write(typeof('10')+'<br>');
+        document.write(typeof('true')+'<br>');
+
+        document.write(typeof(문자열)+'<br>');
+        document.write(typeof(abc)+'<br>');
+        document.write(typeof(10)+'<br>');
+        document.write(typeof(true)+'<br>');
+        document.write(typeof(def)+'<br>');
+        document.write(typeof(['봄', '여름', '가을', '겨울'])+'<br>');
+        document.write(typeof({})+'<br>');
+        document.write(typeof(null)+'<br>');
+        document.write(typeof(new Date())+'<br>');
+
+        document.write(1+2 + '<br>');
+        document.write(0.1+0.2 + '<br>');
+    </script>
+</body>
+
+</html>
