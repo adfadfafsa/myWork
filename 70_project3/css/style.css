@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/* reset */
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+li {
+    list-style:none;
+}
+
+body {
+    background: #ffffff;
+    color: #333;
+}
+
+
+/* typo */
+body {
+    color:#333;
+}
+
+a {
+    text-decoration: none;
+    color:#333;
+}
+
+/* container */
+.container {
+    display:flex;
+}
+
+/* style */
+/* header */
+header {
+    width:200px;
+    height:850px;
+    background: rgba(40,119,90,0.5);
+}
+/* 로고 */
+/* 내비게이션 */
+/* 로그인/회원가입 */
+
+/* contents */
+.contents {
+    /* 연산자 좌우는 띄어쓰기 해야함 */
+    width:calc(100% - 200px);
+}
+/* 슬라이드 */
+.slide {
+    height:400px;
+    background: rgba(134,200,91,0.5);
+}
+/* 배너 */
+.banner {
+    height:200px;
+    background: rgba(66,191,64,0.5);
+}
+/* 공지사항/갤러리 */
+.tabs {
+    height:250px;
+    background: rgba(60,180,84,0.5);
+}
+
+
+/* footer */
+footer {
+    height:100px;
+    background: rgba(42,126,55,0.5);
+}
+
+/* 하단로고 */
+/* 주소/저작권 */
+/* SNS */

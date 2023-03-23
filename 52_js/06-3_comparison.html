@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>연산자</h1>
+    <h2>비교 연산자</h2>
+    <script>
+        // 데이터 유형 구분 x
+        b = '15' > 10;
+        document.write(b + '<br>');
+        b = '오' < 10;
+        document.write(b + '<br>');
+        b = 5 >= 10;
+        document.write(b + '<br>');
+        b = 5 <= 10;
+        document.write(b + '<br>');
+        // 같은 숫자 10 (문자열, 숫자 등 유형 구분 x = true)
+        b = '10' == 10;
+        document.write(b + '<br>');
+        // 같은 숫자 10 (문자열, 숫자 등 유형 구분 o = false)
+        b = '10' === 10;
+        document.write(b + '<br>');
+        // 같지 않다 = false (유형 구분 x 라서)
+        b = '10' != 10;
+        document.write(b + '<br>');
+        // 같지 않다 = true (유형 구분 o 라서)
+        b = '10' !== 10;
+        document.write(b + '<br>');
+        document.write('<br>');
+
+        // 알파벳이 뒤로 갈수록 큰 값이다 (컴퓨터 내부적인 지정임)
+        b = 'a' < 'c';
+        document.write(b + '<br>');
+        b = 'za' < 'bc';
+        document.write(b + '<br>');
+        // 소문자 레이가 더 뒤에 있어서 값이 큼
+        b = 'a' < 'A';
+        document.write(b + '<br>');
+    </script>
+</body>
+</html>

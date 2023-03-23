@@ -7,7 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>피연산자</h1>
+    <h1>연산자</h1>
+    <h2>산술 연산자</h2>
     <script>
         /* 
         피연산자 개수
@@ -22,6 +23,21 @@
         // 선언, 할당
         let i = 0;
         document.write(i + "<br>");
+
+        // 아래 세 문장은 모두 1씩 증가하는 문장
+        i++;
+        i += 1;
+        i = i + 1;
+        document.write('i=' + i + '<br>')
+        
+        // 아래 세 문장은 모두 1씩 감소
+        i--;
+        i -= 1;
+        i = i - 1;
+        document.write('i=' + i + '<br>')
+        document.write('<br>')
+
+        
         // 후위 연산 (i에 저장 후 1 증가)
         i = i++;
         document.write(i + "<br>");
@@ -32,8 +48,46 @@
         document.write(i + "<br>");
         i = --i;
         document.write(i + "<br>");
-        
-        // 출력
+        document.write("<br>");
+        document.write('i=' + i + "<br>");
+
+
+        /*
+        후위연산인데 첫 i++는 +연산자 앞에 있으니
+        ++ 계산된 상태로 i = 1 저장, 왼쪽에서 오른쪽으로 읽히니까
+        후위연산인 두번째 i++은 i로 먼저 계산해서 처음 대입된 i=0인 상태로 계산.
+        a = 1
+        이 상태로 두번째 ++가 연산되면서 i 값은 2로 저장.
+        그래서 a는 1, i는 2로 저장.
+        */
+        let a = i++ + i++;
+        document.write('i=' + i + ', a=' + a + "<br>");
+        /*
+        첫 ++i에 위 i=2 대입되고, 두번째 ++i 가 전위계산이기 때문에
+        첫 ++i = 3, 전위계산 한 두번째 ++i가 4가 됨.
+        그래서 b는 7, i는 4로 저장.
+        */
+        let b = ++i + ++i;
+        document.write('i=' + i + ', b=' + b + "<br>");
+        /*
+        일단 둘 다 i = 4 대입하고 +연산자 기준으로
+        첫 i-- 는 이미 -- 연산돼서 i = 3, 두번째 i-- 는 후위연산이니
+        일단 처음 대입된 4로 계산해서 c값이 계산됨. = 7
+        후위연산이니 두번째 i-- 계산하면 i = 2로 저장
+        그래서 c는 7, i는 2로 저장.
+        */
+        let c = i-- + i--;
+        document.write('i=' + i + ', c=' + c + "<br>");
+        let d = --i + --i;
+        document.write('i=' + i + ', d=' + d + "<br>");
+        document.write('<br>')
+
+
+        // 곱하기
+        i = i * 5;
+        document.write('i=' + i + '<br>')
+        i = 'i' * 5; // NaN (Not a Number)
+        document.write('i=' + i + '<br>')
     </script>
 </body>
 </html>

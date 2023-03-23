@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>제어문</h1>
+    <h2>switch</h2>
+    <script>
+        /*
+        switch ~ case:
+        switch (표현식) {
+            case 1:
+                실행코드;
+            case 2:
+                실행코드;
+        }
+        */
+        let a = 1;
+        // break 문을 만나면 switch 문을 벗어난다
+        switch (a) {
+            case a >= 90:
+                document.write('금상' + '<br>');
+                break;
+            case a >= 80:
+                document.write('은상' + '<br>');
+            default:
+                document.write('상 없음' + '<br>')
+        }
+
+    </script>
+</body>
+</html>

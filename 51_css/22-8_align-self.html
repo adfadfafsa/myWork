@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* resets */
+
+        /* contents */
+        .container {
+            display:flex;
+            flex-wrap: wrap;
+            width:1484px;
+            height:200px;
+            outline:1px solid grey;
+        }
+
+        .container div {
+            background-color: grey;
+        }
+
+        .wrap1 .container div {
+            width:100px;
+            outline: 1px solid black;
+        }
+
+        .wrap2 {
+            display:flex;
+        }
+        .wrap2 .container {
+            flex-wrap: wrap;
+            flex-direction: column;
+            width:200px;
+            height:400px;
+            outline: 1px solid red;
+        }
+        .wrap2 .container div {
+            height:100px;
+            outline: 1px solid black;
+        }
+
+        /* align-items보다 align-self가 우선적용된다. */
+        .ass {align-self:stretch;}
+        .asfs {align-self:flex-start;}
+        .asfe {align-self:flex-end;}
+        .asc {align-self:center;}
+        .asb {align-self:baseline;}
+        .asb1 {font-size:3rem;}
+        .asb2 {font-size:1rem;}
+        .asb3 {font-size:2rem;;}
+        .asb4 {font-size:4rem;}
+    </style>
+</head>
+
+<body>
+    <h1>flexible (플렉서블)</h1>
+    <h2>플렉스 아이템의 교차축 세로 정렬</h2>
+    <div class="wrap1">
+        <div class="container">
+            <div class="ass">1</div>
+            <div class="asfs">2</div>
+            <div class="asfe">3</div>
+            <div class="asc">4</div>
+            <div class="asb asb1">5</div>
+            <div class="asb asb2">6</div>
+            <div class="asb asb3">7</div>
+            <div class="asb asb4">8</div>
+        </div>
+    </div>
+</body>
+
+</html>

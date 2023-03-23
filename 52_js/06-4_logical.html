@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>연산자</h1>
+    <h2>논리 연산자</h2>
+    <script>
+        // 논리 연산은 두 개 이상의 비교 연산을 하나로 묶는다
+        /* 
+        비교 && 비교 (교집합)
+        T && T -> T
+        T && F -> F
+        F && T -> F
+        F && f -> F
+
+        비교 || 비교 (합집합)
+        T || T -> T
+        T || F -> T
+        F || T -> T
+        F || F -> F
+
+        ! 비교 (여집합)
+        T -> F
+        F -> T
+        */
+        let b;
+
+        b = '15' > 10 && 5 < 10;
+        document.write(b + '<br>');
+        b = '15' > 10 && 5 < 10 && 5>=10;
+        document.write(b + '<br>');
+        document.write('<br>');
+
+        b = 5 <= 10 || '10' == 10;
+        document.write(b + '<br>');
+        b = 5 <= 10 || '10' == 10 || '10' === 10;
+        document.write(b + '<br>');
+        document.write('<br>');
+
+        b = ! 'a' < 'c';
+        document.write(b + '<br>');
+        document.write('<br>');
+    </script>
+</body>
+</html>

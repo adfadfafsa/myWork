@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>제어문</h1>
+    <h2>if</h2>
+    <script>
+
+        /* 
+            if (조건식) {
+            실행코드;
+            }
+            조건식: 비교, 논리 연산자를 사용해 만듦
+        */
+        if (10 > 2) {
+            // 참일 경우 실행
+            document.write('참' + '<br>');
+        }
+        document.write('<br>');
+
+
+        /*
+            if ~ else :
+            if (조건식) {
+                참일 경우 실행할 문장
+            } else {
+                거짓일 경우 실행할 문장
+            }
+        */
+        let a = 27;
+        if (a % 2 === 0) {
+            document.write('여' + '<br>');
+        } else {
+        document.write('남' + '<br>');
+    }
+    document.write('<br>');
+
+
+    /*
+    조건 연산자 (? :)
+    (조건식) ? 참일경우실행 : 거짓일경우실행;
+    */
+    (a % 2 === 0) ? document.write('여' + '<br>') : document.write('남' + '<br>');
+    document.write('<br>');
+    
+
+
+    /*
+    if (조건식 1) {
+        조건식 1이 참일 때 실행 코드
+    } else if (조건식 2) {
+        조건식 2가 참일 때 실행 코드
+    } else if (조건식 3) {
+        조건식 3이 참일 때 실행 코드
+    }
+    ...
+    } else (조건식 n) {
+        조건식 n이 참일 때 실행 코드
+    }
+    */
+    let jumsu = 55;
+    let result;
+    if (jumsu >= 90) {
+        result = '수';
+        document.write(result + '<br>');
+    } else if (jumsu >= 80){
+        result = '우';
+        document.write(result + '<br>');
+    } else if (jumsu >= 70){
+        result = '미';
+        document.write(result + '<br>');
+    } else if (jumsu >= 60){
+        result = '양';
+        document.write(result + '<br>');
+    } else if (jumsu >= 50){
+        result = '가';
+        document.write(result + '<br>');
+    }
+    </script>
+</body>
+</html>
