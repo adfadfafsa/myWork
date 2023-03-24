@@ -1,0 +1,317 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Noto+Sans+KR:wght@100;400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+@import url('reset.css');
+
+/* 아이콘 */
+nav li:first-of-type~li a::before {
+    content: '';
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 11px;
+    padding-right: 5px;
+}
+
+nav li:nth-of-type(2) a::before {
+    background-image: url(../images/icon_nav1.png)
+}
+
+nav li:nth-of-type(3) a::before {
+    background-image: url(../images/icon_nav2.png)
+}
+
+nav li:nth-of-type(4) a::before {
+    background-image: url(../images/icon_nav3.png)
+}
+
+form button img {
+    width: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+form button span {
+    vertical-align: middle;
+}
+
+.sns a {
+    font-size: 24px;
+    color: #fff;
+    margin: 3px;
+}
+
+.sns a:hover {
+    color: #777;
+}
+
+/* 헤더 */
+header {
+    height: 45px;
+}
+
+nav li {
+    float: right;
+}
+
+nav li a {
+    line-height: 45px;
+    padding: 20px 20px;
+}
+
+nav li a:hover {
+    background: #ccc;
+    color: #000;
+}
+
+.tac {
+    text-align: center;
+}
+
+
+/* 섹션 공통 */
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 90px 0;
+}
+
+em {
+    display: inline-block;
+    margin-bottom: 54px;
+}
+
+/* 패럴렉스 이미지 */
+#sec1 {
+    position: relative;
+    height: 1045px;
+    background: url(/70_project1/images/parallax1.jpg) no-repeat 50% 50%/cover fixed;
+}
+
+#sec3 .para {
+    height: 405px;
+    background: url(/70_project1/images/parallax2.jpg) no-repeat 50% 50%/cover fixed;
+}
+
+#sec4 .para {
+    height: 405px;
+    background: url(/70_project1/images/parallax3.jpg) no-repeat 50% 50%/cover fixed;
+}
+
+/* 섹션1 */
+.logo {
+    position: absolute;
+    /* width:416px;
+    line-height: 54px;
+    margin-left:-208px;
+    margin-top:-27px; */
+    transform: translate(-50%, -50%);
+    padding: 12px 24px;
+    line-height: 1;
+    left: 50%;
+    top: 50%;
+    background: #404040;
+}
+
+/* 섹션2 */
+
+/* 섹션2 프로필2: 내 사진, 프로필 */
+.pf2 {
+    margin-top:70px;
+}
+
+.pf2 div {
+    width: 425px;
+    float: left;
+}
+
+.pf2 div p {
+    margin-bottom:20px;
+}
+
+.pf2>p {
+    width: 440px;
+    float: right;
+}
+
+/* 섹션2 스킬 */
+
+.skill h4 {
+    margin: 60px 0 40px;
+}
+
+.skill div {
+    height: 35px;
+    background: #ddd;
+}
+
+.skill span {
+    height: 100%;
+    display: block;
+    background: #616161;
+    color: #fff;
+    text-align: center;
+}
+
+.skill li:nth-of-type(1) span {
+    width: 90%;
+}
+
+.skill li:nth-of-type(2) span {
+    width: 85%;
+}
+
+.skill li:nth-of-type(3) span {
+    width: 75%;
+}
+
+.skill i {
+    margin: 20px 10px 20px 0;
+}
+
+/* 섹션2 프로필3 */
+.pf3 li {
+    float: left;
+    width: 25%;
+    height: 135px;
+    text-align: center;
+    background: #616161;
+    color: #fff;
+    padding: 30px;
+}
+
+.pf3 span {
+    display: block;
+}
+
+/* 타이틀 */
+
+#sec3 .para h2 {
+    line-height: 405px;
+}
+
+/* 섹션3 */
+
+.myWork {
+    text-align: center;
+}
+
+.myWork li {
+    float: left;
+    width: 220px;
+    height: 160px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.myWork li:nth-of-type(4n) {
+    margin-right: 0;
+}
+
+.myWork a {
+    display: inline-block;
+    width: 138px;
+    line-height: 45px;
+    background: #f1f1f1;
+    color: #000;
+    margin-top: 50px;
+}
+
+.myWork a:hover {
+    background: #ccc;
+}
+
+/* 섹션4 */
+
+#sec4 .para h2 {
+    line-height: 405px;
+}
+
+.map {
+    float: left;
+    width: 285px;
+}
+
+
+.info {
+    float: right;
+    width: 630px;
+}
+
+.info p {
+    margin: 30px 0 40px 0;
+}
+
+address i {
+    margin-right: 25px;
+}
+
+form {
+    text-align: right;
+}
+
+form input {
+    width: 292px;
+    height: 45px;
+    padding: 16px;
+}
+
+form input::placeholder {
+    color: #ccc;
+}
+
+form button {
+    width: 160px;
+    height: 45px;
+    background: #000;
+    color: #fff;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background: #ccc;
+}
+
+form input:nth-of-type(1) {
+    margin-right: 13px;
+}
+
+form input:nth-of-type(3) {
+    width: 600px;
+    margin-top: 13px;
+}
+
+
+/* 푸터 */
+footer {
+    height: 288px;
+    background: #616161;
+    text-align: center;
+    color: #fff;
+    padding-top: 70px;
+}
+
+footer:hover {
+    background: #000;
+}
+
+.toTheTop {
+    display: inline-block;
+    width: 130px;
+    line-height: 45px;
+    background: #fff;
+    color: #616161;
+}
+
+.toTheTop:hover {
+    background: #ccc;
+    color: #000;
+}
+
+.toTheTop i {
+    margin-right: 5px;
+}
+
+.sns {
+    margin: 15px 0;
+}

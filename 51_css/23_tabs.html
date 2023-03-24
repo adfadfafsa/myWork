@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* reset */
+        * {margin:0; padding:0; box-sizing:border-box;}
+        li {list-style: none;}
+        body {font: 14px/1.6 "굴림", sans-serif;}
+        a {text-decoration:none; color:#333;}
+        img {height:144px; vertical-align:top;}
+
+        /* tabs */
+        .tabs {
+            position: relative;
+            left:50px;
+            top:50px;
+            width: calc(100% - 200px);
+            height: 250px;
+            background:yellow;
+        }
+        /* tabs button */
+        .tabs label {
+            position: relative;
+            z-index:1;
+            margin-top: 20px;
+            float:left;
+            border-left: 1px solid #333;
+            border-top: 1px solid #333;
+            padding: 5px 15px;
+            background: #333;
+            color: #fff;
+        }
+        .tabs label:first-of-type {
+            margin-left: 80px;
+        }
+        .tabs label:last-of-type {
+            border-right: 1px solid #333;
+        }
+        .tabs input {
+            display: none;
+        }
+        /* .tabs input:checked */
+        .tabs input:checked + div + label {
+            background: #fff;
+            color: #333;
+        }
+        /* tabs contents */
+        .tabs div {
+            position: absolute;
+            width:calc(100% - 100px);
+            left:50px;
+            top:52px;
+            border:1px solid #333;
+            padding:15px;
+            background: #fff;
+            display: none;
+            line-height:2.5;
+        }
+        .tabs input:checked + div {
+            display:block;
+        }
+        .tabs .tab1 li {
+            border-bottom: 1px solid #ccc;
+            margin: 0 32px;
+        }
+        .tabs .tab1 span {
+            display: inline-block;
+            width: calc(100% - 200px);
+        }
+        .tabs .tab2 a {
+            margin: 0 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabs">
+        <input type="radio" name="tabs" id="tab1" checked>
+        <div class="tab1">
+            <ul>
+                <li><a href="#"><span>삼양식품, 한-인도수교 50주년 맞아 주인도 대한민국 대사관 행사에 불닭볶음면 등 제품 500박스 협찬</span>2023.03.22</a></li>
+                <li><a href="#"><span>김정수 삼양식품 부회장, 전쟁과 대지진 피해자들에게 교황청 통해 라면 20만개 기부</span>2023.03.16</a></li>
+                <li><a href="#"><span>삼양식품 불닭볶음면, tvN 예능 '서진이네' 메인스폰서 참여</span>2023.02.27</a></li>
+                <li><a href="#"><span>삼양식품 야키소바붉닭복음면 일본서 돌풍... 출시 2주만에 초도 물량 완판</span>2023.02.13</a></li>
+            </ul>
+        </div>
+        <label for="tab1">공지사항</label>
+
+        <input type="radio" name="tabs" id="tab2">
+        <div class="tab2">
+            <a href="#"><img src="assets/House (1).jpg" alt="갤러리 이미지1"></a>
+            <a href="#"><img src="assets/House (2).jpg" alt="갤러리 이미지2"></a>
+            <a href="#"><img src="assets/house (3).jpg" alt="갤러리 이미지3"></a>
+        </div>
+        <label for="tab2">갤러리</label>
+    </div>
+</body>
+</html>

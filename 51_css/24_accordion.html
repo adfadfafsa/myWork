@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accordion</title>
+    <style>
+        * {margin:0; padding:0; box-sizing:border-box;}
+        body {font-size:14px/1.6 "굴림",sans-serif; color:#777;}
+        a {text-decoration: none; color: #333;}
+        ul {list-style:none;}
+
+        /* 내비게이션 */
+        nav {
+            position:relative;
+            width:160px;
+            background:#f1f1f1;
+        }
+        /* 메인메뉴: 1depth */
+        .main > li > a {
+            display:block;
+            border-bottom: 1px solid #777;
+            font-size:16px;
+            font-weight:bold;
+            padding-left:16px;
+        }
+        .main > li > a:hover {
+            background: #999;
+            color: #fff;
+        }
+        .main > li:hover .sub {
+            display:block;
+        }
+        /* 서브메뉴: 2depth */
+        .sub {
+            display:none;
+            padding: 16px 0;
+        }
+        .sub li {
+            padding-left:16px;
+            margin-bottom:8px;
+        }
+        .sub a {
+            padding: 2px 32px;
+            color:#999;
+        }
+        .sub a:hover {
+            background: #999;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="main">
+            <li>
+                <a href="#">회사소개</a>
+                <ul class="sub">
+                    <li><a href="#">삼양식품</a></li>
+                    <li><a href="#">지주사</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">브랜드</a>
+                <ul class="sub">
+                    <li><a href="#">삼양라면</a></li>
+                    <li><a href="#">불닭볶음면</a></li>
+                    <li><a href="#">짜짜로니</a></li>
+                    <li><a href="#">별뽀빠이</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">제품</a>
+                <ul class="sub">
+                    <li><a href="#">라면</a></li>
+                    <li><a href="#">스낵</a></li>
+                    <li><a href="#">유제품</a></li>
+                    <li><a href="#">소스간편식</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">고객지원</a>
+                <ul class="sub">
+                    <li><a href="#">고객문의</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
