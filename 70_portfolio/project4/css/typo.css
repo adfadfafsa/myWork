@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* typo */
+@font-face {
+    font-family:malgunGothic;
+    src:url(../fonts/Malgun_gothic/malgun.ttf)
+}
+@font-face {
+    font-family:malgunGothicBold;
+    src:url(../fonts/Malgun_gothic/malgunbd.ttf)
+}
+
+html {
+    font-size:10px;
+}
+
+body {
+    font: malgunGothic, san-serif;
+    background: #f1f1f1;
+}
+
+h1 {
+    font-size:36px;
+    color:#000;
+}
+
+h2 {
+    font-size:36px;
+    color:#fff;
+}
+
+h3 {
+    font-weight: 400;
+    font-size:24px;
+    color:#000;
+    margin-bottom: 27px;
+}
+
+p, a {
+    font-size: 15px;
+    color:#000;
+    line-height: 22.5px;
+    margin-bottom: 27px;
+}

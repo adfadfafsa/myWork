@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼양식품</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- 로고 -->
+            <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="삼양식품 로고"></a></h1>
+            <!-- 내비게이션 -->
+            <nav>
+                <ul class="main">
+                    <li>
+                        <a href="#">회사소개</a>
+                        <ul class="sub">
+                            <li><a href="#">삼양식품</a></li>
+                            <li><a href="#">지주사</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">브랜드</a>
+                        <ul class="sub">
+                            <li><a href="#">삼양라면</a></li>
+                            <li><a href="#">불닭볶음면</a></li>
+                            <li><a href="#">짜짜로니</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">제품</a>
+                        <ul class="sub">
+                            <li><a href="#">라면</a></li>
+                            <li><a href="#">스낵</a></li>
+                            <li><a href="#">유제품</a></li>
+                            <li><a href="#">소스간편식</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객지원</a>
+                        <ul class="sub">
+                            <li><a href="#">고객문의</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav> 
+            <!-- 로그인/회원가입 -->
+            <div class="member">
+                <a href="#">로그인</a> |
+                <a href="#">회원가입</a>
+            </div>
+        </header>
+        <div class="contents">
+            <div class="login">
+                <form action="login.php" method="post">
+                    <div>
+                        <label for="user_id">아이디:</label>
+                        <input type="text" id="user_id">
+                    </div>
+                    <div>
+                        <label for="user_pw">패스워드:</label>
+                        <input type="password" id="user_pw">
+                    </div>
+                    <div><input type="submit" value="로그인"></div>
+                </form>
+            </div> 
+        </div> <!-- //.contents -->
+    </div> <!-- //.container -->
+    <footer>
+        <!-- 하단로고 -->
+        <div class="b_logo">
+            <a href="index.html"><img src="images/b_logo.png" alt="삼양식품 하단로고"></a>
+        </div>
+        <!-- 주소/저작권 -->
+        <div class="addr">
+            <p>삼양식품(주) 서울특별시 성북구 오패산로3길 104(하월곡동) │ 대표이사 : 김정수, 장재성 │ 사업자등록번호 : 102-81-05450 │ 통신판매신고번호 : 2016-서울성북-0790 │ 대표전화 : <a href="tel:02-940-3000">02-940-3000</a> │ 고객만족센터 : <a href="tel:080-940-3333">080-940-3333</a> (무료상담전화)</p>
+            <p>Copyright Samyang Foods Co., Ltd All Rights Reserved</p>
+        </div>
+        <!-- SNS -->
+        <div class="sns">
+            <a href="#"><img src="images/facebook.png" alt="페이스북"></a>
+            <a href="#"><img src="images/insta.png" alt="인스타그램"></a>
+            <a href="#"><img src="images/twitter.png" alt="트위터"></a>
+        </div>
+    </footer>
+</body>
+</html>

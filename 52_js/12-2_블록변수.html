@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS+JS</title>
+</head>
+
+<body>
+    <h1>블록 변수</h1>
+    <script>
+        let y = 10;
+        // 같은 블록 내에서 let은 재선언할 수 없다.
+        // 재할당
+
+        document.write(y + '<br>');
+        fn();
+
+        function fn() {
+            let y;
+            y = 30;
+            document.write(y + '<br>');
+
+            const z = 300;
+            document.write(z + '<br>');
+        }
+
+        const z = 100;
+        // 같은 블록 내에서 const는 재선언할 수 없다.
+        // const z;
+        // const는 재할당할 수 없다.
+        // z = 50;
+        document.write(z + '<br>');
+
+    </script>
+</body>
+
+</html>

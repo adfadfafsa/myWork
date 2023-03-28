@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+
+<body>
+    <h1>폼</h1>
+    <form action="member.php">
+        <fieldset>
+            <legend>회원 가입</legend>
+
+            <!-- 목록 상자 -->
+            <label for="month">태어난 월 선택:</label>
+            <select name="month" id="month">
+                <!-- value는 서버로 전송될 값 -->
+                <option value>월</option>
+                <option value="01">1</option>
+                <option value="02">2</option>
+                <option value="03">3</option>
+            </select>
+        </fieldset>
+
+        <hr>
+
+        <!-- 목록 상자 -->
+        <label for="month3">태어난 월 선택:</label>
+        <select name="month3" id="month3">
+            <!-- value는 서버로 전송될 값 -->
+            <optgroup label="봄">
+                <option value="03">3</option>
+                <option value="04">4</option>
+                <option value="05">5</option>
+            </optgroup>
+            <optgroup label="여름">
+                <option value="06">6</option>
+                <option value="07">7</option>
+                <option value="08">8</option>
+            </optgroup>
+        </select>
+
+        <hr>
+
+        <!-- 콤보 상자 = 목록 상자 + 입력 상자 -->
+        <label for="month2">태어난 월 선택:</label>
+        <input type="text" name="month2" id="month2" list="months">
+        <datalist id="months">
+            <option value="01">1</option>
+            <option value="02">2</option>
+            <option value="03">3</option>
+        </datalist>
+
+        <hr>
+
+        <textarea name="" id="" cols="30" rows="3" readonly>
+회칙: Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus distinctio inventore sapiente maxime quam, praesentium aliquid quibusdam eligendi id deserunt fugiat autem totam assumenda veniam corrupti reiciendis. Neque, laborum ea!
+        </textarea>
+    </form>
+</body>
+
+</html>

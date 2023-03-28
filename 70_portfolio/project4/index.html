@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI제작_전민준</title>
+
+    <link rel="reset" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <a href="#"><h1 class="logo"><b><i><span>KYOBO</span></i></b></h1></a>
+        <nav>
+            <ul>
+                <li><a href="#">서비스</a></li>
+                <li><a href="#">파트너스</a></li>
+                <li><a href="#">제휴기간</a></li>
+                <li><a href="#">인재영입</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- sec1 -->
+    <section id="sec1">
+        <h2 class="kyobo"><b>Kyobo</b></h2>
+        <div><img src="assets/images/sec1bg.jpg" alt="section1 main background"></div>
+    </section>
+
+    <!-- sec2 -->
+    <section id="sec2" class="container">
+        <h3>당신의 책을 만나보세요.</h3>
+        <ul class="clearfix">
+            <li>
+                <div><img src="assets/images/sec2cont1.png" alt="section2 contents image1"></div>
+                <span>더 편안하게</span>
+            </li>
+            <li>
+                <div><img src="assets/images/sec2cont2.png" alt="section2 contents image2"></div>
+                <span>누구나</span>
+            </li>
+            <li>
+                <div><img src="assets/images/sec2cont3.png" alt="section2 contents image3"></div>
+                <span>함께 즐기세요</span>
+            </li>
+            <li>
+                <div><img src="assets/images/sec2cont1.png" alt="section2 contents image1"></div>
+                <span>더 편안하게</span>
+            </li>
+            <li>
+                <div><img src="assets/images/sec2cont3.png" alt="section2 contents image3"></div>
+                <span>함께 즐기세요</span>
+            </li>
+            <li>
+                <div><img src="assets/images/sec2cont1.png" alt="section2 contents image1"></div>
+                <span>더 편안하게</span>
+            </li>
+            <li>
+                <div><img src="assets/images/sec2cont2.png" alt="section2 contents image2"></div>
+                <span>누구나</span>
+            </li>
+            <li>
+                <div><img src="assets/images/sec2cont3.png" alt="section2 contents image3"></div>
+                <span>함께 즐기세요</span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- sec3 -->
+    <section id="sec3" class="container clearfix">
+        <h3>신간 추천</h3>
+        <p>최대 80% 할인 중인 3월 신간 도서를 만나보세요. 새 학기 시작과 함께 책가방 속에 당신만의 양식을 채울 수 있도록 준비했습니다.</p>
+        <ul>
+            <li>
+                <h3>사람이 답이다</h3>
+                <div class="sec3align"><img src="assets/images/sec3book1.jpg" alt="section3 book image1"></div>
+                <p class="sec3aut">손미향</p>
+                <p class=".sec3p">워커홀릭에서 드림 브릿지로 인생관이 바뀐 워킹 미셔너리가 녹록지 않은 직장생활로 고단한 젊은이들에게 전하는 비전의 메시지!</p>
+                <a href="#">구매</a>
+            </li>
+            <li>
+                <h3>오만과 몽상1</h3>
+                <div class="sec3align"><img src="assets/images/sec3book2.jpg" alt="section3 book image2"></div>
+                <p class="sec3aut">박완서</p>
+                <p class="sec3p">매국노는 친일파를, 친일파는 탐관오리를, 탐관오리는 악덕기업인을 낳고 동학군은 애국투사를, 애국투사는 수위를, 수위는 도배장이를 낳고...</p>
+                <a href="#">구매</a>
+            </li>
+            <li>
+                <h3>개강한 대학생활백서</h3>
+                <div class="sec3align"><img src="assets/images/sec3book3.jpg" alt="section3 book image3"></div>
+                <p class="sec3aut">박세리</p>
+                <p class="sec3p">과탑 선배가 알려 주는 대학생활 비법노트 지금 이 순간도 헤매고 있는 신입생들의 찐 고민 타파!</p>
+                <a href="#">구매</a>
+            </li>
+            <li>
+                <h3>라오콘의 후예</h3>
+                <div class="sec3align"><img src="assets/images/sec3book4.jpg" alt="section3 book image4"></div>
+                <p class="sec3aut">이효석</p>
+                <p class="sec3p">무덥고 답답한 것은 오히려 참을 수 있다고 하더라도 몰려드는 파리떼야말로 역물이다. 편집 시간을 앞두고 수선스럽고 어지럽고 초조한 편집실의 오후를 파리떼는 제 세상인 듯 들끓고
+                    있는데…….</p>
+                <a href="#">구매</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- sec4 -->
+    <section class="container">
+        <h3>희망 도서 신청</h3>
+        <p>원하시는 도서명을 기입하시면 빠른 시일 내에 만나보실 수 있습니다.</p>
+        <form action="request.php" method="post" autocomplete="off">
+            <input class="sec4f" type="name" name="book_name" placeholder="책 제목" required>
+            <input class="sec4f" type="author" name="book_author" placeholder="저자" required>
+            <input class="sec4f" type="email" name="user_email" placeholder="이메일" required>
+            <input class="sec4f" type="call" name="user_call_number" placeholder="연락처" required>
+            <input class="sec4f2" type="submit" value="신청하기">
+        </form>
+        <div><img src="assets/images/sec4map.png" alt="section4_location_map"></div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <p>Copyright 2023 JMJ. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

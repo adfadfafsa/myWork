@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>이벤트</h1>
+    <!-- 인라인 스크립트 -->
+    <!-- 이벤트속성(onclick)="함수"; -->
+    <!-- <p onclick="alert('클릭하였습니다');">클릭</p> -->
+    <button onclick="alert('클릭하였습니다.');">클릭1</button>
+
+    <!-- 내부 스크립트 -->
+    <button id="p1">클릭2</button>
+    <button id="p2">클릭3</button>
+    <button id="p3">클릭4</button>
+    <button id="p4">클릭5</button>
+    <button id="p5">제이쿼리</button>
+
+    <!-- 제이쿼리 cdn 연결 -->
+    <!-- 다운로드한 파일 연결 -->
+    <script src="/jquery-3.6.4.min.js"></script>
+    <!-- 제이쿼리 공식 사이트 cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- cdnjs의 cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- 구글의 cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- 마이크로소프트 cdn -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.4.min.js"></script>
+
+    <script>
+        // btn 변수 = html 요소 선택;
+        // document 객체의 메서드를 사용해 html 요소 선택
+        const btn = document.getElementById('p1');
+        const btn2 = document.getElementById('p4');
+        // 변수 선언과 요소 선택 (제이쿼리): $('선택자')
+        const btn3 = $('#p5');
+        
+        // 요소.on이벤트종류 = 함수호출;
+        // 호출 함수의 ()는 사용하지 않는다.
+        btn.onclick = fn;
+        
+        // 요소.on이벤트종류 = 함수호출;
+        document.getElementById('p2').onclick = fn;
+
+        // 함수 정의
+        function fn() {
+            alert('클릭하였습니다');
+        }
+
+        // 요소.on이벤트종류 = 함수호출;{함수 내용}
+        document.getElementById('p3').onclick = function (){
+            alert('클릭하였습니다');
+        }
+        
+        // 요소.addEventListener(이벤트종류,함수);
+        btn2.addEventListener('click', function(){
+            alert('클릭하였습니다');
+        });
+
+        // 제이쿼리
+        btn3.click(function(){
+            alert('클릭하였습니다');
+        });
+    </script>
+</body>
+</html>

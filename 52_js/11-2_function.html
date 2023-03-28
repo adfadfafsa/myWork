@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS+JS</title>
+</head>
+
+<body>
+    <h1>함수</h1>
+    <h2>익명 함수</h2>
+    <script>
+        /* 
+            익명 함수 정의
+            let 변수명 = function ([매개변수,..]) {
+                실행코드;
+            }
+
+            함수 호출
+            변수명([인수,..]);
+        */
+
+        let a = 9;
+
+        var num = function (i) {
+            document.write('나는 ' + i + '번째 함수이다.<br>');
+            document.write('나는 ' + a + '번째 함수이다.<br>');
+        }
+
+        document.write('나는 ' + a + '번째 함수이다.<br>');
+        num(10);
+    </script>
+</body>
+
+</html>

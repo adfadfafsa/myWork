@@ -1,0 +1,183 @@
+@charset "utf-8";
+@import url(common.css);
+
+/* 슬라이드 */
+.slide {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    background: #E86000;
+}
+
+.slide ul {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 400%;
+    height: 100%;
+    animation: slide 9s infinite;
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+
+    5% {
+        left: -100%;
+    }
+
+    33.33% {
+        left: -100%;
+    }
+
+    38% {
+        left: -200%;
+    }
+
+    66.66% {
+        left: -200%;
+    }
+
+    71% {
+        left: -300%;
+    }
+
+    99.99% {
+        left: -300%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.slide li {
+    width: 25%;
+    height: 100%;
+}
+.slide li a {
+    display: block;
+    width:100%;
+    height:400px;
+    text-indent: -9999em;
+    background: no-repeat 50% 50%/cover;
+}
+.slide li:nth-of-type(1) a, .slide li:nth-of-type(4) a {
+    background-image: url(../images/slide1.png);
+}
+.slide li:nth-of-type(2) a {
+    background-image: url(../images/slide2.png);
+}
+.slide li:nth-of-type(3) a {
+    background-image: url(../images/slide3.png);
+}
+
+/* 배너 */
+.banner {
+    height: 200px;
+    background: #B74182;
+    padding:0 50px;
+}
+.banner a {
+    color: #fff;
+}
+.banner .inner {
+    display: flex;
+    align-items: center;
+    /* 가로/세로 크기의 % 기준은 조상 크기 */
+    height:100%;
+}
+.banner .inner > img {
+    width:100px;
+    margin-right: 32px;
+}
+.banner .inner span img {
+    width: 48px;
+    margin-left: 32px;
+}
+
+/* 탭 메뉴 */
+.tabs {
+    position: relative;
+    height: 250px;
+    background: #775090;
+}
+
+/* 탭 버튼 */
+.tabs label {
+    z-index: 1;
+    position: relative;
+    margin-top: 20px;
+    float: left;
+    border-left: 1px solid #333;
+    border-top: 1px solid #333;
+    padding: 5px 16px;
+    background: #333;
+    color: #fff;
+}
+
+.tabs label:first-of-type {
+    margin-left: 80px;
+}
+
+.tabs label:last-of-type {
+    border-right: 1px solid #333;
+}
+
+.tabs input {
+    display: none;
+}
+
+.tabs input:checked+div+label {
+    background: #fff;
+    color: #333;
+}
+
+/* 탭 내용 */
+.tabs div {
+    position: absolute;
+    width: calc(100% - 100px);
+    left: 50px;
+    top: 52px;
+    border: 1px solid #333;
+    padding: 15px 50px;
+    background: #fff;
+    display: none;
+    line-height: 2.5;
+}
+
+.tabs input:checked+div {
+    display: block;
+}
+
+.tabs .tab1 li {
+    border-bottom: 1px solid #ccc;
+}
+
+.tabs .tab1 span {
+    display: inline-block;
+    width: calc(100% - 200px);
+}
+
+.tabs .tab2 a {
+    margin: 0 8px;
+}
+
+.tabs .tab2 img {
+    width:144px;
+}
+
+/* 바로가기 */
+.shortcut {
+    position: absolute;
+    right:0;
+    top:0;
+}
+.shortcut li {
+    margin-bottom: 4px;
+}
+.shortcut img {
+    width:100px;
+}

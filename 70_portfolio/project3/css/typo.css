@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/* typo */
+body {
+    font: 14px/1.6 "굴림", sans-serif;
+    background: #fff;
+    color: #777;
+}
+
+a {
+    text-decoration: none;
+    color: #777;
+}
