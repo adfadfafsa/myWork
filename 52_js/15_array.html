@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>배열</h1>
+    <script>
+        const spring = '봄';
+        const summer = '여름';
+        const fall = '가을';
+        const winter = '겨울';
+
+        // 배열 생성 (선언)
+        const season = ['봄', '여름', '가을', '겨울'];
+        const season2 = new Array('봄', '여름', '가을', '겨울');
+
+        // 출력
+        document.write(spring + '<br>');
+        document.write(season + '<br>');
+        // 콘솔로 배열 써보면 자동으로 넘버링 돼서 출력됨
+        console.log(season);
+        // 콘솔의 넘버링으로 배열 중 하나만 출력
+        document.write(season[0] + '<br>');
+        document.write(season[1] + '<br>');
+        document.write(season[2] + '<br>');
+        document.write(season[3] + '<br>' + '<br>');
+        
+        // for 문으로 모든 배열 출력해보기
+        document.write(season2 + '<br>');
+        for (let i = 0; i < 4; i++) {
+            document.write(season2[i] + '<br>');
+        }
+    </script>
+</body>
+</html>

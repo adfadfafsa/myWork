@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>배열</h1>
+    <h2>push, pop와 unshift와 shift 메서드</h2>
+
+    <script>
+        const nums = [3, 4, 5];
+        document.write(nums + '<br>');
+        
+        // push 메서드
+        // 요소를 배열 뒤에 추가해줌
+        nums.push(6,7);
+        document.write(nums + '<br>');
+
+        // unshift 메서드
+        // 요소를 배열 앞에 추가해줌
+        nums.unshift(1,2);
+        document.write(nums + '<br>');
+        
+        
+        // pop 메서드
+        // 요소를 배열에서 빼줌
+        // 끝에 하나 빼기
+        nums.pop();
+        document.write(nums + '<br>');
+
+        // shift 메서드
+        // 요소를 배열에서 빼줌
+        // 앞에 하나 빼기
+        nums.shift();
+        document.write(nums + '<br>')
+    </script>
+</body>
+</html>

@@ -47,11 +47,13 @@ form button span {
 
 /* 헤더 */
 header {
+    position: fixed;
+    z-index:999;
     height: 45px;
 }
 
 nav li {
-    float: right;
+    float: left;
 }
 
 nav li a {
@@ -82,20 +84,20 @@ em {
 }
 
 /* 패럴렉스 이미지 */
-#sec1 {
+#home {
     position: relative;
     height: 1045px;
-    background: url(/70_project1/images/parallax1.jpg) no-repeat 50% 50%/cover fixed;
+    background: url(../images/parallax1.jpg) no-repeat 50% 50%/cover fixed;
 }
 
-#sec3 .para {
+#portfolio .para {
     height: 405px;
-    background: url(/70_project1/images/parallax2.jpg) no-repeat 50% 50%/cover fixed;
+    background: url(../images/parallax2.jpg) no-repeat 50% 50%/cover fixed;
 }
 
-#sec4 .para {
+#contact .para {
     height: 405px;
-    background: url(/70_project1/images/parallax3.jpg) no-repeat 50% 50%/cover fixed;
+    background: url(../images/parallax3.jpg) no-repeat 50% 50%/cover fixed;
 }
 
 /* 섹션1 */
@@ -186,8 +188,8 @@ em {
 
 /* 타이틀 */
 
-#sec3 .para h2 {
-    line-height: 405px;
+#portfolio .para h2 {
+    line-height: 300px;
 }
 
 /* 섹션3 */
@@ -199,16 +201,22 @@ em {
 .myWork li {
     float: left;
     width: 220px;
+    line-height: 160px;
     height: 160px;
     margin-right: 20px;
     margin-bottom: 20px;
+    border: 1px solid #ccc;
 }
 
 .myWork li:nth-of-type(4n) {
     margin-right: 0;
 }
 
-.myWork a {
+.mywork li img {
+    height:158px;
+}
+
+.myWork > a {
     display: inline-block;
     width: 138px;
     line-height: 45px;
@@ -223,7 +231,7 @@ em {
 
 /* 섹션4 */
 
-#sec4 .para h2 {
+#contact .para h2 {
     line-height: 405px;
 }
 

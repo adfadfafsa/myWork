@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>배열</h1>
+    <h2>splice 메서드</h2>
+
+    <script>
+        const nums = [1, 2, 3, 4, 5];
+        document.write(nums + '<br>');
+        const study = ['html', 'css', 'JS', 'Jq'];
+        document.write(study + '<br>' + '<br>');
+        
+        // splice 메서드
+        // 배열.splice(index, count, value);
+        // (인덱스) -> (인덱스넘버부터, 몇개삭제할지, 삭제하고 뭐 넣을지) 디폴트는 인덱스넘버부터 전부 삭제
+        nums.splice(2);
+        document.write(nums + '<br>');
+        study.splice(2, 1, 'javascript', 'photo', 'illust');
+        document.write(study + '<br>' + '<br>');
+    </script>
+</body>
+</html>

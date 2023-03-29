@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>날짜와 시간</h1>
+    <script>
+        // Date 객체 인스턴스 생성
+        const date = new Date();
+        const date2 = new Date("2023-03-29");
+        // 그리니치 표준시 (GMT)
+        const date3 = new Date("2023-03-29T18:00:00");
+        // 국제표준시 (UTC)
+        const date4 = new Date("2023-03-29T18:00:00Z");
+        
+        document.write(date + '<br>');
+        document.write(date2 + '<br>');
+        document.write(date3 + '<br>');
+        document.write(date4 + '<br>');
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html</title>
+</head>
+
+<body>
+    <h1>미디어</h1>
+    <h2>비디오</h2>
+    <!-- autoplay 해야 재생. 크롬 정책상 mute해야 재생가능 -->
+    <video autoplay loop>
+        <source src="assets/school.mp4" height="200" autoplay mute loop type="video/mp4">
+        <source src="assets/school.mp4" height="200" autoplay mute loop type="video/webm">
+    </video>
+    <!-- controls = 컨트롤 바 출력 -->
+    <video height="200" controls>
+        <!-- 소스는 하나밖에 안나온다. 브라우저가 지원하지 않을 경우 그 다음 소스가 나옴 -->
+        <source src="assets/mov_bbb.mp4" type="video/mp4">
+        <source src="assets/mov_bbb.webm" type="video/webm">
+        <source src="assets/mov_bbb.ogv" type="video/ogg">
+    </video>
+
+    <h2>유튜브 아이프레임</h2>
+    <iframe src="https://www.youtube.com/embed/aqz-KE-bpKQ"></iframe>
+
+    <h2>오디오</h2>
+    <!-- 배경음악으로 삽입 -->
+    <audio autoplay loop>
+        <source src="assets/I Love My Mom - Reed Mathis.mp3" type="audio/mp3">
+        <source src="assets/I Love My Mom - Reed Mathis.wav" type="audio/wav">
+    </audio>
+    <!-- 소리 끄면 자동 실행 -->
+    <audio height="200" controls>
+        <source src="assets/horse.mp3" type="audio/mp3">
+        <source src="assets/horse.wav" type="audio/wav">
+        <source src="assets/horse.ogv" type="audio/ogg">
+    </audio>
+</body>
+
+</html>

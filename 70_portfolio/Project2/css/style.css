@@ -12,6 +12,7 @@
 }
 
 html {
+    scroll-behavior:smooth;
     font-size:10px;
 }
 
@@ -31,6 +32,7 @@ h2 {
 }
 
 h3 {
+    padding-top:80px;
     font-size:24px;
     color:#000;
     margin-bottom: 27px;
@@ -125,6 +127,11 @@ nav li:nth-of-type(4) {
 }
 #sec2 li:not(li:nth-of-type(1), li:nth-of-type(5)) {
     margin-left:16px;
+}
+
+#sec2 li div {
+    width:359px;
+    height:239px;
 }
 
 #sec2 span {

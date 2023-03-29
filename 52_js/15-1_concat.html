@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>배열</h1>
+    <h2>concat과 join 메서드</h2>
+
+    <script>
+        // concat
+        // concat = 요소들을 유지한 채 배열을 합치는 메서드
+
+        const nums = [1, 2, 3];
+        const chars = ['a', 'b', 'c'];
+
+        // 배열1.concat(배열2)
+        const numsChars = nums.concat(chars);
+        const charsNums = chars.concat(nums);
+        
+        // 출력
+        document.write(nums + '<br>');
+        document.write(chars + '<br>');
+        document.write(numsChars + '<br>');
+        document.write(charsNums + '<br>'+ '<br>');
+        
+        
+        // join
+        // join = 배열을 하나의 요소로 합쳐 묶어주는 메서드
+        
+        // 배열.join(['구분자'])
+        const string = nums.join();
+        const string2 = nums.join('/');
+
+        // 출력
+        document.write(string + '<br>');
+        document.write(string2 + '<br>');
+        console.log(string);
+    </script>
+</body>
+</html>

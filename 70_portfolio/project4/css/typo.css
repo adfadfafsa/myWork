@@ -1,44 +1,83 @@
 @charset "utf-8";
 
-/* typo */
+/* Typo */
 @font-face {
-    font-family:malgunGothic;
-    src:url(../fonts/Malgun_gothic/malgun.ttf)
+    font-family: segoeui;
+    src: url(../font/segoeui.ttf);
 }
+
 @font-face {
-    font-family:malgunGothicBold;
-    src:url(../fonts/Malgun_gothic/malgunbd.ttf)
+    font-family: verdana;
+    src: url(../font/verdana.ttf);
+}
+
+@font-face {
+    font-family: segoeuii;
+    src: url(../font/segoeuii.ttf);
+}
+
+@font-face {
+    font-family: verdanai;
+    src: url(../font/verdanai.ttf);
 }
 
 html {
-    font-size:10px;
+    font-size: 10px;
 }
 
 body {
-    font: malgunGothic, san-serif;
-    background: #f1f1f1;
+    font: 1.5rem/1.6 verdana, sans-serif;
+    color: #000;
 }
 
-h1 {
-    font-size:36px;
-    color:#000;
+h1,
+h2,
+h3 {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+h1, .mainTit {
+    /* section1 - Main Title */
+    font-size: 36px;
+    color: #fff;
+    letter-spacing: 4px;
 }
 
 h2 {
-    font-size:36px;
-    color:#fff;
+    /* section2,3,4 - Title */
+    font-size: 24px;
+    font-weight: normal;
 }
 
 h3 {
-    font-weight: 400;
-    font-size:24px;
-    color:#000;
-    margin-bottom: 27px;
+    /* section3 - Sub Title */
+    font-size: 24px;
+    font-weight: normal;
 }
 
-p, a {
+.logo {
     font-size: 15px;
-    color:#000;
-    line-height: 22.5px;
-    margin-bottom: 27px;
+    font-weight: 400;
+    color: #000;
 }
+
+a {
+    color: #000;
+}
+
+nav a {
+    letter-spacing: 4px;
+}
+
+.mainTit {
+    font-weight: normal;
+}
+
+.copy {
+    color: #fff;
+}
+
+#section3 li p:first-of-type {
+    color:#999;
+}
+
