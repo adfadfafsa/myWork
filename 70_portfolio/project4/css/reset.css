@@ -1,8 +1,12 @@
-@charset 'utf-8';
+@charset "utf-8";
 
 /* 초기화 */
 * {
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body,
@@ -41,8 +45,8 @@ address {
     font-style: normal;
 }
 
-.clearfix::after {
-    content: '';
-    clear: both;
-    display: block;
+iframe {
+    width: 100%;
+    height: 800px;
+    border: 0;
 }

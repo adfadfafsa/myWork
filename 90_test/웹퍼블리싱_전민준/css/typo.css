@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/* Typo */
+@font-face {
+    font-family: 'Malgun';
+    src: url(../font/malgun.ttf);
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font: 1.5rem/1.6 'Malgun', sans-serif;
+    color: #000;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Malgun', sans-serif;
+}
+
+h1,
+.mainTit {
+    /* section1 - Main Title */
+    font-size: 36px;
+    color: #fff;
+    letter-spacing: 4px;
+}
+
+h2 {
+    /* section2,3,4 - Title */
+    font-size: 24px;
+    font-weight: normal;
+}
+
+h3 {
+    /* section3 - Sub Title */
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.logo {
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+}
+
+a {
+    color: #000;
+}
+
+nav a {
+    letter-spacing: 4px;
+}
+
+.mainTit {
+    font-weight: normal;
+}
+
+.copy {
+    color: #fff;
+}
+
+#section3 li p:first-of-type {
+    color: #999;
+}

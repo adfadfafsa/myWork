@@ -2,23 +2,8 @@
 
 /* Typo */
 @font-face {
-    font-family: segoeui;
-    src: url(../font/segoeui.ttf);
-}
-
-@font-face {
-    font-family: verdana;
-    src: url(../font/verdana.ttf);
-}
-
-@font-face {
-    font-family: segoeuii;
-    src: url(../font/segoeuii.ttf);
-}
-
-@font-face {
-    font-family: verdanai;
-    src: url(../font/verdanai.ttf);
+    font-family: 'Malgun';
+    src: url(../font/malgun.ttf);
 }
 
 html {
@@ -26,17 +11,18 @@ html {
 }
 
 body {
-    font: 1.5rem/1.6 verdana, sans-serif;
+    font: 1.5rem/1.6 'Malgun', sans-serif;
     color: #000;
 }
 
 h1,
 h2,
 h3 {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Malgun', sans-serif;
 }
 
-h1, .mainTit {
+h1,
+.mainTit {
     /* section1 - Main Title */
     font-size: 36px;
     color: #fff;
@@ -78,6 +64,5 @@ nav a {
 }
 
 #section3 li p:first-of-type {
-    color:#999;
+    color: #999;
 }
-
