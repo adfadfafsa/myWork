@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Noto+Sans+KR:wght@100;400;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
 @import url('reset.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css");
 
 /* 아이콘 */
 nav li:first-of-type~li a::before {
@@ -48,7 +49,7 @@ form button span {
 /* 헤더 */
 header {
     position: fixed;
-    z-index:999;
+    z-index: 999;
     height: 45px;
 }
 
@@ -119,7 +120,7 @@ em {
 
 /* 섹션2 프로필2: 내 사진, 프로필 */
 .pf2 {
-    margin-top:70px;
+    margin-top: 70px;
 }
 
 .pf2 div {
@@ -128,7 +129,7 @@ em {
 }
 
 .pf2 div p {
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 .pf2>p {
@@ -201,11 +202,14 @@ em {
 .myWork li {
     float: left;
     width: 220px;
-    line-height: 160px;
-    height: 160px;
     margin-right: 20px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
+}
+
+.myWork li.blankBox {
+    line-height: 193px;
+    height: 193px;
 }
 
 .myWork li:nth-of-type(4n) {
@@ -213,10 +217,10 @@ em {
 }
 
 .mywork li img {
-    height:158px;
+    height: 158px;
 }
 
-.myWork > a {
+.myWork>a {
     display: inline-block;
     width: 138px;
     line-height: 45px;

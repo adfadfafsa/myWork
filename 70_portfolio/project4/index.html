@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>아이파크건설_전민준</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="script/script.js"></script>
 </head>
 
 <body>
@@ -15,7 +17,11 @@
         <!-- 로고 -->
         <h1 class="logo"><a href="#"><b>I Park</b></a></h1>
         <!-- GNB: Global Navigation Bar -->
-        <nav>
+        <!-- 햄버거 버튼 -->
+        <button type="button" class="toggler">
+            <span></span><span></span><span></span>
+        </button>
+        <nav id="gnb">
             <ul>
                 <li><a href="#section2"><b>분양 단지</b></a></li>
                 <li><a href="#section3"><b>CEO 인사말</b></a></li>
@@ -138,6 +144,7 @@
             </div>
         </div>
     </footer><!-- /푸터 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
 </body>
 
 </html>

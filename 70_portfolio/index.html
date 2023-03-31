@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>전민준</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </head>
 
 <body>
@@ -32,8 +34,8 @@
     <!-- 섹션2 -->
     <section id="about">
         <div class="container">
-        <h3>ABOUT ME</h3>
-        <p class="tac"><em>I love WebDesign</em></p>
+            <h3>ABOUT ME</h3>
+            <p class="tac"><em>I love WebDesign</em></p>
             <p>
                 We have created a fictional "personal" website/blog, and our fictional character is a hobby
                 photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -98,20 +100,40 @@
         </div>
 
         <div class="container myWork">
-        <h3>MYWORK</h3>
-        <p class="tac">
-            <em>나의 최근 작품들이 여기에 있습니다.<br>
-            클릭하면 큰 이미지로 볼 수 있습니다.</em>
-        </p>
+            <h3>MYWORK</h3>
+            <p class="tac">
+                <em>나의 최근 작품들이 여기에 있습니다.<br>
+                    클릭하면 큰 이미지로 볼 수 있습니다.</em>
+            </p>
+
+            <!-- data- 사용자 정의 속성 -->
             <ul class="clearfix">
-                <li><a href="http://frim0707.dothome.co.kr/project4" target="_blank"><img src="images/pf1.jpg" alt="교보문고 반응형"></a></li>
-                <li><a href="http://frim0707.dothome.co.kr/project3" target="_blank"><img src="images/pf2.jpg" alt="삼양식품"></a></li>
-                <li>준비중...</li>
-                <li>준비중...</li>
-                <li>준비중...</li>
-                <li>준비중...</li>
-                <li>준비중...</li>
-                <li>준비중...</li>
+                <li>
+                    <a href="./images/pf1.jpg" data-lightbox="roadtrip" data-title="http://frim0707.dothome.co.kr">
+                        <img src="images/thumb1.jpg" alt="마이사이트">
+                    </a>
+                    <span class="linkTxt">
+                        <a href="#">개인 사이트</a>
+                    </span>
+                </li>
+                <li>
+                    <a href="./images/pf2.jpg" data-lightbox="roadtrip"
+                        data-title="http://frim0707.dothome.co.kr/project2">
+                        <img src="images/thumb2.jpg" alt="교보문고 반응형">
+                        <span class="linkTxt">
+                            <a href="http://frim0707.dothome.co.kr/project4">아이파크
+                                반응형</a>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./images/pf3.jpg" data-lightbox="roadtrip"
+                        data-title="http://frim0707.dothome.co.kr/project3">
+                        <img src="images/thumb3.jpg" alt="삼양식품">
+                        <span class="linkTxt">삼양식품</span>
+                    </a>
+                </li>
+                <li class="blankBox">준비중...</li>
             </ul>
             <a href="#">더 보기</a>
         </div>
@@ -128,7 +150,8 @@
             <p class="tac"><em>당신의 연락을 기다립니다!</em></p>
             <div class="where clearfix">
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.9899861794484!2d126.72927811564726!3d37.53173333387767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7d8691d09ccb%3A0x6a2cfea06087260f!2z7ZWc6rWt7JWE7YyM7Yq4!5e0!3m2!1sko!2skr!4v1680070282082!5m2!1sko!2skr"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.9899861794484!2d126.72927811564726!3d37.53173333387767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7d8691d09ccb%3A0x6a2cfea06087260f!2z7ZWc6rWt7JWE7YyM7Yq4!5e0!3m2!1sko!2skr!4v1680070282082!5m2!1sko!2skr"></iframe>
                 </div>
                 <div class="info">
                     <div>
@@ -143,7 +166,8 @@
                         <input type="text" name="username" id="username" placeholder="이름">
                         <input type="email" name="useremail" id="useremail" placeholder="이메일">
                         <input type="text" name="usermsg" id="usermsg" placeholder="메세지">
-                        <button type="submit"><img src="images/icon_btn1.png" alt="메세지 전송 아이콘"><span>메세지 전송하기</span></button>
+                        <button type="submit"><img src="images/icon_btn1.png" alt="메세지 전송 아이콘"><span>메세지
+                                전송하기</span></button>
                     </form>
                 </div> <!-- info -->
             </div> <!-- where -->

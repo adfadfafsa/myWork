@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img{
+            width:200px;
+            height:150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Math 객체</h1>
+    <div>
+        <img src="assets/1.jpg" alt="">
+    </div>
+    <span></span><button>버튼</button><br>
+    <hr>
+
+    <script>
+        // 반올림
+        document.write(Math.round(3.141592) + "<br>");
+        // 올림
+        document.write(Math.ceil(3.141592) + "<br>");
+        // 내림
+        document.write(Math.floor(3.141592) + "<br>");
+        // 소수점 자름
+        document.write(Math.trunc(3.141592) + "<br>" + "<br>");
+        
+        // 거듭제곱
+        document.write(Math.pow(2,3) + "<br>");
+        // 제곱근
+        document.write(Math.sqrt(4) + "<br>");
+        // 절대값
+        document.write(Math.abs(-3.141592) + "<br>" + "<br>");
+
+        // 최소값
+        document.write(Math.min(1,2,3,4,5) + "<br>");
+        // 최대값
+        document.write(Math.max(1,2,3,4,5) + "<br>");
+        // 난수 디폴트 : 0 <= x < 1
+        // 난수: 0*6 +1 <= x < 1*6 +1
+        document.write(Math.random() *6 +1 + "<br>" + "<br>");
+        // 난수 활용 : 랜덤 이미지 출력
+        const btn = document.querySelector('button');
+        const num = document.querySelector('span');
+        const img = document.querySelector('img');
+        btn.addEventListener('click', function(){
+            let num = Math.floor(Math.random() *6 +1 );
+            // setAttribute('HTML속성명', '값');
+            // HTML 요소 속성을 변경
+            img.setAttribute('src', 'assets/' + num + '.jpg');
+        });
+        </script>
+</body>
+</html>

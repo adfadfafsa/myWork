@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        /* reset */
+        button {
+            border:none;
+            background:none;
+            cursor: pointer;
+        }
+        /* Collapsed Menu Icon */
+        .toggler {
+            position: absolute;
+            z-index: 9999;
+            right: 30px;
+            top: 30px;
+            width: 20px;
+            height: 16px;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+
+        .toggler span {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            border-top: 2px solid black;
+            transition: 0.3s;
+        }
+
+        .toggler span:first-of-type {
+            top: 0;
+        }
+
+        .toggler span:last-of-type {
+            top: 100%;
+        }
+
+        .toggler.active span:first-of-type {
+            opacity: 0;
+        }
+
+        .toggler.active span:first-of-type,
+        .toggler.active span:last-of-type {
+            top: 50%;
+        }
+
+        .toggler.active span:nth-of-type(2) {
+            transform: rotate(45deg);
+            border-top: 2px solid red;
+        }
+
+        .toggler.active span:nth-of-type(3) {
+            transform: rotate(-45deg);
+            border-top: 2px solid red;
+        }
+
+        /* #gnb {
+            position: fixed;
+            width: 50%;
+            height: 100vh;
+            right: -50%;
+            top: 0px;
+            background: #333;
+        }
+
+        #gnb ul {
+            display: flex;
+            flex-direction: column;
+            height: 56px;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        #gnb li {
+            margin-bottom: 24px;
+            padding: 0 24px;
+        }
+
+        #gnb li a {
+            display: block;
+            padding: 8px 16px;
+            color: #fff;
+            transition: 0.1s;
+        }
+
+        #gnb li a:hover {
+            background: #555;
+            color: #fff;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>햄버거 버튼</h1>
+    <button type="button" class="toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <script>
+        $(function () {
+            /* mobile toggler button */
+            let flag = 0;
+            $(".toggler").click(function () {
+                if (flag === 0) {
+                    // $(this): 이벤트가 발생한 객체
+                    // .addclass("클래스명") : 제이쿼리의 클래스 추가
+                    // .classList.add("클래스명") : JS의 클래스 추가
+                    $(this).addClass("active");
+                    flag = 1;
+                } else {
+                    // .removeclass("클래스명") : 제이쿼리의 클래스 제거
+                    // .classList.remove("클래스명") : JS의 클래스 제거
+                    $(this).removeClass("active");
+                    flag = 0;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

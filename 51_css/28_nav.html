@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font: 14px/1.6 "굴림", sans-serif;
+            color: #777;
+        }
+
+        a {
+            text-decoration: none;
+            color: #777;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 내비게이션 */
+        .nav {
+            position: relative;
+            /*   height: 450px; */
+            background: #000;
+        }
+
+        .nav_bg {
+            position: absolute;
+            left: 0;
+            top: 42px;
+            width: 100%;
+            height: 0;
+            background: rgba(255, 0, 0, 0.5);
+            transition: 0.3s;
+        }
+
+        .nav_bg.active {
+            height: 200px;
+        }
+
+        /* 1depth */
+        .main>li {
+            display: inline-block;
+            text-align: center;
+            width: 160px;
+            vertical-align: top;
+            overflow: hidden;
+        }
+
+        .main>li>a {
+            display: block;
+            margin-bottom: 1px;
+            padding: 8px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .main>li>a:hover {
+            background: #333;
+            color: #fff;
+        }
+
+        /* 2depth */
+        .sub {
+            position: relative;
+            visibility: hidden;
+            opacity: 0;
+            height: 0;
+            transition: height 0.3s;
+        }
+
+        .sub a {
+            display: inline-block;
+            padding: 2px 8px;
+            color: #fff;
+        }
+
+        .sub a:first-child {
+            margin-top: 10px;
+        }
+
+        .sub a:hover {
+            background: #ccc;
+            color: #111;
+        }
+
+        .sub.active {
+            visibility: visible;
+            opacity: 1;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav_bg"></div>
+        <ul class="main">
+            <li><a href="#">CLUB</a>
+                <ul class="sub">
+                    <li><a href="#">클럽소개</a></li>
+                    <li><a href="#">시설안내</a></li>
+                </ul>
+            </li>
+            <li><a href="#">BOOKING</a>
+                <ul class="sub">
+                    <li><a href="#">요금안내</a></li>
+                    <li><a href="#">예약안내</a></li>
+                    <li><a href="#">위약안내</a></li>
+                </ul>
+            </li>
+            <li><a href="#">INFORMATION</a>
+                <ul class="sub">
+                    <li><a href="#">명예의 전당</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">자료실</a></li>
+                    <li><a href="#">포토갤러리</a></li>
+                </ul>
+            </li>
+            <li><a href="#">COMMUNITY</a>
+                <ul class="sub">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">Q&amp;A</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        var nav = document.querySelector(".nav"),
+            navBg = document.querySelector(".nav_bg"),
+            mainMenu = document.querySelectorAll(".main > li > a"),
+            subMenu = document.querySelectorAll(".sub");
+
+        for (var i = 0; i < mainMenu.length; i++) {
+            mainMenu[i].onmouseenter = slideDown;
+        }
+
+        nav.onmouseleave = slideUp;
+
+        function slideDown() {
+            for (var i = 0; i < subMenu.length; i++) {
+                subMenu[i].classList.add("active");
+            }
+            navBg.classList.add("active");
+        }
+
+        function slideUp() {
+            for (var i = 0; i < subMenu.length; i++) {
+                subMenu[i].classList.remove("active");
+            }
+            navBg.classList.remove("active");
+        }
+    </script>
+</body>
+
+</html>
