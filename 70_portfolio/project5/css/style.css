@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@import url('reset.css');
+@import url('typo.css');
+
+.container {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sec1img1 {
+    width: 1000px;
+    position: absolute;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- 
+    설정 요약
+
+    container
+    1. flex-direction 기본 축 설정
+    2. flex-wrap 줄바꿈 설정
+    3. justify-content 기본 축 컨텐츠 정렬
+    4. align-items 보조 축 컨텐츠 정렬
+    5. align-content 컨텐츠 정렬
+    -->
+
+    <style>
+      .container {
+        width: 360px;
+        height: 80vh;
+        background-color: #D8D8D8;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+      }
+
+      .box {
+        width: 40px;
+        height: 40px;
+        margin: 20px 10px;
+      }
+
+      .box1{background-color: #FA5858;}
+      .box2{background-color: #FA8258;}
+      .box3{background-color: #FAAC58;}
+      .box4{background-color: #F7D358;}
+      .box5{background-color: #F4FA58;}
+      .box6{background-color: #D0FA58;}
+      .box7{background-color: #ACFA58;}
+      .box8{background-color: #82FA58;}
+      .box9{background-color: #81F781;}
+      .box10{background-color: #58FA82;}
+      .box11{background-color: #58FA58;}
+      .box12{background-color: #81F7D8;}
+    </style>
+  </head>
+
+  <body>
+    <h1>플렉스</h1>
+    <div class="container">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="box box5">5</div>
+      <div class="box box6">6</div>
+      <div class="box box7">7</div>
+      <div class="box box8">8</div>
+      <div class="box box9">9</div>
+      <div class="box box10">10</div>
+      <div class="box box11">11</div>
+      <div class="box box12">12</div>
+    </div>
+  </body>
+</html>
