@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let days = ['mon', 'tue', 'wed'] //[index1, index2, index3]
+        console.log(days[1]) //days[1] = 인덱스 1번 부른거
+        
+        days[2] = '화요일'; //인덱스 2번 화요일로 바꿈
+        console.log(days[2])
+
+        console.log(days.length) //.length = 길이 확인 메서드
+
+        days.push('thu') //배열 맨 뒤에 요소 추가
+        days.unshift('sun') //배열 맨 앞에 요소 추가
+        console.log(days)
+
+        // .pop = 배열 맨 뒤 요소 제거
+        // .shift = 배열 맨 앞 요소 제거
+        // push와 unshift는 여러 요소를 한번에 추가할 수 있다
+
+        // 배열 처음거부터 하나씩 출력하는 코드
+        // 그냥 for
+        for(let index = 0; index < days.length; index++)
+        {
+            console.log(days[index]);
+        }
+
+        // for of
+        for (let day of days){
+            console.log(day);
+        }
+    </script>
+</body>
+</html>

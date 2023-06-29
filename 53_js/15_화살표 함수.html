@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //함수의 표현을 간결하게 만든다
+      //예시1
+      function showError() { // let showError = () => {
+        console.log("error");
+      }
+      showError();
+
+      //예시2
+      const sayHello = function (name) { // const sayHello = (name) => {
+        const msg = `hello,${name}`;
+        console.log(msg);
+      };
+
+      //예시3 매개변수2개, return문
+      const add = function (num1, num2) {
+        const result = num1 + num2;
+        return result;
+      };
+    //const add = (num1, num2) => {
+    //  return num1 + num2; -> 심지어 이거도 리턴 하나라 {return num1 + num2;}를 (num1 + num2;)로 대체 가능
+    //};
+
+    </script>
+  </body>
+</html>

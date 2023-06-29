@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = 10;
+        // 변수 안에 변수 다시 넣을 수 있음
+        num = num + 5; // -> num += 5;
+        console.log(num)
+
+        let num2 = 10;
+        num2 %= 5;
+        console.log(num2)
+
+        // 증가 연산자, 감소 연산자
+        let num3 = 10;
+        let result1 = num3++; // result에 num 넣고 ++ 시키기
+        console.log(result1); // 그래서 10 나옴
+
+        let num4 = 10;
+        let result2 = ++num4; // result에 ++ 시키고 num 넣기
+        console.log(result2); // 그래서 11 나옴
+        
+    </script>
+</body>
+</html>

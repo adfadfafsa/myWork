@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let fruit = prompt("무슨 과일을 사시겠습니까");
+      switch (fruit) {
+        case "사과":
+          console.log("100원 입니다.");
+          break; //switch는 break 안넣어주면 케이스 아래로 다 실행함
+        case "바나나":
+          console.log("200원 입니다.");
+          break;
+        case "키위":
+          console.log("300원 입니다.");
+          break;
+        case "멜론":
+        case "수박": //멜론이랑 수박 두개 묶은거임
+          console.log("500원 입니다.");
+          break;
+          default: //if문의 else와 같음
+            console.log('사과, 바나나, 키위, 멜론, 수박 중 하나만 선택해주세요');
+      }
+      
+    </script>
+  </body>
+</html>

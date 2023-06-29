@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // AND = &&
+        // OR = || (쉬프트 누르고 엔터 위 역슬래시)
+        // NOT = !
+        // 우선순위 = && > ||. AND는 무조건 먼저 계산됨
+
+        // 모든 조건은 불린으로 해석,
+        // AND는 첫번째 false를 발견 즉시, OR는 첫번쨰 true를 발견 즉시 코드 진행 종료. 최적화 시 유용하다고 함
+
+        const name = "Mike";
+        const age = 30;
+
+        // 이름 마이크에 성인 (AND)
+        if(name === 'Mike' && age > 19){
+            console.log('통과');
+        }
+
+        // 이름이 톰이거나 성인 (OR)
+        if(name === 'Tom' || age > 19){
+            console.log('통과');
+        }
+
+        // 응애는 저리가고 성인만 (NOT)
+        const ageNum = prompt("나이가 어떻게 되십니가?"); // prompt
+        age2 = Number(ageNum); // prompt 입력값 Number 변환
+        const isAge = age2 > 19; // 성인 조건 설정
+        
+        if(!isAge){
+            console.log('저리로 꺼지도록 해');
+        } else {
+            console.log('어서오세용');
+        }
+
+        // 논리연산자의 우선순위
+        const gender = 'F';
+        const name2 = 'Jane';
+        const isAdult = true;
+
+        // 남자이고, 이름이 마이크거나 성인이면 통과 작성
+        // AND 우선순위 때문에 '(남자이고 이름이 마이크) 혹은 성인이면 통과' 로 바뀌어버림
+        // -> 남자이고, (이름이 마이크거나 성인) 으로 묶어줘야함
+        if(gender === 'M' && (name2 === 'Mike' || isAdult)){
+            console.log('통과');
+        } else {
+            console.log('돌아가');
+        } 
+        
+    </script>
+</body>
+</html>

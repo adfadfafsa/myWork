@@ -1,0 +1,257 @@
+@charset "UTP-8";
+@import url(./reset.css);
+
+/* common */
+.container { 
+    width:1280px;
+    margin: 0 auto;
+}
+
+.clearfix:before, .clearfix:after {
+    display: block;
+    content: '';
+    line-height: 0;
+}
+.clearfix:after {
+    clear:both;
+}
+.clearfix {
+	*zoom: 1;
+}
+
+h1,h2 {
+    font-size: 48px;
+    font-weight: 300;
+    text-align: center;
+}
+h1 {
+    letter-spacing: -4px;
+}
+h2 {
+    letter-spacing: -2px;
+}
+h3 {
+    letter-spacing: -2px;
+    text-align:center;
+}
+p,a,li {
+    letter-spacing: -1px;
+    font-size:20px;
+    font-weight: 300;
+}
+
+/* header */
+.search {
+    float:left;
+    background: rgba(0,0,0,0.5);
+    width:300px;
+    height:40px;
+    border: rgba(0,0,0,0.5);
+    border-radius: 8px;
+    margin-top:23px;
+}
+.search[placeholder] {
+    font-size: 1.2rem;
+    padding: 0 15px;
+}
+
+nav>ul {
+    display:flex;
+    flex-direction:row-reverse;
+    float:right;
+}
+nav>ul>li>a {
+    margin:0;
+    margin-left:84px;
+    padding:0;
+    color: #fff;
+    font-size:24px;
+    font-weight:400;
+    line-height:86px;
+}
+
+/* sec1 */
+#HOME {
+    background: url(../assets/flash-4244923_1920-1@2x.png) no-repeat 50% 50%/cover fixed;
+}
+
+#HOME>div>h1 {
+    color: #fff;
+    text-align: center;
+}
+#HOME>div>p {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 300px;
+}
+
+#HOME>div>h1 {
+    padding-top: 300px;
+}
+
+.sec1_ul {
+    display:flex;
+}
+.sec1_ul>li {
+    display:flex;
+    flex-direction:column;
+    justify-content: end;
+    align-items: center;
+    width:320px;
+    height:66px;
+    background:#fff;
+}
+
+/* sec2 */
+.sec2_ul {
+    display:flex;
+}
+.sec2_ul>li {
+    display:flex;
+    flex-direction:column;
+    justify-content:start;
+    align-items: center;
+    width:320px;
+    height:66px;
+    font-weight:600;
+    background:#fff;
+}
+
+#ABOUT>div>h2 {
+    padding-top:50px;
+}
+#ABOUT>div>p {
+    text-align:center;
+    padding-bottom:50px;
+    font-weight:500;
+}
+
+.sec2_ul2 {
+    display:flex;
+    justify-content:space-around;
+    margin-top: 30px;
+    margin-bottom: 120px;
+}
+.sec2_ul2>li {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:230px;
+}
+.sec2_ul2>li>img {
+    margin:0 auto;
+    width:136px;
+    height:127px;
+}
+.sec2_ul2>li>p {
+    width:280px;
+    font-size:16px;
+    text-align:center;
+}
+
+.sec2_ul2>li>button {
+    width:100px;
+    height:30px;
+    border:none;
+    background-color:#2F7AF4;
+    color:#fff;
+    font-size: 12px;
+}
+.sec2_ul2>li>h3 {
+    margin-bottom:8px;
+}
+.sec2_ul2>li>p {
+    margin-bottom:25px;
+}
+
+/* sec3 */
+#SERVICE>div>p {
+    text-align:center;
+    margin-bottom:50px;
+    font-weight:500;
+}
+
+#SERVICE>div>div>img {
+    float:left;
+    width:640px;
+    height:426px;
+    margin-bottom:50px;
+}
+
+#SERVICE>div>div>div>h3 {
+    text-align:left;
+    font-size:24px;
+    margin-bottom:24px;
+}
+
+.sec3_text {
+    float:right;
+    width:580px;
+    margin-right:30px;
+}
+
+.sec3_text>p {
+    font-size:18px;
+}
+
+/* sec4 */
+#CONTACT {
+    width:auto;
+    height:420px;
+    background:url(../assets/flash-4244923_1920@2x.png) no-repeat 50% 50%/cover fixed;
+}
+
+.sec4_container {
+    width: calc(50%);
+    height: 420px;
+    display:flex;
+    justify-content: center;
+}
+
+.sec4_text {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width: 440px;
+    color: white;
+}
+.sec4_text>h2 {
+    margin-bottom: 5px;
+}
+.sec4_text>p {
+    font-size:20px;
+    margin-bottom: 23px;
+}
+.sec4_text>button {
+    width:220px;
+    height:40px;
+    background: none;
+    border: #fff;
+    color:#fff;
+    font-size:18px;
+}
+
+/* footer */
+.footer {
+    position:relative;
+    color:#fff;
+    height:250px;
+    background:#1F1F1F;
+}
+
+.footer>div>ul {
+    position:absolute;
+    top:calc(50% - 72px);
+    left:calc(50% - 315px);
+    width:630px;
+    height:145px;
+}
+
+.logo {
+    position: absolute;
+    top:calc(50% - 24px);
+    float:left;
+    display:flex;
+    font-size:48px;
+}

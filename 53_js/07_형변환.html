@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 이렇게 하면 이상한 값이 나옴
+        // prompt 입력 -> 문자형, 90점 80점 입력 -> "9080" -> 자동형변환 -> 9080 /2 해서 "4540" 됨.
+        const mathScore = prompt("수학 몇 점?");
+        const engScore = prompt("영어 몇 점?");
+        const result = (mathScore + engScore) / 2;
+        console.log(result)
+
+        // 그래서 아예 처음부터 명시적 형변환을 해준다
+        console.log(
+            // 나 문자형으로 씁니다
+            String(3),
+            String(true),
+            String(false),
+            String(null),
+            String(undefined)
+        )
+
+        console.log(
+            Number("1234asdfqwe"), // 넘버는 스트링 들어가있으면 NaN 뜸
+            Number(true), // 불린 true -> 넘버 1
+            Number(false), // 불린 false -> 넘버 0
+            Number(null), // null -> 넘버 0
+            Number(undefined) // undifined -> NaN
+        )
+
+        console.log(
+            // 아래는 모두 불린 형변환 시 값이 0인 것들, 이 외 나머지는 전부 1임
+            Boolean(0), // 넘버 0
+            Boolean(""), // 빈 문자열
+            Boolean(null), // Null
+            Boolean(undefined), // undefined
+            Boolean(NaN) // NaN
+        )
+        
+    </script>
+</body>
+</html>

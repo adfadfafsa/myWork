@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 몇살이세요?
+        let num = prompt("나이가 어떻게 되십니까?"); // 입력값 string으로 출력됨
+        const age = Number(num); // 출력값 Number로 변환
+
+        // "20살 미만은 반갑고 20살은 음... 그리고 나머진 꺼지세요" 작성
+        if(age < 20){
+            console.log("환영합니다");
+        } else if(age === 20) {
+            console.log("음...");
+        } else {
+            console.log("늙었어");
+        }
+
+    </script>
+</body>
+</html>
