@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // symbol()
+        // const id = Symbol('id'); 처럼 쓸 수 있음.
+        // symbol 함수는 키 값이 같더라도 매번 다른 symbol 함수 생성. ==, === 비교시 불일치함. 다른 개체임.
+        // 꽁꽁 숨겨져 있어 object.keys object.values에 잡히지 않음. 얘가 값을 덮어씌울 일이 없음.
+
+        // symbol.for()
+        // 그냥 symbol 이랑 달리 키 값이 같은게 있으면 쓰고 없으면 함수 생성.
+        // 키 값이 같으면 symbol 공유
+
+
+        // 그래서 어떻게 씀?
+        // 다른 개발자가 만들어 놓은 객체
+        const user = {
+            name: "Mike",
+            age: 30
+        }
+
+        // 내가 작업
+        const showName = Symbol("show name")
+        user[showName] = function(){
+            console.log(this.name);
+        }
+        user[showName]();
+
+        // 사용자가 접속하면 보는 메세지
+        for (let key in user) {
+            console.log(`His ${key} is ${user[key]}.`)
+        }
+    </script>
+</body>
+</html>

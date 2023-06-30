@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 객체 메소드
+        
+        // 객체 복제 = Object.assign({초기값}, 추가할거1, 추가할거2) //초기값에서 키 똑같은거 있으면 덮어쓰게 됨
+        // 오브젝트의 키들을 배열로 반환 = Object.keys(반환할 오브젝트)
+        // 오브젝트의 값들을 배열로 반환 = Object.values(반환할 오브젝트)
+        // 오브젝트의 키/값 모두 배열로 반환 = Object.entries(반환할 오브젝트)
+        // 키/값 배열을 객체로 반환 = Object.fromEntries(반환할 배열)
+
+        // 키를 선언해놓고 끌어다 쓰기 = 컴퓨티드 프로퍼티
+        let n = "name";
+        let a = "age";
+        const user = {
+            [n]: "Mike",
+            [a]: 30,
+            [1 + 4]: 5 // 이 [] 부분을 함수 출력이나 다른 값들로 활용할 수 있다
+        }
+        console.log(user)
+
+        // 객체 [키:밸류] 를 출력하는 함수
+        function makeObj(key, val){
+            return{
+                [key]: val,
+            }
+        }
+        const obj = makeObj("나이",33);
+        console.log(obj);
+
+        // 객체 복사 이렇게 하면 안됨
+        const user2 = {
+            name: "Mike",
+            age: 30
+        }
+        const user3 = user2; // 이러면 user3 벨류 바꾸면 user2 벨류도 같이 바뀜
+
+        // 객체 복사 이렇게 해야됨
+        const user4 = {
+            name: "Mike",
+            age: 30
+        }
+        const user5 = Object.assign({},user4) //이렇게 바꿔야함. 
+        user5.name = "Jane"
+        console.log(user4)
+        console.log(user5)
+
+    </script>
+</body>
+</html>

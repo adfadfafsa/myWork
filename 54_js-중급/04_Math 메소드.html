@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 진수 변환
+        let num = 10;
+        num.toString(); //"10" = 10진법(공백)
+        num.toString(2); //"1010" = 2진법
+        let num2 = 255;
+        num.toString(16); //"11" = 16진법
+
+        // 올림, 내림, 반올림
+        let num3 = 5.1;
+        Math.ceil(num3); // 6 = ceil(올림)
+        let num4 = 5.7;
+        Math.floor(num4); // 5 = floor(내림)
+        let num5 = 5.5;
+        Math.round(num5); // 6 = round(반올림)
+
+
+        // 소수점 2번째 자리까지만 표현
+
+        // 1번
+        let userRate = 30.1234; // 4째자리까지 있음
+        // 소수점 2번째까지니까 10^2곱해서 반올림하고 다시 10^2으로 나누기
+        Math.round(userRate * 100)/100 // 30.12
+
+        // 2번 toFixed()
+        let userRate2 = 30.1234;
+        userRate2.toFixed(2); // 30.12(String)
+        Number(userRate2.toFixed(2)); // 30.12(Number) //toFixed의 출력은 string으로 나와서 바꿔줘야함
+
+
+        // isNaN() = 얘가 유일하게 NaN 구분해줌.
+        let x = Number('x'); // NaN
+        x == NaN // false 뜸. 그냥 NaN은 등위연산자로 판별 불가임
+        x === NaN // false 뜸. 일치연산자도 마찬가지
+        NaN == NaN // false 뜸. 심지어 지도 NaN 아니라함 병신
+        isNaN(x) // true
+        isNaN(3) // false
+
+
+        // parseInt() = String -> Number로 바꿔줌
+        let margin = '10px';
+        parseInt(margin); // 10 //문자 혼용돼있어도 사용가능
+        Number(margin); // NaN //Number는 문자 혼용되면 안댐
+        let redColor = 'f3';
+        parseInt(redColor); // Nan //첫글자가 String이라 안댐
+        parseInt(redColor, 16); // 243 //그래서 16진수로 바꿔서 출력가능함
+        parseInt('11', 2) // 3 //11을 2진수로 바로 출력 가능 
+
+
+        // parseFloat() = parseInt() 랑 똑같은데 소수점까지 반환
+        let padding2 = `18.5%`;
+        parseInt(padding2); // 18
+        parseFloat(padding2); // 18.5
+
+
+        // Math.random() = 0 ~ 1 사이 무작위 숫자 생성
+        // 1~100 무작위 숫자 뽑기
+        console.log(Math.floor(Math.random() * 100)+1);
+
+
+        // Math.max(), Math.min() = 괄호 안 인수들 중 최대, 최소값 분별
+        Math.max(1, 4, -1, 5, 10, 9, 5.54); // 10
+        Math.min(1, 4, -1, 5, 10, 9, 5.54); // -1
+
+
+        // Math.abs() = 절대값
+        Math.abs(-1); // 1
+
+
+        // Math.pow(n,m) = n^m 계산
+        Math.pow(2,10); // 1024
+        // Math.sqrt() = 제곱근 계산
+        Math.sqrt(16); // 4
+
+    </script>
+</body>
+</html>
