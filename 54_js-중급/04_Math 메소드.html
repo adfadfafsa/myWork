@@ -8,14 +8,26 @@
 </head>
 <body>
     <script>
-        // 진수 변환
+        // 1. .toString = 진수 변환
+        // 2. .ceil, .floor, .round = 숫자 올림, 내림, 반올림
+        // 3. toFixed()
+        // 4. isNaN() = NaN 여부 구분
+        // 5. parseInt() = String -> Number로 바꿔줌
+        // 6. parseFloat() = parseInt() 랑 똑같은데 소수점까지 반환
+        // 7. Math.random() = = 0 ~ 1 사이 무작위 숫자 생성
+        // 8. Math.max(), Math.min() = 괄호 안 인수들 중 최대, 최소값 분별
+        // 9. Math.abs() = 절대값
+        // 10. Math.pow(n,m) = n^m 계산
+        // 11. Math.sqrt() = 제곱근 계산
+
+        // 1. .toString
         let num = 10;
         num.toString(); //"10" = 10진법(공백)
         num.toString(2); //"1010" = 2진법
         let num2 = 255;
         num.toString(16); //"11" = 16진법
 
-        // 올림, 내림, 반올림
+        // 2. .ceil, .floor, .round
         let num3 = 5.1;
         Math.ceil(num3); // 6 = ceil(올림)
         let num4 = 5.7;
@@ -25,19 +37,18 @@
 
 
         // 소수점 2번째 자리까지만 표현
-
-        // 1번
+        // (1)
         let userRate = 30.1234; // 4째자리까지 있음
         // 소수점 2번째까지니까 10^2곱해서 반올림하고 다시 10^2으로 나누기
         Math.round(userRate * 100)/100 // 30.12
-
-        // 2번 toFixed()
+        // (2)
+        // 3. toFixed()
         let userRate2 = 30.1234;
         userRate2.toFixed(2); // 30.12(String)
         Number(userRate2.toFixed(2)); // 30.12(Number) //toFixed의 출력은 string으로 나와서 바꿔줘야함
 
 
-        // isNaN() = 얘가 유일하게 NaN 구분해줌.
+        // 4. isNaN()
         let x = Number('x'); // NaN
         x == NaN // false 뜸. 그냥 NaN은 등위연산자로 판별 불가임
         x === NaN // false 뜸. 일치연산자도 마찬가지
@@ -46,7 +57,7 @@
         isNaN(3) // false
 
 
-        // parseInt() = String -> Number로 바꿔줌
+        // 5. parseInt()
         let margin = '10px';
         parseInt(margin); // 10 //문자 혼용돼있어도 사용가능
         Number(margin); // NaN //Number는 문자 혼용되면 안댐
@@ -56,29 +67,29 @@
         parseInt('11', 2) // 3 //11을 2진수로 바로 출력 가능 
 
 
-        // parseFloat() = parseInt() 랑 똑같은데 소수점까지 반환
+        // 6. parseFloat()
         let padding2 = `18.5%`;
         parseInt(padding2); // 18
         parseFloat(padding2); // 18.5
 
 
-        // Math.random() = 0 ~ 1 사이 무작위 숫자 생성
+        // 7. Math.random()
         // 1~100 무작위 숫자 뽑기
         console.log(Math.floor(Math.random() * 100)+1);
 
 
-        // Math.max(), Math.min() = 괄호 안 인수들 중 최대, 최소값 분별
+        // 8. Math.max(), Math.min()
         Math.max(1, 4, -1, 5, 10, 9, 5.54); // 10
         Math.min(1, 4, -1, 5, 10, 9, 5.54); // -1
 
 
-        // Math.abs() = 절대값
+        // 9. Math.abs()
         Math.abs(-1); // 1
 
 
-        // Math.pow(n,m) = n^m 계산
+        // 10. Math.pow(n,m)
         Math.pow(2,10); // 1024
-        // Math.sqrt() = 제곱근 계산
+        // 11. Math.sqrt()
         Math.sqrt(16); // 4
 
     </script>

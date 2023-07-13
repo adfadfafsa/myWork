@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 함수의 (인수)를 얻는 방법
+        // 인수들이 배열로 얻어짐
+
+        // 1. arguments
+        // length, index 말고 다른 내장메서드 없음
+        function showName(name){
+            console.log(arguments.length);
+            console.log(arguments[0]);
+            console.log(arguments[1]);
+        }
+        showName('Mike','Tom');
+        // 2
+        // 'Mike'
+        // 'Tom'
+
+        // 2. ... = 나머지 매개변수
+        // 배열의 메서드 사용 가능
+        function showName2(...name2){
+            console.log(name2)
+        }
+        showName2(); // []
+        showName2('Mike'); // ['Mike']
+        showName2('Mike', 'Tom') // ['Mike', 'Tom']
+
+        // 나머지 매개변수 활용
+        // 전달받은 수를 모두 더해야함
+        function add(...numbers){
+            let result = 0;
+            numbers.forEach((num) => (result += num));
+            console.log(result);
+        }
+        add (1,2,3);
+        add (1,2,3,4,5,6,7,8,9,10);
+
+        // 나머지 매개변수 활용2
+        // user 객체를 만드는 생성자 함수 생성
+        function User(name, age, ...skills){ // 나머지 매개변수는 인수 중 마지막에 넣어야 함
+            this.name = name;
+            this.age = age;
+            this.skills = skills;
+        }
+        const user1 = new User('Mike', 30, 'html','css')
+        const user2 = new User('Tom', 20, 'JS','React')
+        const user3 = new User('Jane', 10, 'English')
+
+        console.log(user1)
+        console.log(user2)
+        console.log(user3)
+
+        // 3. 전개 구문
+        // 얜 중간에 써도 댐
+        let arr1 = [1,2,3];
+        let arr2 = [4,5,6];
+        let result = [0, ...arr1, ...arr2, 7, 8, 9];
+
+        // 활용
+        let user4 = {name : "Mike"};
+        let info = {age: 30};
+        let fe = ["JS", "React"];
+        let lang = ["Korean", "English"];
+        // user4 = Object.assign({},user4,info,{skills: []});
+        // fe.forEach((item) => {
+        //     user4.skills.push(item);
+        // })
+        // lang.forEach((item) => {
+        //     user4.skills.push(item);
+        // })
+        // => 위의 Object.assign(객체 새로 복제) -> forEach(객체 반복)로 만들어야 할 걸 아래와 같이 바꿀 수 있음
+        user4 = {
+            ...user4,
+            ...info,
+            skills: [...fe, ...lang]
+        } 
+        console.log(user4)
+    </script>
+</body>
+</html>

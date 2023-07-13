@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. setTimeout = 일정 시간 이후 함수 실행
+        // 2. setInterval = 일정 시간 간격으로 함수를 반복
+
+        // 1. setTimeout
+        // (1)
+        function fn(){
+            console.log(3)
+        }
+        setTimeout(fn, 3000); // setTimeout(함수, 시간(ms))
+        // (2)
+        setTimeout(function(){
+            console.log(3)
+        }, 3000); 
+        // (1), (2) 같은 거임
+    </script>
+</body>
+</html>

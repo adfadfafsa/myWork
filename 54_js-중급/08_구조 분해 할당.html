@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 분해 할당
+        let [x,y] = [1,2];
+        console.log(x); // 1
+        console.log(y); // 2
+        
+        let [a=3, b=4, c=5] = [1,2] // a=1, b=2, c=5 //기본값을 먼저 주고 할당한거
+        
+        // 객체 구조 분해
+        let user = {name: "Mike", age:30}
+        let {name, age} = user;
+        console.log(name)
+        
+    </script>
+</body>
+</html>
