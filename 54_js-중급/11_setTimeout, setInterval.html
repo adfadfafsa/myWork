@@ -9,7 +9,9 @@
 <body>
     <script>
         // 1. setTimeout = 일정 시간 이후 함수 실행
-        // 2. setInterval = 일정 시간 간격으로 함수를 반복
+        // 2. clearTimeout() = setTimeout 의 기능을 멈춘다.
+        // 3. setInterval = 일정 시간 간격으로 함수를 반복
+        // 4. clearInterval() = setInterval 의 기능을 멈춘다.
 
         // 1. setTimeout
         // (1)
@@ -22,6 +24,32 @@
             console.log(3)
         }, 3000); 
         // (1), (2) 같은 거임
+
+        // 2. clearTimeout
+
+        // 예제
+        function showName(name){
+            console.log(name);
+        }
+        setTimeout(showName, 3000, 'Mike') // 인수가 더 필요하다면 뒤에 적어준다
+
+        // 3. setInterval
+        function showName2(name){
+            console.log(name);
+        }
+        const tId2 = setInterval(showName2, 3000, 'Mike')
+        // 4. clearInterval()
+
+        // 전체 예제
+        let num = 0;
+        function showTime() {
+            console.log(`안녕하세요. 접속하신지 ${num++}초 경과했습니다.`)
+            if(num > 5){
+                clearInterval(tId);
+            }
+        }
+        const tId = setInterval(showTime,1000);
+        
     </script>
 </body>
 </html>

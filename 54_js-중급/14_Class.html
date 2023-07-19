@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // class
+
+        // 생성자 함수
+        const User = function(name, age){ // 생성자 함수 원형
+            this.name = name;
+            this.age = age;
+            this.showName = function() {
+                console.log(this.name);
+            }
+        }
+        const mike = new User("Mike", 30)
+
+        class User2{ // class 생성자 함수
+            constructor(name, age){
+                this.name = name;
+                this.age = age;
+            }
+            showName(){
+                console.log(this.name)
+            }
+        }
+        const tom = new User2("Tom", 19)
+
+        // 상속
+        // 메서드 오버라이딩
+        class Car{
+            constructor(color){
+                this.color = color;
+                this.wheels = 4;
+            }
+            drive(){
+                console.log("drive...")
+            }
+            stop(){
+                console.log("STOP!")
+            }
+        }
+        class Bmw extends Car {
+            constructor(color){ // 컨스트럭터 오버라이딩, 매개변수 써줘야함
+                super(color); // super 안써주면 에러뜸. 이게 부모 컨스트럭터 따라가겠다는건데 부모 컨스트럭터는 원래 자기 내부의 this가 들어갈 빈 객체 {}를 생성함. 상속받는 애들은 그 과정을 건너뜀. 그래서 부모 자식 컨스트럭터 서로 이어줘야함
+                this.navigation = 1;
+            }
+            Park() {
+                console.log("PARK")
+            }
+        }
+        const z4 = new Bmw("Blue")
+
+
+    </script>
+</body>
+</html>
