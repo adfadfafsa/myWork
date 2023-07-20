@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/05_style.css">
+</head>
+<body>
+    <div class="alert-box" id="alert">
+        <p id="title">알림창임</p>
+        <button id="close">닫기</button>
+    </div>
+
+    <button onclick="알림창열기('flex', '아이디를 입력하세요')">아이디</button>
+    <button onclick="알림창열기('flex', '비번을 입력하세요')">비번</button>
+
+    <script>
+        // 이벤트리스너
+        document.getElementById('close').addEventListener('click', function(){
+            document.getElementById('alert').style.display='none';
+        });
+        // document.getElementById('') <- 얘를
+        // addEventListner('click',function(){}) <- 'click' 하면, function(){} 하게 해준다
+        // 이벤트 명은 많음 mouseover, scroll, click, keydown...
+
+        function 알림창열기(구멍,할말){
+            document.getElementById('alert').style.display=구멍;
+            document.getElementById('title').innerHTML=할말;
+        }
+
+    </script>
+</body>
+</html>

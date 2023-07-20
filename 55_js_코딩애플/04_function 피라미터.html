@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/04_style.css">
+  </head>
+  <body>
+    <!-- 수업 -->
+    <div class="alert" id="alertBox">Alert!
+        <button onclick="getAlert('none')">CLOSE</button>
+    </div>
+    <button onclick="getAlert('block')">GO</button>
+
+    <!-- 숙제 -->
+    <button onclick="alertState('block',2)">ID</button>
+    <div class="alert2" id="alertBox2">
+        <p>Put your ID here</p> 
+        <input action="text" class="alertForm" name="user_id" placeholder="ID"></input>
+        <button onclick="alertState('none',2)">CLOSE</button>
+    </div>
+    <button onclick="alertState('block',3)">PASSWORD</button>
+    <div class="alert3" id="alertBox3">
+        <p>Put your PW here</p>
+        <input action="text" class="alertForm" name="user_pw" placeholder="PASSWORD"></input>
+        <button onclick="alertState('none',3)">CLOSE</button>
+    </div>
+
+    <script>
+      // 수업
+      function getAlert(state) {
+        document.getElementById("alertBox").style.display = state;
+      }
+
+      // 숙제
+      function alertState(state,n){
+        document.getElementById(`alertBox${n}`).style.display = state;
+      }
+    </script>
+  </body>
+</html>

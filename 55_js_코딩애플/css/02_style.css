@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.alert {
+    box-sizing:border-box;
+    text-align:center;
+    width:320px;
+    height:30px;
+    line-height:30px;
+    border-radius: 4px;
+    background-color: aquamarine;
+    display:none;
+}
