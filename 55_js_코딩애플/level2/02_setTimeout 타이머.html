@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="alert alert-danger">
+        <p>5초 이내 구매시 사은품 증정!</p>
+    </div>
+    <div class="alert alert-danger">
+        <p>앨랠래 생겼다 없어졌다 약오르지롱</p>
+    </div>
+
+    <!-- 숙제 -->
+    <div class="alert alert-danger">
+        <p class="alertmsg">
+            <span class="msgcount">5</span>초 이내 구매시 사은품 증정!
+        </p>
+    </div>
+
+    <script>
+        let msgCount = document.getElementsByClassName('msgcount')[0];
+        let hideAlert = function(time){
+            document.getElementsByClassName('alert')[time].style.display="none";
+        }
+
+        setTimeout(function(){
+            hideAlert(0);
+        },5000)
+        setInterval(function(){
+            hideAlert(1);
+        },1000)
+
+        // 숙제
+        setInterval(function(){
+           hideAlert(2);
+        },5000)
+        setInterval(function(){
+            msgCount.innerHTML = '4';
+        },1000)
+        setInterval(function(){
+            msgCount.innerHTML = '3';
+        },2000)
+        setInterval(function(){
+            msgCount.innerHTML = '2';
+        },3000)
+        setInterval(function(){
+            msgCount.innerHTML = '1';
+        },4000)
+
+        // 어찌어찌 잘해보려다 망한코드
+        // let count = 0;
+        // setInterval(function(){
+        //     count++;
+        // },1000)
+
+        // let countnum = 5 - count;
+        // const msgcount = document.getElementsByClassName('msgcount')[0]
+        // msgcount.innerHTML = `${countnum}`;
+
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Q5 -->
+    <p>태조 이성계가 태어난 년도는?</p>
+    <input type="text" id="answer">
+    <button id="send-answer">제출</button>
+
+    <script>
+      // Q1
+      let age = 26;
+      const region = 'Incheon';
+
+      // Q2
+      // -
+
+      // Q3
+      var prev = 10000;
+      var cur = 0;
+
+      if(prev < 50000){
+        cur = prev*1.15*1.15;
+      } else {
+        cur = prev*1.2*1.2;
+      }
+
+      console.log(cur);
+
+      // Q4
+      function total(first){
+        let second = first/3*2;
+        let third = second/3*2;
+        let total = first + second + third;
+        console.log(total);
+      }
+
+      // Q5
+      let count = 0;
+
+      document.getElementById('send-answer').addEventListener('click', function(){
+        count++;
+
+        if(count >= 3 && document.getElementById('answer').value != "1335"){
+        alert('멍~청이')
+        } else if (count < 3 && document.getElementById('answer').value != "1335"){
+            alert('땡땡땡땡땡땡땡떄얭얘ㄸ떙')
+        } else if(document.getElementById('answer').value == "1335"){
+            alert('성공')
+        } else {
+            return 0;
+        }
+      })
+
+    </script>
+  </body>
+</html>

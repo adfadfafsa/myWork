@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.darkmod {
+    background-color: #222;
+    transition: 1s;
+}
+
+.whitemod {
+    background-color: #fff;
+    transition: 1s;
+}

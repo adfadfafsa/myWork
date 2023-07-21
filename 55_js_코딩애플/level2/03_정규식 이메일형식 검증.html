@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="black-bg">
+        <div class="white-bg">
+            <h4>로그인하세요</h4>
+            <form action="success.html">
+                <div class="my-3">
+                  <input type="text" class="form-control" id="email">
+                 </div>
+                 <div class="my-3">
+                   <input type="password" class="form-control" id="userpw">
+                 </div>
+                 <button type="submit" class="btn btn-primary">전송</button>
+                 <button type="button" class="btn btn-danger" id="close">닫기</button>
+              </form>
+        </div>
+    </div> 
+    <button id="modal-btn">버튼</button>
+
+
+    <script>
+        // 수업 내용 = 정규식 표현
+        /abc/.test('abcdef'); //true // test() 안에 abc있나요??
+
+        /[a-d]/.test('aefg');  //true // a~d 중에 아무거나 하나 포함돼있나요?
+        /[가-다]/.test('다라마바');  //true // 가~다 중에 아무거나 하나 포함돼있나요?
+
+        /[a-zA-Z]/.test('반가워요');  //false // a~z, A~Z 중 아무거나 하나 포함돼있나요?
+        /[a-zA-Z]/.test('반가워요a'); //true // a~z, A~Z 중 아무거나 하나 포함돼있나요?
+        /[ㄱ-ㅎㅏ-ㅣ가-힣]/.test('반가워요');  //true // ㄱ~ㅎ(자음), ㅏ~ㅣ(모음), 가~힣(한글조합) 중 하나 포함돼있나요?
+        
+        /\S/.test('abcde');   //true // \S = 모든 문자, 아무 문자가 포함돼있나요?
+        /^a/.test('abcde');   //true // a로 시작하나요?
+        /e$/.test('abcde'); //true  // e로 끝나나요?
+
+        /(e|f)/.test('abcde');   //true // e나 f중 하나 이상 포함돼있나요? (합집합)
+        /(e&f)/.test('abcde');   //true // e와 f중 둘 다 포함돼있나요? (교집합)
+
+        /a+/; // a를 찾았다면 쭉 반복해서 더 찾아주세요 (원래 처음 만난 것까지만 찾음)
+
+        /\S+t/; // '모든 문자를 찾아 쭉 진행하면서' + 't라는 글자가 있다면 찾아주세요'
+        /\S+@\S+\.\S+/; // '모든 문자를 찾아 진행' + '@라는 글자 찾으면서 진행해주세요' + '. 이랑 모든 문자 찾아 진행'
+        // -> . 은 정규식에서 특수한 문법이라 문법 말고 진짜 마침표 찾아달라고 할거면 앞에 백슬래시 붙여야함
+
+        document.getElementsByClassName('btn-primary')[0].addEventListener('click', function(){
+
+            let emailValue = document.getElementById('email').value
+            let pwValue = document.getElementById('userpw').value
+            
+            if(emailValue == '' || emailValue == ''){
+                alert('아이디 비번 입력 안함');
+            } else if(/\S+@\S+\.\S+/.test(emailValue) == 0){
+                alert('이메일형식이아님')
+                
+                //여기부턴 숙제
+                
+                } else if(/[A-Z]/.test(pwValue) == 1)
+                    alert('비번에 대문자 포함불가')
+                
+        })
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

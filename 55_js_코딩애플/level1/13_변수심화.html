@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/13_style.css">
+</head>
+<body class="darkmod" id="body">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <span class="navbar-brand">JSShop</span>
+            <span class="badge bg-dark">Dark 🔄</span>
+            <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <script>
+        let count = 0;
+        document.getElementsByClassName('badge')[0].addEventListener('click', function(){
+            count++;
+        })
+
+        document.getElementsByClassName('badge')[0].addEventListener('click', function(){
+            if(count % 2 == 0){
+                document.getElementsByClassName('badge')[0].innerHTML="Dark 🔄";
+                document.getElementById('body').classList="darkmod";
+            } else {
+                document.getElementsByClassName('badge')[0].innerHTML="White 🔄";
+                document.getElementById('body').classList="whitemod";
+            }
+        })
+
+
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <script>
+      // Q1
+      function game369(num) {
+        if (num % 3 == 0) {
+            console.log('박수');
+        } else {
+            console.log('통과');
+        }
+      }
+
+      // Q2
+      function newGame369(num){
+        if(num % 9 == 0){
+            console.log('박수x2');
+        } else if(num % 3 == 0){
+            console.log('박수');
+        } else {
+            console.log('통과');
+        }
+      }
+
+      // Q3
+      function result(test1, test2){
+        if(test1 > 100){
+            console.log('점수는 100점 이하로만 설정 가능합니다')
+        } else if(test2 > 100){ // 피드백) if(test1 > 100 || test2 > 100){}
+            console.log('점수는 100점 이하로만 설정 가능합니다')
+        } else if(test1 < 40){
+            console.log('과락')
+        } else if(test2 < 40){
+            console.log('과락') // 피드백) else if(test1 < 40 || test2 < 40){}
+        } else if(test1 + test2 >= 120){
+            console.log('합격입니다')
+        } else if(test1 + test2 < 120){
+            console.log('불합격입니다')
+        } else {
+            return 0;
+        }
+      }
+
+    </script>
+  </body>
+</html>
