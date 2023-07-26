@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.navbar{
+    position:fixed;
+    width:100%;
+    z-index:1;
+}
+
+.navbar-brand{
+    font-size: 30px;
+    transition: all 0.5s;
+}
+.navbar-brand2{
+    font-size: 16px;
+    transition: all 0.5s;
+}

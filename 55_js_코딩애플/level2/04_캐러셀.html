@@ -32,7 +32,6 @@
     <button class="nextBtn">다음</button>
 
     <script>
-      let slideCont = document.getElementsByClassName('slide-container2')[0].style.transform;
 
       document.getElementsByClassName('slide2')[0].addEventListener('click', function(){
         document.getElementsByClassName('slide-container2')[0].style.transform = "translateX(-100vw)";
@@ -45,6 +44,12 @@
       })
 
       //숙제
+
+      const slideCont = document.getElementsByClassName('slide-container2')[0].style.transform;
+      const trans0 = "translateX(0vw)";
+      const trans1 = "translateX(-100vw)";
+      const trans2 = "translateX(-200vw)";
+
       document.getElementsByClassName('prevBtn')[0].addEventListener('click', function(){
         if(document.getElementsByClassName('slide-container2')[0].style.transform == "translateX(-100vw)"){
           document.getElementsByClassName('slide-container2')[0].style.transform = "translateX(0)";
