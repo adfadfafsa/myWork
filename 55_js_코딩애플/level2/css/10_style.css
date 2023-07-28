@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+.black-bg {
+    width : 100%;
+    height : 100%;
+    background : rgba(0,0,0,0.5);
+    padding: 30px;
+    
+    position : fixed;
+    z-index : 5;
+    
+    visibility: hidden;
+    opacity:0;
+    transition: all 1s;
+}
+
+.white-bg {
+    background: white;
+    border-radius: 5px;
+    padding: 30px;
+
+    visibility:hidden;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show-modal{
+    opacity:1;
+    visibility:visible;
+}
+
+
+.div1{
+    width:800px;
+    height:800px;
+    background-color: palegreen;
+}
+.div2{
+    width:600px;
+    height:600px;
+    background-color: paleturquoise;
+}
+
+.change {
+    transition: all 1s;
+    background-color: rgba(0,0,0,0.5);
+}
