@@ -18,6 +18,51 @@ for(i=0; i<products.length; i++){
 }
 
 
+let cnt = 0;
+$('.btn').on('click',function(){
+    cnt = cnt + 1;
+    console.log(cnt);
+
+    if(cnt === 1){
+        $.get('https://codingapple1.github.io/js/more1.json')
+        .done(function(data){
+            for(i=0; i<data.length; i++){
+                
+                let template = `<div class="col-sm-4">
+                <img src="https://via.placeholder.com/600" class="w-100">
+                <h5>${data[i].title}</h5>
+                <p>가격 : ${data[i].price}</p>
+                </div>`
+                
+                $('.row').eq(0).append(template);
+            }
+    })
+        .fail(function(){
+            alert('Fail to load');
+    })} 
+    
+    else if(cnt === 2){
+        $.get('https://codingapple1.github.io/js/more2.json')
+        .done(function(data){
+            for(i=0; i<data.length; i++){
+                
+                let template = `<div class="col-sm-4">
+                <img src="https://via.placeholder.com/600" class="w-100">
+                <h5>${data[i].title}</h5>
+                <p>가격 : ${data[i].price}</p>
+                </div>`
+                
+                $('.row').eq(0).append(template);
+            }
+        })
+        .fail(function(){
+            alert('Fail to load');
+        })}
+        
+    else {
+        return 0;
+    }
+})
 
 
 
