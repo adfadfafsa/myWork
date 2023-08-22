@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- DOM 설명 -->
+    1. DOM = Document Object Model
+
+    2. JS는 HTML 조작에 특화된 언어긴한데 p태그 같은 HTML 요소를 어캐 알아들을까요 이상합니다
+       => HTML을 JS가 해석할 수 있는 문법으로 변환해놓으면 댐
+    3. 그래서 브라우저는 HTML 페이지를 열 때 Object과 비슷한 자료형에 정리하고 담아가면서 실행함
+       => 그래야 JS로 원하는거 뽑아다 쓸 수 있으니까
+    4. 그 Object을 document object (Model) = DOM 이라고 함
+
+    5. 브라우저는 문서를 위에서부터 읽으며 DOM을 생성함
+       => 읽다 HTML 발견하면 DOM에 추가
+       => 이래서 script 아래에 있는 요소들은 에러나는거임 아직 DOM에 추가 안돼서
+    6. 이를 해결하기 위해 HTML을 다 읽고나서 실행해주는 이벤트 리스너들이 있음
+       => 순서 상관 없어짐, 딱히 쓸모는 없음, JS파일에 적어놓음 
+
+    7. load 이벤트 리스너도 있는데 DOM, 이미지, CSS, JS파일이 로드 됐는지도 체크 가능
+       => 안정적이긴 한데 느려터짐 DOM 이미지 CSS JS 다 로드상태 체크하는거라서, JS파일에 적어놓음
+    
+    <script src="js/10_JS.js"></script>
+</body>
+</html>
