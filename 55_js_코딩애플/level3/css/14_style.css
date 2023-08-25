@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+.slide-container{
+    overflow: hidden;
+}
+
+.slide-container2{
+    width: 300vw;
+    transition: all 0.5s;
+}
+
+.slide-box {
+    width: 100vw;
+    float:left;
+}
+
+.slide-box>img {
+    width:100vw;
+}
